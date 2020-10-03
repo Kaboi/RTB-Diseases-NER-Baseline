@@ -376,7 +376,7 @@ def evaluating(model, datas, best_F):
     return best_F, new_F, save
 
 model.train(True)
-for epoch in range(1, 11):
+for epoch in range(1, 2):
     print('='*80)
     print("epoch = %i." % epoch)
     print('='*80)
