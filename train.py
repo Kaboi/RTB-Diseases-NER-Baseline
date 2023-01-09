@@ -23,7 +23,7 @@ optparser.add_option(
     help="Train set location"
 )
 optparser.add_option(
-    "-d", "--dev", default="dataset/valid.txt",
+    "-d", "--dev", default="dataset/dev.txt",
     help="Dev set location"
 )
 optparser.add_option(
