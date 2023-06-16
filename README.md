@@ -8,7 +8,7 @@ End-toEnd Sequence labeling via BLSTM-CNN-CRF<br/>
    
 code:
 
-https://github.com/ZhixiuYe/NER-pytorch<br/>
+https://github.com/smutuvi/NER_Baseline<br/>
 
 ## requirement
 
