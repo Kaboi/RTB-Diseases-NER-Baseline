@@ -16,6 +16,7 @@ from loader import *
 from model import BiLSTM_CRF
 # import wandb to log experiments
 import wandb
+import datetime
 
 t = time.time()
 models_path = "models/"
@@ -161,7 +162,10 @@ param_plot_every = 1000
 param_eval_every = 2000
 param_momentum = 0.9
 
-wandb.init(project='RTB-NER-Transfer-Learning', name=parameters['name'])
+timestamp = datetime.datetime.now().strftime("%Y%m%d%H%M%S")
+# wandb.init(project='RTB-NER-Transfer-Learning', name=parameters['name'])
+run_name = f"{parameters['name']}-{timestamp}"
+wandb.init(project='RTB-NER-Transfer-Learning', name=run_name)
 
 
 assert os.path.isfile(opts.train)
