@@ -14,6 +14,9 @@ import sys
 from utils import *
 from loader import *
 from model import BiLSTM_CRF
+# import wandb to log experiments
+import wandb
+
 t = time.time()
 models_path = "models/"
 
@@ -151,6 +154,15 @@ name = parameters['name']
 model_name = models_path + name #get_name(parameters)
 tmp_model = model_name + '.tmp'
 
+# Chagne some parameters only once, to include in WandB as well
+param_num_epochs = 10
+param_learning_rate = 0.015
+param_plot_every = 1000
+param_eval_every = 2000
+param_momentum = 0.9
+
+wandb.init(project='RTB-NER-Transfer-Learning', name=parameters['name'])
+
 
 assert os.path.isfile(opts.train)
 assert os.path.isfile(opts.dev)
@@ -267,6 +279,22 @@ with open(mapping_file, 'wb') as f:
     pickle.dump(mappings, f)
 
 print('word_to_id: ', len(word_to_id))
+
+# Log parameters
+wandb.config.epochs = param_num_epochs
+wandb.config.vocab_size = len(word_to_id)
+wandb.config.embedding_dim = parameters['word_dim']
+wandb.config.hidden_dim = parameters['word_lstm_dim']
+wandb.config.use_crf = parameters['crf']
+wandb.config.char_mode = parameters['char_mode']
+wandb.config.learning_rate = param_learning_rate
+wandb.config.use_gpu = use_gpu
+wandb.config.plot_every = param_plot_every
+wandb.config.eval_every = param_eval_every
+wandb.config.momentum = param_momentum
+wandb.config.optimizer = "SGD"
+
+
 model = BiLSTM_CRF(vocab_size=len(word_to_id),
                    tag_to_ix=tag_to_id,
                    embedding_dim=parameters['word_dim'],
@@ -280,18 +308,22 @@ model = BiLSTM_CRF(vocab_size=len(word_to_id),
                    # cap_embedding_dim=10)
 if parameters['reload']:
     model.load_state_dict(torch.load(model_name))
+
+# Log gradients and model parameters
+wandb.watch(model)
+
 if use_gpu:
     model.cuda()
-learning_rate = 0.015
-optimizer = torch.optim.SGD(model.parameters(), lr=learning_rate, momentum=0.9)
+learning_rate = param_learning_rate
+optimizer = torch.optim.SGD(model.parameters(), lr=learning_rate, momentum=param_momentum)
 losses = []
 loss = 0.0
 best_dev_F = -1.0
 best_test_F = -1.0
 best_train_F = -1.0
 all_F = [[0, 0, 0]]
-plot_every = 1000
-eval_every = 2000
+plot_every = param_plot_every
+eval_every = param_eval_every
 count = 0
 # vis = visdom.Visdom()
 sys.stdout.flush()
@@ -376,8 +408,8 @@ def evaluating(model, datas, best_F):
     return best_F, new_F, save
 
 model.train(True)
-# for epoch in range(1, 11):
-for epoch in range(1, 9):
+
+for epoch in range(1, param_num_epochs + 1):
     print('='*80)
     print("epoch = %i." % epoch)
     print('='*80)
@@ -434,6 +466,10 @@ for epoch in range(1, 9):
         if count % plot_every == 0:
             loss /= plot_every
             print(count, ': ', loss)
+
+            # Log the averaged loss and current count to wandb
+            wandb.log({"avg_loss": loss, "iteration": count})
+
             if losses == []:
                 losses.append(loss)
             losses.append(loss)
@@ -454,6 +490,10 @@ for epoch in range(1, 9):
             if save:
                 torch.save(model, model_name)
             best_test_F, new_test_F, _ = evaluating(model, test_data, best_test_F)
+
+            # Log the new F-scores to wandb
+            wandb.log({"train_F": new_train_F, "dev_F": new_dev_F, "test_F": new_test_F, "iteration": count})
+
             sys.stdout.flush()
 
             # all_F.append([new_train_F, new_dev_F, new_test_F])
@@ -466,6 +506,8 @@ for epoch in range(1, 9):
         if count % len(train_data) == 0:
             adjust_learning_rate(optimizer, lr=learning_rate/(1+0.05*count/len(train_data)))
 
+    # log the epochs
+    wandb.log({"epoch": epoch})
 
 print(time.time() - t)
 
