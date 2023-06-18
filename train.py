@@ -513,3 +513,6 @@ print(time.time() - t)
 
 # plt.plot(losses)
 # plt.show()
+
+# Close Weights and Biases
+wandb.finish()
