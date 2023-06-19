@@ -8,6 +8,9 @@ from torch.autograd import Variable
 
 from loader import *
 from utils import *
+# import wandb to log experiments
+import wandb
+import datetime
 
 t = time.time()
 
@@ -61,7 +64,7 @@ char_to_id = mappings['char_to_id']
 parameters = mappings['parameters']
 word_embeds = mappings['word_embeds']
 
-use_gpu =  opts.use_gpu == 1 and torch.cuda.is_available()
+use_gpu = opts.use_gpu == 1 and torch.cuda.is_available()
 
 
 assert os.path.isfile(opts.test)
@@ -81,6 +84,16 @@ update_tag_scheme(test_sentences, tag_scheme)
 test_data = prepare_dataset(
     test_sentences, word_to_id, char_to_id, tag_to_id, lower
 )
+
+# log evaluation to wandb
+timestamp = datetime.datetime.now().strftime("%Y%m%d%H%M%S")
+run_name = f"{parameters['name']}-{timestamp}-eval"
+wandb.init(project='RTB-NER-Transfer-Learning', name=run_name)
+
+# Log parameters
+wandb.config.char_mode = parameters['char_mode']
+wandb.config.use_gpu = use_gpu
+
 
 model = torch.load(opts.model_path)
 model_name = opts.model_path.split('/')[-1].split('.')[0]
@@ -109,6 +122,11 @@ model.eval()
 def eval(model, datas, maxl=1):
     prediction = []
     confusion_matrix = torch.zeros((len(tag_to_id) - 2, len(tag_to_id) - 2))
+
+    # Collecting all ground truth ids and predicted ids for all datas
+    ground_truth_ids = []
+    predicted_ids = []
+
     for data in datas:
         ground_truth_id = data['tags']
         # l = getmaxlen(ground_truth_id)
@@ -149,11 +167,23 @@ def eval(model, datas, maxl=1):
         else:
             val, out = model(dwords, chars2_mask, dcaps, chars2_length, d)
         predicted_id = out
+
+        # Append current batch of ground truth and predictions to respective lists
+        ground_truth_ids.extend(ground_truth_id)
+        predicted_ids.extend(predicted_id)
+
         for (word, true_id, pred_id) in zip(words, ground_truth_id, predicted_id):
             line = ' '.join([word, id_to_tag[true_id], id_to_tag[pred_id]])
             prediction.append(line)
             confusion_matrix[true_id, pred_id] += 1
         prediction.append('')
+
+    # After the loop, log the confusion matrix to W&B
+    wandb.log({"conf_mat": wandb.plot.confusion_matrix(
+        y_true=ground_truth_ids, preds=predicted_ids,
+        class_names=[id_to_tag[i] for i in range(len(tag_to_id) - 2)]
+    )})
+
     predf = eval_temp + '/pred.' + model_name
     scoref = eval_temp + '/score.' + model_name
 

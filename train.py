@@ -155,15 +155,15 @@ name = parameters['name']
 model_name = models_path + name #get_name(parameters)
 tmp_model = model_name + '.tmp'
 
-# Chagne some parameters only once, to include in WandB as well
+# Change some parameters only once, to include in WandB as well
 param_num_epochs = 10
 param_learning_rate = 0.015
 param_plot_every = 1000
 param_eval_every = 2000
 param_momentum = 0.9
 
+# log training to wandb
 timestamp = datetime.datetime.now().strftime("%Y%m%d%H%M%S")
-# wandb.init(project='RTB-NER-Transfer-Learning', name=parameters['name'])
 run_name = f"{parameters['name']}-{timestamp}"
 wandb.init(project='RTB-NER-Transfer-Learning', name=run_name)
 
