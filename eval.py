@@ -212,8 +212,11 @@ def eval(model, datas, maxl=1):
 #     print('maxl=', l)
 #     eval(model, test_data, l)
 #     # print()
-for i in range(10):
-    eval(model, test_data, 100)
+#for i in range(10):
+eval(model, test_data, 100)
 
-# print(time.time() - t)
+# Close Weights and Biases
+wandb.finish()
+
+print(time.time() - t)
 
