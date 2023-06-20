@@ -5,12 +5,16 @@ import torch
 import time
 import pickle
 from torch.autograd import Variable
-
 from loader import *
 from utils import *
 # import wandb to log experiments
 import wandb
 import datetime
+# import for hq creating confusion matrix
+import itertools
+import matplotlib.pyplot as plt
+import numpy as np
+
 
 t = time.time()
 
@@ -119,6 +123,39 @@ model.eval()
 #             l = 1
 #     return maxl
 
+
+def plot_confusion_matrix(cm, classes, normalize=False, title='Confusion matrix', cmap=plt.cm.Blues):
+    """
+    This function prints and plots the confusion matrix.
+    Normalization can be applied by setting `normalize=True`.
+    """
+    if normalize:
+        cm = cm.astype('float') / cm.sum(axis=1)[:, np.newaxis]
+        print("Normalized confusion matrix")
+    else:
+        print('Confusion matrix, without normalization')
+
+    print(cm)
+
+    plt.imshow(cm, interpolation='nearest', cmap=cmap)
+    plt.title(title)
+    plt.colorbar()
+    tick_marks = np.arange(len(classes))
+    plt.xticks(tick_marks, classes, rotation=45)
+    plt.yticks(tick_marks, classes)
+
+    fmt = '.2f' if normalize else 'd'
+    thresh = cm.max() / 2.
+    for i, j in itertools.product(range(cm.shape[0]), range(cm.shape[1])):
+        plt.text(j, i, format(cm[i, j], fmt),
+                 horizontalalignment="center",
+                 color="white" if cm[i, j] > thresh else "black")
+
+    plt.tight_layout()
+    plt.ylabel('True label')
+    plt.xlabel('Predicted label')
+
+
 def eval(model, datas, maxl=1):
     prediction = []
     confusion_matrix = torch.zeros((len(tag_to_id) - 2, len(tag_to_id) - 2))
@@ -207,6 +244,12 @@ def eval(model, datas, maxl=1):
               ["%.3f" % (confusion_matrix[i][i] * 100. / max(1, confusion_matrix[i].sum()))])
         ))
     print("\n")
+
+    cm = confusion_matrix.numpy()  # Assuming your confusion_matrix is a PyTorch tensor
+    plot_confusion_matrix(cm, classes=[id_to_tag[i] for i in range(len(tag_to_id) - 2)])
+    plt.savefig("confusion_matrix.png", dpi=300)
+    wandb.log({"confusion_matrix": wandb.Image("confusion_matrix.png")})
+
 
 # for l in range(1, 6):
 #     print('maxl=', l)
