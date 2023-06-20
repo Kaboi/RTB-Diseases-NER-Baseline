@@ -338,6 +338,13 @@ def evaluating(model, datas, best_F):
     save = False
     new_F = 0.0
     confusion_matrix = torch.zeros((len(tag_to_id) - 2, len(tag_to_id) - 2))
+
+    # Non-O entities evaluation
+    total_entities = 0
+    total_non_O_entities = 0
+    correct_entities = 0
+    correct_non_O_entities = 0
+
     for data in datas:
         ground_truth_id = data['tags']
         words = data['str_words']
@@ -374,11 +381,23 @@ def evaluating(model, datas, best_F):
             val, out = model(dwords.cuda(), chars2_mask.cuda(), dcaps.cuda(), chars2_length, d)
         else:
             val, out = model(dwords, chars2_mask, dcaps, chars2_length, d)
+
         predicted_id = out
         for (word, true_id, pred_id) in zip(words, ground_truth_id, predicted_id):
             line = ' '.join([word, id_to_tag[true_id], id_to_tag[pred_id]])
             prediction.append(line)
             confusion_matrix[true_id, pred_id] += 1
+
+            # Non-O entities evaluation
+            total_entities += 1
+            if id_to_tag[true_id] != 'O':
+                total_non_O_entities += 1
+
+            if true_id == pred_id:
+                correct_entities += 1
+                if id_to_tag[true_id] != 'O':
+                    correct_non_O_entities += 1
+
         prediction.append('')
     predf = eval_temp + '/pred.' + name
     scoref = eval_temp + '/score.' + name
@@ -409,6 +428,14 @@ def evaluating(model, datas, best_F):
             *([confusion_matrix[i][j] for j in range(confusion_matrix.size(0))] +
               ["%.3f" % (confusion_matrix[i][i] * 100. / max(1, confusion_matrix[i].sum()))])
         ))
+
+    # Non-O entities evaluation
+    overall_accuracy = correct_entities / total_entities * 100.0
+    non_O_accuracy = correct_non_O_entities / total_non_O_entities * 100.0
+
+    print(f"Overall accuracy: {overall_accuracy:.2f}%")
+    print(f"Non-'O' entities accuracy: {non_O_accuracy:.2f}%")
+
     return best_F, new_F, save
 
 model.train(True)
