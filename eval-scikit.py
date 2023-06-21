@@ -14,7 +14,7 @@ import datetime
 import itertools
 import matplotlib.pyplot as plt
 import numpy as np
-
+from sklearn.metrics import confusion_matrix
 
 t = time.time()
 
@@ -188,23 +188,9 @@ def get_entity_mapping(entities):
     return entity_to_id, id_to_entity, entity_labels
 
 
-def compute_entity_confusion_matrix(ground_truth_entity_ids, predicted_entity_ids, labels):
-    """Compute confusion matrix for entities."""
-    assert len(ground_truth_entity_ids) == len(predicted_entity_ids), "Length of ground truth IDs and predicted IDs " \
-                                                                      "must be the same."
-    assert max(labels) + 1 == len(labels), "Labels should be a list of unique integers from 0 to num_classes - 1."
-
-    # Determine the number of unique entity classes from the labels.
-    num_classes = len(labels)
-
-    # Initialize confusion matrix with zeros.
-    confusion_matrix = torch.zeros((num_classes, num_classes))
-
-    # Iterate over all ground truth IDs and predicted IDs and increment corresponding cell in confusion matrix.
-    for gt, pred in zip(ground_truth_entity_ids, predicted_entity_ids):
-        confusion_matrix[gt, pred] += 1
-
-    return confusion_matrix
+def compute_entity_confusion_matrix(y_true, y_pred, labels):
+    cm = confusion_matrix(y_true, y_pred, labels=labels)
+    return cm
 
 
 # def eval(model, datas, maxl=1):
@@ -285,8 +271,10 @@ def eval(model, datas):
     # Assuming you have a way to convert entities to indices and the entity_labels list
     entity_to_id, id_to_entity, entity_labels = get_entity_mapping(ground_truth_entities + predicted_entities)
 
+    # Transform ground truth and predicted entities to label integers
     ground_truth_entity_ids = [entity_to_id[e] for e in ground_truth_entities]
     predicted_entity_ids = [entity_to_id.get(e, -1) for e in predicted_entities]
+
 
     wandb.log({"entity_confusion_matrix": wandb.plot.confusion_matrix(
         y_true=ground_truth_entity_ids,
@@ -325,11 +313,9 @@ def eval(model, datas):
 
     cm_entity = compute_entity_confusion_matrix(ground_truth_entity_ids, predicted_entity_ids,
                                                 list(range(len(entity_labels))))
-
     plot_confusion_matrix(cm_entity, classes=entity_labels)
     plt.savefig("entity_confusion_matrix.png", dpi=300)
     wandb.log({"entity_confusion_matrix": wandb.Image("entity_confusion_matrix.png")})
-
 
 # for l in range(1, 6):
 #     print('maxl=', l)

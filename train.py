@@ -438,6 +438,7 @@ def evaluating(model, datas, best_F):
 
     return best_F, new_F, save
 
+
 model.train(True)
 
 for epoch in range(1, param_num_epochs + 1):
@@ -455,7 +456,7 @@ for epoch in range(1, param_num_epochs + 1):
         tags = data['tags']
         chars2 = data['chars']
 
-        ######### char lstm
+        # ######## char lstm
         if parameters['char_mode'] == 'LSTM':
             chars2_sorted = sorted(chars2, key=lambda p: len(p), reverse=True)
             d = {}
