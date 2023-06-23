@@ -122,6 +122,11 @@ model.eval()
 #             l = 1
 #     return maxl
 
+# Define your custom order here
+custom_order = ['B-CROP', 'I-CROP', 'B-PLANT_PART', 'I-PLANT_PART', 'B-DISEASE', 'I-DISEASE',
+                'B-SYMPTOM', 'I-SYMPTOM', 'B-PATHOGEN', 'I-PATHOGEN', 'B-GPE', 'I-GPE',
+                'B-LOC', 'I-LOC', 'B-ORG', 'I-ORG', 'B-DATE', 'I-DATE', 'O']
+custom_order_ids = [tag_to_id[tag] for tag in custom_order]
 
 def get_entities(seq):
     """Gets entities from sequence."""
@@ -235,10 +240,12 @@ def evaluate(model, datas):
         ground_truth_ids.extend(ground_truth_id)
         predicted_ids.extend(predicted_id)
 
+
+
     confusion_matrix = metrics.confusion_matrix(ground_truth_ids, predicted_ids)
 
-    # Log the confusion matrix to Weights & Biases
-    wandb.log({"individual_level_confusion_matrix": wandb.plot.confusion_matrix(
+    # Log the unordered confusion matrix to Weights & Biases
+    wandb.log({"unordered_individual_level_confusion_matrix": wandb.plot.confusion_matrix(
         y_true=ground_truth_ids,
         preds=predicted_ids,
         class_names=[id_to_tag[i] for i in range(len(tag_to_id) - 2)]
@@ -268,9 +275,34 @@ def evaluate(model, datas):
         ))
     print("\n")
 
-    fig = plot_confusion_matrix(confusion_matrix, normalize=True, classes=[id_to_tag[i] for i in range(len(tag_to_id) - 2)])
-    wandb.log({"individual_label_confusion_matrix": wandb.Image(fig)})
+    fig = plot_confusion_matrix(confusion_matrix, normalize=True,
+                                classes=[id_to_tag[i] for i in range(len(tag_to_id) - 2)])
+    wandb.log({"unordered_individual_label_confusion_matrix": wandb.Image(fig)})
 
+    # Convert the ground truth and predicted ids to numpy arrays
+    ground_truth_ids = np.array(ground_truth_ids)
+    predicted_ids = np.array(predicted_ids)
+
+    # Get the indices that would sort the ground truth and predicted ids according to the custom order
+    ground_truth_sort_indices = np.argsort(np.argsort(ground_truth_ids))
+    predicted_sort_indices = np.argsort(np.argsort(predicted_ids))
+
+    # Sort the ground truth and predicted ids
+    ground_truth_ids_sorted = ground_truth_ids[ground_truth_sort_indices]
+    predicted_ids_sorted = predicted_ids[predicted_sort_indices]
+
+    # Create a new confusion matrix with the sorted ground truth and predicted ids
+    confusion_matrix_sorted = metrics.confusion_matrix(ground_truth_ids_sorted, predicted_ids_sorted)
+
+    # Log the ordered confusion matrix to Weights & Biases
+    wandb.log({"ordered_individual_level_confusion_matrix": wandb.plot.confusion_matrix(
+        y_true=ground_truth_ids_sorted,
+        preds=predicted_ids_sorted,
+        class_names=custom_order
+    )})
+
+    fig = plot_confusion_matrix(confusion_matrix_sorted, normalize=True, classes=custom_order)
+    wandb.log({"ordered_individual_label_confusion_matrix": wandb.Image(fig)})
 
 
 # for l in range(1, 6):
