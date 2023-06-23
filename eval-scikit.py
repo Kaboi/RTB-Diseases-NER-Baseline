@@ -195,9 +195,6 @@ def evaluate(model, datas):
 
     for data in datas:
         ground_truth_id = data['tags']
-        # l = getmaxlen(ground_truth_id)
-        # if not l == maxl:
-        #     continue
         words = data['str_words']
         chars2 = data['chars']
         caps = data['caps']
@@ -259,20 +256,21 @@ def evaluate(model, datas):
         for l in f.readlines():
             print(l.strip())
 
-    print(("{: >2}{: >7}{: >7}%s{: >9}" % ("{: >7}" * confusion_matrix.size(0))).format(
+    print(("{: >2}{: >7}{: >7}%s{: >9}" % ("{: >7}" * confusion_matrix.shape[0])).format(
         "ID", "NE", "Total",
-        *([id_to_tag[i] for i in range(confusion_matrix.size(0))] + ["Percent"])
+        *([id_to_tag[i] for i in range(confusion_matrix.shape[0])] + ["Percent"])
     ))
-    for i in range(confusion_matrix.size(0)):
-        print(("{: >2}{: >7}{: >7}%s{: >9}" % ("{: >7}" * confusion_matrix.size(0))).format(
+    for i in range(confusion_matrix.shape[0]):
+        print(("{: >2}{: >7}{: >7}%s{: >9}" % ("{: >7}" * confusion_matrix.shape[0])).format(
             str(i), id_to_tag[i], str(confusion_matrix[i].sum()),
-            *([confusion_matrix[i][j] for j in range(confusion_matrix.size(0))] +
+            *([confusion_matrix[i][j] for j in range(confusion_matrix.shape[0])] +
               ["%.3f" % (confusion_matrix[i][i] * 100. / max(1, confusion_matrix[i].sum()))])
         ))
     print("\n")
 
     fig = plot_confusion_matrix(confusion_matrix, normalize=True, classes=[id_to_tag[i] for i in range(len(tag_to_id) - 2)])
     wandb.log({"individual_label_confusion_matrix": wandb.Image(fig)})
+
 
 
 # for l in range(1, 6):
