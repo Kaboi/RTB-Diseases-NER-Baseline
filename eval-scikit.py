@@ -14,7 +14,7 @@ import datetime
 import itertools
 import matplotlib.pyplot as plt
 import numpy as np
-from sklearn.metrics import confusion_matrix
+import sklearn
 
 t = time.time()
 
@@ -70,7 +70,6 @@ word_embeds = mappings['word_embeds']
 
 use_gpu = opts.use_gpu == 1 and torch.cuda.is_available()
 
-
 assert os.path.isfile(opts.test)
 assert parameters['tag_scheme'] in ['iob', 'iobes']
 
@@ -92,12 +91,12 @@ test_data = prepare_dataset(
 # log evaluation to wandb
 timestamp = datetime.datetime.now().strftime("%Y%m%d%H%M%S")
 run_name = f"{parameters['name']}-{timestamp}-eval"
-wandb.init(project='RTB-NER-Transfer-Learning', name=run_name)
+wandb.init(project='RTB-NER-Transfer-Learning-debug', name=run_name)
+# wandb.init(project='RTB-NER-Transfer-Learning', name=run_name, mode='disabled')
 
 # Log parameters
 wandb.config.char_mode = parameters['char_mode']
 wandb.config.use_gpu = use_gpu
-
 
 model = torch.load(opts.model_path)
 model_name = opts.model_path.split('/')[-1].split('.')[0]
@@ -162,49 +161,40 @@ def plot_confusion_matrix(cm, classes, normalize=False, title='Confusion matrix'
 
     print(cm)
 
-    plt.imshow(cm, interpolation='nearest', cmap=cmap)
-    plt.title(title)
-    plt.colorbar()
+    fig, ax = plt.subplots(figsize=(14, 12))  # Adjust the figsize parameter
+
+    im = ax.imshow(cm, interpolation='nearest', cmap=cmap)
+    ax.set_title(title)
+    plt.colorbar(im, ax=ax)  # Use the mappable object 'im' for colorbar creation
     tick_marks = np.arange(len(classes))
-    plt.xticks(tick_marks, classes, rotation=45)
-    plt.yticks(tick_marks, classes)
+    ax.set_xticks(tick_marks)
+    ax.set_yticks(tick_marks)
+    ax.set_xticklabels(classes, rotation=60)
+    ax.set_yticklabels(classes)
 
     fmt = '.2f' if normalize else 'd'
     thresh = cm.max() / 2.
     for i, j in itertools.product(range(cm.shape[0]), range(cm.shape[1])):
-        plt.text(j, i, format(cm[i, j], fmt),
-                 horizontalalignment="center",
-                 color="white" if cm[i, j] > thresh else "black")
+        ax.text(j, i, format(cm[i, j], fmt),
+                horizontalalignment="center",
+                color="white" if cm[i, j] > thresh else "black")
 
-    plt.tight_layout()
-    plt.ylabel('True label')
-    plt.xlabel('Predicted label')
+    ax.set_ylabel('True label')
+    ax.set_xlabel('Predicted label')
 
-
-def get_entity_mapping(entities):
-    entity_to_id = {k: v for v, k in enumerate(set(entities))}
-    id_to_entity = {v: k for k, v in entity_to_id.items()}
-    entity_labels = list(entity_to_id.keys())
-    return entity_to_id, id_to_entity, entity_labels
+    return fig  # Return the figure object
 
 
-def compute_entity_confusion_matrix(y_true, y_pred, labels):
-    cm = confusion_matrix(y_true, y_pred, labels=labels)
-    return cm
+
 
 
 # def eval(model, datas, maxl=1):
 def eval(model, datas):
     prediction = []
-    confusion_matrix = torch.zeros((len(tag_to_id) - 2, len(tag_to_id) - 2))
 
     # Collecting all ground truth ids and predicted ids for all datas
     ground_truth_ids = []
     predicted_ids = []
-
-    # Collecting all ground truth and predicted entities for all datas
-    ground_truth_entities = []
-    predicted_entities = []
 
     for data in datas:
         ground_truth_id = data['tags']
@@ -242,7 +232,7 @@ def eval(model, datas):
         dwords = Variable(torch.LongTensor(data['words']))
         dcaps = Variable(torch.LongTensor(caps))
         if use_gpu:
-            val, out = model(dwords.cuda(), chars2_mask.cuda(), dcaps.cuda(),chars2_length, d)
+            val, out = model(dwords.cuda(), chars2_mask.cuda(), dcaps.cuda(), chars2_length, d)
         else:
             val, out = model(dwords, chars2_mask, dcaps, chars2_length, d)
         predicted_id = out
@@ -251,35 +241,13 @@ def eval(model, datas):
         ground_truth_ids.extend(ground_truth_id)
         predicted_ids.extend(predicted_id)
 
-        # Compute entities for ground truth and prediction
-        ground_truth_entities.extend(get_entities([id_to_tag[gti] for gti in ground_truth_id]))
-        predicted_entities.extend(get_entities([id_to_tag[pi] for pi in predicted_id]))
-
-        for (word, true_id, pred_id) in zip(words, ground_truth_id, predicted_id):
-            line = ' '.join([word, id_to_tag[true_id], id_to_tag[pred_id]])
-            prediction.append(line)
-            confusion_matrix[true_id, pred_id] += 1
-        prediction.append('')
+    confusion_matrix = sklearn.metrics.confusion_matrix(ground_truth_ids, predicted_ids)
 
     # Log the confusion matrix to Weights & Biases
     wandb.log({"individual_level_confusion_matrix": wandb.plot.confusion_matrix(
         y_true=ground_truth_ids,
         preds=predicted_ids,
         class_names=[id_to_tag[i] for i in range(len(tag_to_id) - 2)]
-    )})
-
-    # Assuming you have a way to convert entities to indices and the entity_labels list
-    entity_to_id, id_to_entity, entity_labels = get_entity_mapping(ground_truth_entities + predicted_entities)
-
-    # Transform ground truth and predicted entities to label integers
-    ground_truth_entity_ids = [entity_to_id[e] for e in ground_truth_entities]
-    predicted_entity_ids = [entity_to_id.get(e, -1) for e in predicted_entities]
-
-
-    wandb.log({"entity_confusion_matrix": wandb.plot.confusion_matrix(
-        y_true=ground_truth_entity_ids,
-        preds=predicted_entity_ids,
-        class_names=entity_labels
     )})
 
     predf = eval_temp + '/pred.' + model_name
@@ -306,16 +274,9 @@ def eval(model, datas):
         ))
     print("\n")
 
-    cm = confusion_matrix.numpy()  # Assuming your confusion_matrix is a PyTorch tensor
-    plot_confusion_matrix(cm, classes=[id_to_tag[i] for i in range(len(tag_to_id) - 2)])
-    plt.savefig("individual_label_confusion_matrix.png", dpi=300)
-    wandb.log({"individual_label_confusion_matrix": wandb.Image("individual_label_confusion_matrix.png")})
+    fig = plot_confusion_matrix(confusion_matrix, normalize=True, classes=[id_to_tag[i] for i in range(len(tag_to_id) - 2)])
+    wandb.log({"individual_label_confusion_matrix": wandb.Image(fig)})
 
-    cm_entity = compute_entity_confusion_matrix(ground_truth_entity_ids, predicted_entity_ids,
-                                                list(range(len(entity_labels))))
-    plot_confusion_matrix(cm_entity, classes=entity_labels)
-    plt.savefig("entity_confusion_matrix.png", dpi=300)
-    wandb.log({"entity_confusion_matrix": wandb.Image("entity_confusion_matrix.png")})
 
 # for l in range(1, 6):
 #     print('maxl=', l)
@@ -331,4 +292,3 @@ eval(model, test_data)
 wandb.finish()
 
 print(time.time() - t)
-

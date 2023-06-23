@@ -148,7 +148,7 @@ def get_entities(seq):
     return entities
 
 
-def plot_confusion_matrix(cm, classes, normalize=False, title='Confusion matrix', cmap=plt.cm.Blues, ax=None):
+def plot_confusion_matrix(cm, classes, normalize=False, title='Confusion matrix', cmap=plt.cm.Blues):
     """
     This function prints and plots the confusion matrix.
     Normalization can be applied by setting `normalize=True`.
@@ -161,8 +161,7 @@ def plot_confusion_matrix(cm, classes, normalize=False, title='Confusion matrix'
 
     print(cm)
 
-    if ax is None:
-        fig, ax = plt.subplots(figsize=(15, 12))  # Adjust the figsize parameter
+    fig, ax = plt.subplots(figsize=(14, 12))  # Adjust the figsize parameter
 
     im = ax.imshow(cm, interpolation='nearest', cmap=cmap)
     ax.set_title(title)
@@ -281,7 +280,6 @@ def eval(model, datas):
     print("\n")
 
     cm = confusion_matrix.numpy()  # Assuming your confusion_matrix is a PyTorch tensor
-    fig, ax = plt.subplots()
     fig = plot_confusion_matrix(cm, normalize=True, classes=[id_to_tag[i] for i in range(len(tag_to_id) - 2)])
     wandb.log({"individual_label_confusion_matrix": wandb.Image(fig)})
 
