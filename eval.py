@@ -162,7 +162,7 @@ def plot_confusion_matrix(cm, classes, normalize=False, title='Confusion matrix'
     print(cm)
 
     if ax is None:
-        fig, ax = plt.subplots(figsize=(10, 8))  # Adjust the figure size here
+        fig, ax = plt.subplots(figsize=(15, 12))  # Adjust the figsize parameter
 
     im = ax.imshow(cm, interpolation='nearest', cmap=cmap)
     ax.set_title(title)
@@ -170,10 +170,10 @@ def plot_confusion_matrix(cm, classes, normalize=False, title='Confusion matrix'
     tick_marks = np.arange(len(classes))
     ax.set_xticks(tick_marks)
     ax.set_yticks(tick_marks)
-    ax.set_xticklabels(classes, rotation=45)
+    ax.set_xticklabels(classes, rotation=60)
     ax.set_yticklabels(classes)
 
-    fmt = '.2f' if normalize else '.2f'
+    fmt = '.2f' if normalize else 'd'
     thresh = cm.max() / 2.
     for i, j in itertools.product(range(cm.shape[0]), range(cm.shape[1])):
         ax.text(j, i, format(cm[i, j], fmt),
@@ -183,9 +183,8 @@ def plot_confusion_matrix(cm, classes, normalize=False, title='Confusion matrix'
     ax.set_ylabel('True label')
     ax.set_xlabel('Predicted label')
 
-    plt.tight_layout()  # Adjust the figure layout and spacing
-
     return fig  # Return the figure object
+
 
 
 
