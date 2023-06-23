@@ -92,7 +92,8 @@ test_data = prepare_dataset(
 # log evaluation to wandb
 timestamp = datetime.datetime.now().strftime("%Y%m%d%H%M%S")
 run_name = f"{parameters['name']}-{timestamp}-eval"
-wandb.init(project='RTB-NER-Transfer-Learning', name=run_name)
+wandb.init(project='RTB-NER-Transfer-Learning-debug', name=run_name)
+# wandb.init(project='RTB-NER-Transfer-Learning', name=run_name, mode='disabled')
 
 # Log parameters
 wandb.config.char_mode = parameters['char_mode']
@@ -169,7 +170,7 @@ def plot_confusion_matrix(cm, classes, normalize=False, title='Confusion matrix'
     plt.xticks(tick_marks, classes, rotation=45)
     plt.yticks(tick_marks, classes)
 
-    fmt = '.2f' if normalize else 'd'
+    fmt = '.2f' if normalize else '.2f'
     thresh = cm.max() / 2.
     for i, j in itertools.product(range(cm.shape[0]), range(cm.shape[1])):
         plt.text(j, i, format(cm[i, j], fmt),
@@ -181,32 +182,6 @@ def plot_confusion_matrix(cm, classes, normalize=False, title='Confusion matrix'
     plt.xlabel('Predicted label')
 
 
-def get_entity_mapping(entities):
-    entity_to_id = {k: v for v, k in enumerate(set(entities))}
-    id_to_entity = {v: k for k, v in entity_to_id.items()}
-    entity_labels = list(entity_to_id.keys())
-    return entity_to_id, id_to_entity, entity_labels
-
-
-def compute_entity_confusion_matrix(ground_truth_entity_ids, predicted_entity_ids, labels):
-    """Compute confusion matrix for entities."""
-    assert len(ground_truth_entity_ids) == len(predicted_entity_ids), "Length of ground truth IDs and predicted IDs " \
-                                                                      "must be the same."
-    assert max(labels) + 1 == len(labels), "Labels should be a list of unique integers from 0 to num_classes - 1."
-
-    # Determine the number of unique entity classes from the labels.
-    num_classes = len(labels)
-
-    # Initialize confusion matrix with zeros.
-    confusion_matrix = torch.zeros((num_classes, num_classes))
-
-    # Iterate over all ground truth IDs and predicted IDs and increment corresponding cell in confusion matrix.
-    for gt, pred in zip(ground_truth_entity_ids, predicted_entity_ids):
-        confusion_matrix[gt, pred] += 1
-
-    return confusion_matrix
-
-
 # def eval(model, datas, maxl=1):
 def eval(model, datas):
     prediction = []
@@ -215,10 +190,6 @@ def eval(model, datas):
     # Collecting all ground truth ids and predicted ids for all datas
     ground_truth_ids = []
     predicted_ids = []
-
-    # Collecting all ground truth and predicted entities for all datas
-    ground_truth_entities = []
-    predicted_entities = []
 
     for data in datas:
         ground_truth_id = data['tags']
@@ -265,10 +236,6 @@ def eval(model, datas):
         ground_truth_ids.extend(ground_truth_id)
         predicted_ids.extend(predicted_id)
 
-        # Compute entities for ground truth and prediction
-        ground_truth_entities.extend(get_entities([id_to_tag[gti] for gti in ground_truth_id]))
-        predicted_entities.extend(get_entities([id_to_tag[pi] for pi in predicted_id]))
-
         for (word, true_id, pred_id) in zip(words, ground_truth_id, predicted_id):
             line = ' '.join([word, id_to_tag[true_id], id_to_tag[pred_id]])
             prediction.append(line)
@@ -282,17 +249,6 @@ def eval(model, datas):
         class_names=[id_to_tag[i] for i in range(len(tag_to_id) - 2)]
     )})
 
-    # Assuming you have a way to convert entities to indices and the entity_labels list
-    entity_to_id, id_to_entity, entity_labels = get_entity_mapping(ground_truth_entities + predicted_entities)
-
-    ground_truth_entity_ids = [entity_to_id[e] for e in ground_truth_entities]
-    predicted_entity_ids = [entity_to_id.get(e, -1) for e in predicted_entities]
-
-    wandb.log({"entity_confusion_matrix": wandb.plot.confusion_matrix(
-        y_true=ground_truth_entity_ids,
-        preds=predicted_entity_ids,
-        class_names=entity_labels
-    )})
 
     predf = eval_temp + '/pred.' + model_name
     scoref = eval_temp + '/score.' + model_name
@@ -319,17 +275,9 @@ def eval(model, datas):
     print("\n")
 
     cm = confusion_matrix.numpy()  # Assuming your confusion_matrix is a PyTorch tensor
-    plot_confusion_matrix(cm, classes=[id_to_tag[i] for i in range(len(tag_to_id) - 2)])
-    plt.savefig("individual_label_confusion_matrix.png", dpi=300)
-    wandb.log({"individual_label_confusion_matrix": wandb.Image("individual_label_confusion_matrix.png")})
-
-    cm_entity = compute_entity_confusion_matrix(ground_truth_entity_ids, predicted_entity_ids,
-                                                list(range(len(entity_labels))))
-
-    plot_confusion_matrix(cm_entity, classes=entity_labels)
-    plt.savefig("entity_confusion_matrix.png", dpi=300)
-    wandb.log({"entity_confusion_matrix": wandb.Image("entity_confusion_matrix.png")})
-
+    fig = plt.figure()
+    plot_confusion_matrix(cm, normalize=True, classes=[id_to_tag[i] for i in range(len(tag_to_id) - 2)])
+    wandb.log({"individual_label_confusion_matrix": wandb.Image(fig)})
 
 # for l in range(1, 6):
 #     print('maxl=', l)
