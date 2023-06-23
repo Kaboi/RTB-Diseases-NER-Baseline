@@ -181,10 +181,31 @@ def plot_confusion_matrix(cm, classes, normalize=False, title='Confusion matrix'
     plt.xlabel('Predicted label')
 
 
+# def get_entity_mapping(entities):
+#     entity_to_id = {k: v for v, k in enumerate(set(entities))}
+#     id_to_entity = {v: k for k, v in entity_to_id.items()}
+#     entity_labels = list(entity_to_id.keys())
+#     return entity_to_id, id_to_entity, entity_labels
+
 def get_entity_mapping(entities):
-    entity_to_id = {k: v for v, k in enumerate(set(entities))}
-    id_to_entity = {v: k for k, v in entity_to_id.items()}
+    entity_to_id = {}
+    id_to_entity = {}
+    entity_labels = []
+
+    for entity in entities:
+        entity_label = entity[0]
+        entity_ids = entity[1:]
+
+        if entity_label not in entity_to_id:
+            entity_to_id[entity_label] = set()
+
+        for entity_id in entity_ids:
+            entity_to_id[entity_label].add(entity_id)
+            id_to_entity[entity_id] = entity_label
+
+    entity_to_id = {k: list(v) for k, v in entity_to_id.items()}
     entity_labels = list(entity_to_id.keys())
+
     return entity_to_id, id_to_entity, entity_labels
 
 

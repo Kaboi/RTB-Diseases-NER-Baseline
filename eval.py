@@ -92,7 +92,8 @@ test_data = prepare_dataset(
 # log evaluation to wandb
 timestamp = datetime.datetime.now().strftime("%Y%m%d%H%M%S")
 run_name = f"{parameters['name']}-{timestamp}-eval"
-wandb.init(project='RTB-NER-Transfer-Learning', name=run_name)
+# wandb.init(project='RTB-NER-Transfer-Learning', name=run_name)
+wandb.init(mode="disabled")
 
 # Log parameters
 wandb.config.char_mode = parameters['char_mode']
@@ -181,10 +182,18 @@ def plot_confusion_matrix(cm, classes, normalize=False, title='Confusion matrix'
     plt.xlabel('Predicted label')
 
 
+# def get_entity_mapping(entities):
+#     entity_to_id = {k: v for v, k in enumerate(set(entities))}
+#     id_to_entity = {v: k for k, v in entity_to_id.items()}
+#     entity_labels = list(entity_to_id.keys())
+#     return entity_to_id, id_to_entity, entity_labels
+
 def get_entity_mapping(entities):
-    entity_to_id = {k: v for v, k in enumerate(set(entities))}
+    entities = [tuple(e) if isinstance(e, list) else e for e in entities]
+    unique_entities = dict.fromkeys(entities).keys()  # maintains the order and removes duplicates
+    entity_to_id = {k: v for v, k in enumerate(unique_entities)}
     id_to_entity = {v: k for k, v in entity_to_id.items()}
-    entity_labels = list(entity_to_id.keys())
+    entity_labels = list(unique_entities)
     return entity_to_id, id_to_entity, entity_labels
 
 
@@ -285,8 +294,21 @@ def eval(model, datas):
     # Assuming you have a way to convert entities to indices and the entity_labels list
     entity_to_id, id_to_entity, entity_labels = get_entity_mapping(ground_truth_entities + predicted_entities)
 
-    ground_truth_entity_ids = [entity_to_id[e] for e in ground_truth_entities]
-    predicted_entity_ids = [entity_to_id.get(e, -1) for e in predicted_entities]
+    ground_truth_entities = [tuple(entity) if isinstance(entity, list) else entity for entity in ground_truth_entities]
+    predicted_entities = [tuple(entity) if isinstance(entity, list) else entity for entity in predicted_entities]
+
+    missing_entities = set()
+
+    try:
+        ground_truth_entity_ids = [entity_to_id[e] for e in ground_truth_entities]
+        predicted_entity_ids = [entity_to_id[e] for e in predicted_entities]
+    except KeyError as e:
+        missing_entities.add(e.args[0])
+
+    print("Missing entities:", missing_entities)
+    print(len(ground_truth_ids), len(predicted_ids))
+    print(len(ground_truth_entities), len(predicted_entities))
+    print(len(ground_truth_entity_ids), len(predicted_entity_ids))
 
     wandb.log({"entity_confusion_matrix": wandb.plot.confusion_matrix(
         y_true=ground_truth_entity_ids,
