@@ -14,7 +14,7 @@ import datetime
 import itertools
 import matplotlib.pyplot as plt
 import numpy as np
-import sklearn
+from sklearn import metrics
 
 t = time.time()
 
@@ -90,7 +90,7 @@ test_data = prepare_dataset(
 
 # log evaluation to wandb
 timestamp = datetime.datetime.now().strftime("%Y%m%d%H%M%S")
-run_name = f"{parameters['name']}-{timestamp}-eval"
+run_name = f"{parameters['name']}-{timestamp}-eval-sklearn"
 wandb.init(project='RTB-NER-Transfer-Learning-debug', name=run_name)
 # wandb.init(project='RTB-NER-Transfer-Learning', name=run_name, mode='disabled')
 
@@ -185,11 +185,8 @@ def plot_confusion_matrix(cm, classes, normalize=False, title='Confusion matrix'
     return fig  # Return the figure object
 
 
-
-
-
 # def eval(model, datas, maxl=1):
-def eval(model, datas):
+def evaluate(model, datas):
     prediction = []
 
     # Collecting all ground truth ids and predicted ids for all datas
@@ -241,7 +238,7 @@ def eval(model, datas):
         ground_truth_ids.extend(ground_truth_id)
         predicted_ids.extend(predicted_id)
 
-    confusion_matrix = sklearn.metrics.confusion_matrix(ground_truth_ids, predicted_ids)
+    confusion_matrix = metrics.confusion_matrix(ground_truth_ids, predicted_ids)
 
     # Log the confusion matrix to Weights & Biases
     wandb.log({"individual_level_confusion_matrix": wandb.plot.confusion_matrix(
@@ -286,7 +283,7 @@ def eval(model, datas):
 #     eval(model, test_data, 100)
 
 # eval(model, test_data, 100)
-eval(model, test_data)
+evaluate(model, test_data)
 
 # Close Weights and Biases
 wandb.finish()
