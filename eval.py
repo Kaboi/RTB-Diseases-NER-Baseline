@@ -15,7 +15,6 @@ import itertools
 import matplotlib.pyplot as plt
 import numpy as np
 
-
 t = time.time()
 
 # python -m visdom.server
@@ -70,7 +69,6 @@ word_embeds = mappings['word_embeds']
 
 use_gpu = opts.use_gpu == 1 and torch.cuda.is_available()
 
-
 assert os.path.isfile(opts.test)
 assert parameters['tag_scheme'] in ['iob', 'iobes']
 
@@ -99,13 +97,13 @@ wandb.init(project='RTB-NER-Transfer-Learning-debug', name=run_name)
 wandb.config.char_mode = parameters['char_mode']
 wandb.config.use_gpu = use_gpu
 
-
 model = torch.load(opts.model_path)
 model_name = opts.model_path.split('/')[-1].split('.')[0]
 
 if use_gpu:
     model.cuda()
 model.eval()
+
 
 # def getmaxlen(tags):
 #     l = 1
@@ -150,7 +148,7 @@ def get_entities(seq):
     return entities
 
 
-def plot_confusion_matrix(cm, classes, normalize=False, title='Confusion matrix', cmap=plt.cm.Blues):
+def plot_confusion_matrix(cm, classes, normalize=False, title='Confusion matrix', cmap=plt.cm.Blues, ax=None):
     """
     This function prints and plots the confusion matrix.
     Normalization can be applied by setting `normalize=True`.
@@ -163,23 +161,33 @@ def plot_confusion_matrix(cm, classes, normalize=False, title='Confusion matrix'
 
     print(cm)
 
-    plt.imshow(cm, interpolation='nearest', cmap=cmap)
-    plt.title(title)
-    plt.colorbar()
+    if ax is None:
+        fig, ax = plt.subplots(figsize=(10, 8))  # Adjust the figure size here
+
+    im = ax.imshow(cm, interpolation='nearest', cmap=cmap)
+    ax.set_title(title)
+    plt.colorbar(im, ax=ax)  # Use the mappable object 'im' for colorbar creation
     tick_marks = np.arange(len(classes))
-    plt.xticks(tick_marks, classes, rotation=45)
-    plt.yticks(tick_marks, classes)
+    ax.set_xticks(tick_marks)
+    ax.set_yticks(tick_marks)
+    ax.set_xticklabels(classes, rotation=45)
+    ax.set_yticklabels(classes)
 
     fmt = '.2f' if normalize else '.2f'
     thresh = cm.max() / 2.
     for i, j in itertools.product(range(cm.shape[0]), range(cm.shape[1])):
-        plt.text(j, i, format(cm[i, j], fmt),
-                 horizontalalignment="center",
-                 color="white" if cm[i, j] > thresh else "black")
+        ax.text(j, i, format(cm[i, j], fmt),
+                horizontalalignment="center",
+                color="white" if cm[i, j] > thresh else "black")
 
-    plt.tight_layout()
-    plt.ylabel('True label')
-    plt.xlabel('Predicted label')
+    ax.set_ylabel('True label')
+    ax.set_xlabel('Predicted label')
+
+    plt.tight_layout()  # Adjust the figure layout and spacing
+
+    return fig  # Return the figure object
+
+
 
 
 # def eval(model, datas, maxl=1):
@@ -227,7 +235,7 @@ def eval(model, datas):
         dwords = Variable(torch.LongTensor(data['words']))
         dcaps = Variable(torch.LongTensor(caps))
         if use_gpu:
-            val, out = model(dwords.cuda(), chars2_mask.cuda(), dcaps.cuda(),chars2_length, d)
+            val, out = model(dwords.cuda(), chars2_mask.cuda(), dcaps.cuda(), chars2_length, d)
         else:
             val, out = model(dwords, chars2_mask, dcaps, chars2_length, d)
         predicted_id = out
@@ -248,7 +256,6 @@ def eval(model, datas):
         preds=predicted_ids,
         class_names=[id_to_tag[i] for i in range(len(tag_to_id) - 2)]
     )})
-
 
     predf = eval_temp + '/pred.' + model_name
     scoref = eval_temp + '/score.' + model_name
@@ -275,9 +282,10 @@ def eval(model, datas):
     print("\n")
 
     cm = confusion_matrix.numpy()  # Assuming your confusion_matrix is a PyTorch tensor
-    fig = plt.figure()
-    plot_confusion_matrix(cm, normalize=True, classes=[id_to_tag[i] for i in range(len(tag_to_id) - 2)])
+    fig, ax = plt.subplots()
+    fig = plot_confusion_matrix(cm, normalize=True, classes=[id_to_tag[i] for i in range(len(tag_to_id) - 2)])
     wandb.log({"individual_label_confusion_matrix": wandb.Image(fig)})
+
 
 # for l in range(1, 6):
 #     print('maxl=', l)
@@ -293,4 +301,3 @@ eval(model, test_data)
 wandb.finish()
 
 print(time.time() - t)
-
