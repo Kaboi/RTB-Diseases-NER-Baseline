@@ -189,7 +189,7 @@ def plot_confusion_matrix(cm, classes, normalize=False, title='Confusion matrix'
 
 
 # def eval(model, datas, maxl=1):
-def eval(model, datas):
+def evaluate(model, datas):
     prediction = []
     confusion_matrix = torch.zeros((len(tag_to_id) - 2, len(tag_to_id) - 2))
 
@@ -292,7 +292,7 @@ def eval(model, datas):
 #     eval(model, test_data, 100)
 
 # eval(model, test_data, 100)
-eval(model, test_data)
+evaluate(model, test_data)
 
 # Close Weights and Biases
 wandb.finish()
