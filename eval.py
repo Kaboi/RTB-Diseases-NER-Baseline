@@ -193,9 +193,15 @@ def evaluate(model, datas):
     prediction = []
     confusion_matrix = torch.zeros((len(tag_to_id) - 2, len(tag_to_id) - 2))
 
-    # Collecting all ground truth ids and predicted ids for all datas
+    # Collecting all ground truth ids and predicted ids for all datas for logging
     ground_truth_ids = []
     predicted_ids = []
+
+    # Non-O entities evaluation
+    total_entities = 0
+    total_non_O_entities = 0
+    correct_entities = 0
+    correct_non_O_entities = 0
 
     for data in datas:
         ground_truth_id = data['tags']
@@ -236,8 +242,8 @@ def evaluate(model, datas):
             val, out = model(dwords.cuda(), chars2_mask.cuda(), dcaps.cuda(), chars2_length, d)
         else:
             val, out = model(dwords, chars2_mask, dcaps, chars2_length, d)
-        predicted_id = out
 
+        predicted_id = out
         # Append current batch of ground truth and predictions to respective lists
         ground_truth_ids.extend(ground_truth_id)
         predicted_ids.extend(predicted_id)
@@ -246,6 +252,17 @@ def evaluate(model, datas):
             line = ' '.join([word, id_to_tag[true_id], id_to_tag[pred_id]])
             prediction.append(line)
             confusion_matrix[true_id, pred_id] += 1
+
+            # Non-O entities evaluation
+            total_entities += 1
+            if id_to_tag[true_id] != 'O':
+                total_non_O_entities += 1
+
+            if true_id == pred_id:
+                correct_entities += 1
+                if id_to_tag[true_id] != 'O':
+                    correct_non_O_entities += 1
+
         prediction.append('')
 
     # Log the confusion matrix to Weights & Biases
@@ -271,6 +288,7 @@ def evaluate(model, datas):
         "ID", "NE", "Total",
         *([id_to_tag[i] for i in range(confusion_matrix.size(0))] + ["Percent"])
     ))
+
     for i in range(confusion_matrix.size(0)):
         print(("{: >2}{: >7}{: >7}%s{: >9}" % ("{: >7}" * confusion_matrix.size(0))).format(
             str(i), id_to_tag[i], str(confusion_matrix[i].sum()),
@@ -278,6 +296,13 @@ def evaluate(model, datas):
               ["%.3f" % (confusion_matrix[i][i] * 100. / max(1, confusion_matrix[i].sum()))])
         ))
     print("\n")
+
+    # Non-O entities evaluation
+    overall_accuracy = correct_entities / total_entities * 100.0
+    non_O_accuracy = correct_non_O_entities / total_non_O_entities * 100.0
+
+    print(f"Overall accuracy: {overall_accuracy:.2f}%")
+    print(f"Non-'O' entities accuracy: {non_O_accuracy:.2f}%")
 
     cm = confusion_matrix.numpy()  # Assuming your confusion_matrix is a PyTorch tensor
     fig = plot_confusion_matrix(cm, normalize=True, classes=[id_to_tag[i] for i in range(len(tag_to_id) - 2)])

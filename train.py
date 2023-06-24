@@ -399,6 +399,7 @@ def evaluating(model, datas, best_F):
                     correct_non_O_entities += 1
 
         prediction.append('')
+
     predf = eval_temp + '/pred.' + name
     scoref = eval_temp + '/score.' + name
 
@@ -422,12 +423,14 @@ def evaluating(model, datas, best_F):
         "ID", "NE", "Total",
         *([id_to_tag[i] for i in range(confusion_matrix.size(0))] + ["Percent"])
     ))
+
     for i in range(confusion_matrix.size(0)):
         print(("{: >2}{: >7}{: >7}%s{: >9}" % ("{: >7}" * confusion_matrix.size(0))).format(
             str(i), id_to_tag[i], str(confusion_matrix[i].sum()),
             *([confusion_matrix[i][j] for j in range(confusion_matrix.size(0))] +
               ["%.3f" % (confusion_matrix[i][i] * 100. / max(1, confusion_matrix[i].sum()))])
         ))
+    print("\n")
 
     # Non-O entities evaluation
     overall_accuracy = correct_entities / total_entities * 100.0
