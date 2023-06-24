@@ -165,7 +165,7 @@ param_momentum = 0.9
 # log training to wandb
 timestamp = datetime.datetime.now().strftime("%Y%m%d%H%M%S")
 run_name = f"{parameters['name']}-{timestamp}"
-wandb.init(project='RTB-NER-Transfer-Learning', name=run_name)
+wandb.init(project='RTB-NER-Transfer-Learning-DEBUG', name=run_name)
 
 
 assert os.path.isfile(opts.train)
@@ -410,6 +410,14 @@ def evaluating(model, datas, best_F):
 
     eval_lines = [l.rstrip() for l in codecs.open(scoref, 'r', 'utf8')]
 
+    # Logging to wandb
+    # Define columns for wandb Table
+    columns = ["Entity", "Precision", "Recall", "F1", "Count"]
+    # Create an empty list to store rows of the table
+    table_rows = []
+    # # Placeholder for best_F
+    # best_F_wandb = None
+
     for i, line in enumerate(eval_lines):
         print(line)
         if i == 1:
@@ -419,11 +427,42 @@ def evaluating(model, datas, best_F):
                 save = True
                 print('the best F is ', new_F)
 
+        # Logging to wandb
+        if i == 1:
+            metrics = line.split(';')
+            accuracy = float(metrics[0].split(':')[1].strip().replace("%", ""))
+            precision = float(metrics[1].split(':')[1].strip().replace("%", ""))
+            recall = float(metrics[2].split(':')[1].strip().replace("%", ""))
+            fb1 = float(metrics[3].split(':')[1].strip())
+            # best_F_wandb = fb1
+            # Log accuracy, precision, recall, and fb1 to wandb
+            wandb.log({"accuracy": accuracy, "precision": precision, "recall": recall, "FB1": fb1})
+        elif i > 1 and line.strip():  # Skip the first line and empty lines
+            entity_metrics = line.split()
+            entity_name = entity_metrics[0].replace(":", "")
+            precision = float(entity_metrics[2].replace(";", "").replace("%", ""))
+            recall = float(entity_metrics[4].replace(";", "").replace("%", ""))
+            f1 = float(entity_metrics[6])
+            count = int(entity_metrics[7])
+
+            # Append the row to table_rows
+            table_rows.append([entity_name, precision, recall, f1, count])
+
+    # Log the table to wandb
+    # Create a wandb Table
+    metrics_table = wandb.Table(columns=columns, data=table_rows)
+
+    # Log the table to wandb
+    wandb.log({"Entity Metrics": metrics_table})
+
+    # # Log the best F score to wandb
+    # if best_F_wandb is not None:
+    #     wandb.log({"best_F": best_F_wandb})
+
     print(("{: >2}{: >7}{: >7}%s{: >9}" % ("{: >7}" * confusion_matrix.size(0))).format(
         "ID", "NE", "Total",
         *([id_to_tag[i] for i in range(confusion_matrix.size(0))] + ["Percent"])
     ))
-
     for i in range(confusion_matrix.size(0)):
         print(("{: >2}{: >7}{: >7}%s{: >9}" % ("{: >7}" * confusion_matrix.size(0))).format(
             str(i), id_to_tag[i], str(confusion_matrix[i].sum()),
@@ -438,6 +477,9 @@ def evaluating(model, datas, best_F):
 
     print(f"Overall accuracy: {overall_accuracy:.2f}%")
     print(f"Non-'O' entities accuracy: {non_O_accuracy:.2f}%")
+
+    # Log overall_accuracy and non_O_accuracy to wandb
+    wandb.log({"overall_accuracy": overall_accuracy, "non_O_accuracy": non_O_accuracy})
 
     return best_F, new_F, save
 

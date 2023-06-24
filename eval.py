@@ -90,7 +90,7 @@ test_data = prepare_dataset(
 # log evaluation to wandb
 timestamp = datetime.datetime.now().strftime("%Y%m%d%H%M%S")
 run_name = f"{parameters['name']}-{timestamp}-eval"
-wandb.init(project='RTB-NER-Transfer-Learning', name=run_name)
+wandb.init(project='RTB-NER-Transfer-Learning-DEBUG', name=run_name)
 # wandb.init(project='RTB-NER-Transfer-Learning', name=run_name, mode='disabled')
 
 # Log parameters
