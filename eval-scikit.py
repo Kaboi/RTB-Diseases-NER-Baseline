@@ -91,7 +91,7 @@ test_data = prepare_dataset(
 # log evaluation to wandb
 timestamp = datetime.datetime.now().strftime("%Y%m%d%H%M%S")
 run_name = f"{parameters['name']}-{timestamp}-eval-sklearn"
-wandb.init(project='RTB-NER-Transfer-Learning-debug', name=run_name)
+wandb.init(project='RTB-NER-Transfer-Learning', name=run_name)
 # wandb.init(project='RTB-NER-Transfer-Learning', name=run_name, mode='disabled')
 
 # Log parameters
@@ -245,7 +245,10 @@ def evaluate(model, datas):
         ground_truth_ids.extend(ground_truth_id)
         predicted_ids.extend(predicted_id)
 
-
+        for (word, true_id, pred_id) in zip(words, ground_truth_id, predicted_id):
+            line = ' '.join([word, id_to_tag[true_id], id_to_tag[pred_id]])
+            prediction.append(line)
+        prediction.append('')
 
     confusion_matrix = metrics.confusion_matrix(ground_truth_ids, predicted_ids)
 
