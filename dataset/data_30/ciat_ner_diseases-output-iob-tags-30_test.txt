@@ -40,6 +40,7 @@ an	O
 unknown	O
 disease	O
 ,	O
+
 which	O
 was	O
 also	O
@@ -49,6 +50,7 @@ the	O
 Hyderabad	B-GPE
 region	I-GPE
 .	O
+
 Severely	O
 affected	O
 plants	O
@@ -84,6 +86,7 @@ tissues	I-SYMPTOM
 and	I-SYMPTOM
 rhizome	I-SYMPTOM
 .	O
+
 Fruits	B-SYMPTOM
 had	I-SYMPTOM
 a	I-SYMPTOM
@@ -119,6 +122,7 @@ of	O
 Panama	B-DISEASE
 disease	I-DISEASE
 ,	O
+
 which	O
 was	O
 identified	O
@@ -149,6 +153,7 @@ at	O
 both	O
 ends	O
 ,	O
+
 30	O
 -	O
 60x3	O
@@ -179,6 +184,7 @@ on	O
 false	O
 heads	O
 ,	O
+
 5	O
 -	O
 12x3	O
@@ -188,6 +194,7 @@ heads	O
 in	O
 size	O
 .	O
+
 The	O
 optimum	O
 temperature	O
@@ -207,7 +214,6 @@ C	O
 ,	O
 respectively	O
 .	O
-
 For	O
 pathogenicity	O
 tests	O
@@ -222,6 +228,7 @@ plantlets	O
 of	O
 cv	O
 .	O
+
 Basri	O
 were	O
 inoculated	O
@@ -260,6 +267,7 @@ inoculation	O
 was	O
 recovered	O
 .	O
+
 Thus	O
 ,	O
 Pakistani	B-GPE
@@ -292,9 +300,11 @@ world	O
 (	O
 Ploetz	O
 ,	O
+
 2000	B-DATE
 )	O
 .	O
+
 The	O
 cultivation	O
 of	O
@@ -328,6 +338,7 @@ bunchy	I-DISEASE
 top	I-DISEASE
 disease	I-DISEASE
 ,	O
+
 which	O
 virtually	O
 eradicated	O
@@ -344,6 +355,7 @@ et	O
 al	O
 .	O
 ,	O
+
 1993	B-DATE
 )	O
 .	O
@@ -385,10 +397,12 @@ its	O
 global	O
 spread	O
 ,	O
+
 hindering	O
 disease	O
 control	O
 .	O
+
 A	O
 potato	B-CROP
 breeding	O
@@ -441,6 +455,7 @@ bacterial	B-DISEASE
 wilt	I-DISEASE
 resistance	O
 .	O
+
 The	O
 overall	O
 aim	O
@@ -472,6 +487,7 @@ solanacearum	I-PATHOGEN
 were	O
 selected	O
 ,	O
+
 and	O
 colonization	O
 ,	O
@@ -484,6 +500,7 @@ infection	O
 were	O
 evaluated	O
 .	O
+
 A	O
 R.	B-PATHOGEN
 solanacearum	I-PATHOGEN
@@ -522,6 +539,7 @@ or	O
 lux	O
 operon	O
 .	O
+
 These	O
 reporter	O
 strains	O
@@ -548,7 +566,6 @@ microscopy	O
 and	O
 luminometry	O
 .	O
-
 Based	O
 on	O
 wilting	O
@@ -559,6 +576,7 @@ of	O
 latent	O
 infections	O
 ,	O
+
 the	O
 selected	O
 clones	O
@@ -579,6 +597,7 @@ response	O
 was	O
 identified	O
 .	O
+
 Typical	O
 wilting	B-SYMPTOM
 symptoms	O
@@ -621,6 +640,7 @@ the	O
 stem	B-PLANT_PART
 base	O
 .	O
+
 Results	O
 indicate	O
 that	O
@@ -661,6 +681,7 @@ R.	B-PATHOGEN
 solanacearum	I-PATHOGEN
 infection	O
 ,	O
+
 including	O
 hyperplasic	O
 activity	O
@@ -683,6 +704,7 @@ reactive	O
 oxygen	O
 species	O
 .	O
+
 This	O
 study	O
 highlights	O
@@ -755,6 +777,7 @@ against	O
 black	B-DISEASE
 dot	I-DISEASE
 ,	O
+
 but	O
 commercial	O
 potato	B-CROP
@@ -780,6 +803,7 @@ this	O
 pathogen	O
 exist	O
 .	O
+
 Cytological	O
 studies	O
 are	O
@@ -810,6 +834,7 @@ in	O
 quantitative	O
 resistance	O
 .	O
+
 In	O
 this	O
 study	O
@@ -849,6 +874,7 @@ untargeted	O
 metabolomics	O
 methods	O
 .	O
+
 The	O
 cytological	O
 approach	O
@@ -887,6 +913,7 @@ with	O
 disease	O
 susceptibility	O
 ,	O
+
 indicating	O
 that	O
 other	O
@@ -898,6 +925,7 @@ to	O
 black	B-DISEASE
 dot	I-DISEASE
 .	O
+
 Furthermore	O
 ,	O
 suberin	O
@@ -922,7 +950,6 @@ potato	B-CROP
 cultivars	O
 studied	O
 .	O
-
 On	O
 the	O
 other	O
@@ -938,6 +965,7 @@ biomarkers	O
 of	O
 infection	O
 ,	O
+
 as	O
 well	O
 as	O
@@ -949,6 +977,7 @@ resistance	O
 related	O
 metabolites	O
 .	O
+
 Hydroxycinnamic	O
 acids	O
 ,	O
@@ -982,6 +1011,7 @@ the	O
 resistant	O
 cultivars	O
 .	O
+
 Notably	O
 ,	O
 some	O
@@ -1016,6 +1046,7 @@ and	O
 biochemical	O
 mechanisms	O
 ,	O
+
 including	O
 the	O
 production	O
@@ -1057,6 +1088,7 @@ the	O
 TR4	B-DISEASE
 disease	I-DISEASE
 ,	O
+
 is	O
 a	O
 threat	O
@@ -1074,6 +1106,7 @@ ornamental	O
 Heliconia	B-CROP
 crops	O
 .	O
+
  	O
 According	O
 to	O
@@ -1134,6 +1167,7 @@ for	O
 a	O
 while	O
 .	O
+
 In	O
 2021	B-DATE
 ,	O
@@ -1179,6 +1213,7 @@ for	O
 30	B-DATE
 years	I-DATE
 .	O
+
 Mrs.	O
 Conie	O
 pointed	O
@@ -1221,6 +1256,7 @@ in	O
 the	O
 soil	O
 ,	O
+
 in	O
 water	O
 ,	O
@@ -1264,10 +1300,12 @@ is	O
 very	O
 real	O
 ,	O
+
 "	O
 she	O
 explained	O
 .	O
+
  	O
 Source	O
 :	O
@@ -1309,6 +1347,7 @@ on	O
 high	O
 alert	O
 .	O
+
  	O
 The	O
 disease	O
@@ -1342,6 +1381,7 @@ the	O
 Heliconia	B-CROP
 plant	O
 .	O
+
  	O
 The	O
 fungus	O
@@ -1372,6 +1412,7 @@ animals	O
 and	O
 vehicles	O
 .	O
+
  	O
 In	O
 countries	O
@@ -1412,6 +1453,7 @@ and	O
 plantain	B-CROP
 crop	O
 .	O
+
  	O
 Speaking	O
 at	O
@@ -1449,6 +1491,7 @@ of	O
 the	O
 disease	O
 .	O
+
  	O
 Headlines	O
 Delivered	O
@@ -1490,6 +1533,7 @@ outside	I-SYMPTOM
 moving	I-SYMPTOM
 in	I-SYMPTOM
 ,	O
+
 but	O
 yellowing	O
 can	O
@@ -1536,6 +1580,7 @@ yellowing	O
 Conie	O
 stated	O
 .	O
+
  	O
 "	O
 Gros	O
@@ -1572,6 +1617,7 @@ us	O
 ;	O
 yellowing	B-SYMPTOM
 ,	O
+
 buckling	B-SYMPTOM
 ,	O
 wilting	B-SYMPTOM
@@ -1586,6 +1632,7 @@ us	O
 she	O
 stressed	O
 .	O
+
  	O
 Conie	O
 further	O
@@ -1623,6 +1670,7 @@ implement	O
 biosecurity	O
 measures	O
 ,	O
+
 the	B-ORG
 Ministry	I-ORG
 of	I-ORG
@@ -1637,6 +1685,7 @@ protect	O
 the	O
 industry	O
 .	O
+
  	O
 Portfolio	O
 Minister	O
@@ -1676,6 +1725,7 @@ example	O
 of	O
 resilience	O
 ,	O
+
 as	O
 an	O
 example	O
@@ -1712,6 +1762,7 @@ reach	O
 our	O
 shores	O
 ,	O
+
 to	O
 secure	O
 their	O
@@ -1758,6 +1809,7 @@ detect	O
 it	O
 here	O
 .	O
+
 The	O
 plan	O
 also	O
@@ -1791,6 +1843,7 @@ the	O
 Minister	O
 added	O
 .	O
+
  	O
 Extension	O
 Officers	O
@@ -1833,6 +1886,7 @@ call	O
 his	O
 mother	O
 ,	O
+
 sister	O
 ,	O
 child	O
@@ -1847,6 +1901,7 @@ looks	O
 at	O
 it	O
 .	O
+
 By	O
 that	O
 time	O
@@ -1880,6 +1935,7 @@ area	O
 Conie	O
 said	O
 .	O
+
  	O
 -	O
 JIS	O
@@ -1951,6 +2007,7 @@ spp	I-CROP
 .	O
 )	O
 .	O
+
 The	O
 fungus	O
 is	O
@@ -2000,6 +2057,7 @@ banana	B-CROP
 's	O
 origin	O
 ,	O
+
 even	O
 in	O
 non	O
@@ -2019,6 +2077,7 @@ virulence	O
 associated	O
 genes	O
 .	O
+
 Therefore	O
 ,	O
 the	O
@@ -2059,6 +2118,7 @@ race	B-PATHOGEN
 1	I-PATHOGEN
 )	O
 ,	O
+
 0120	O
 (	O
 subtropical	B-PATHOGEN
@@ -2074,6 +2134,7 @@ race	I-PATHOGEN
 4	I-PATHOGEN
 )	O
 .	O
+
 While	O
 comparing	O
 the	O
@@ -2104,6 +2165,7 @@ at	O
 transposable	O
 elements	O
 ,	O
+
 phylogenetic	O
 relationships	O
 ,	O
@@ -2170,6 +2232,7 @@ respective	O
 reference	O
 genomes	O
 .	O
+
 The	O
 findings	O
 contributed	O
@@ -2238,6 +2301,7 @@ and	I-LOC
 Central	I-LOC
 Africa	I-LOC
 .	O
+
 Lack	O
 of	O
 CBSD	B-DISEASE
@@ -2268,6 +2332,7 @@ the	O
 new	O
 season	O
 .	O
+
 Recycling	O
 planting	O
 material	O
@@ -2310,6 +2375,7 @@ yield	O
 over	O
 time	O
 .	O
+
 An	O
 experiment	O
 was	O
@@ -2348,12 +2414,14 @@ conditions	O
 in	O
 Bagamoyo	B-GPE
 ,	O
+
 Tanzania	B-GPE
 from	O
 2013	B-DATE
 to	I-DATE
 2017	I-DATE
 .	O
+
 The	O
 experiment	O
 was	O
@@ -2392,6 +2460,7 @@ October	I-DATE
 and	I-DATE
 December	I-DATE
 .	O
+
 Mean	O
 abundance	O
 of	O
@@ -2469,6 +2538,7 @@ materials	O
 in	O
 Masika	O
 ,	O
+
 although	O
 no	O
 significant	O
@@ -2478,6 +2548,7 @@ obvious	O
 in	O
 Vuli	O
 .	O
+
 However	O
 ,	O
 Masika	O
@@ -2523,6 +2594,7 @@ thanMasika	O
 %	O
 )	O
 ,	O
+
 and	O
 root	B-PLANT_PART
 yields	O
@@ -2548,6 +2620,7 @@ t	O
 ha	O
 )	O
 .	O
+
 The	O
 highest	O
 percentage	O
@@ -2592,6 +2665,7 @@ not	O
 in	O
 Vuli	O
 .	O
+
 Overall	O
 root	B-PLANT_PART
 yield	O
@@ -2625,6 +2699,7 @@ Masika	O
 and	O
 Vuli	O
 ,	O
+
 whereas	O
 changes	O
 in	O
@@ -2673,6 +2748,7 @@ delayed	O
 ”	O
 degeneration	O
 .	O
+
 The	O
 strongest	O
 effects	O
@@ -2709,6 +2785,7 @@ driver	O
 of	O
 degeneration	O
 ,	O
+
 because	O
 its	O
 effects	O
@@ -2720,6 +2797,7 @@ Vuli	O
 than	O
 Masika	O
 .	O
+
 To	O
 the	O
 best	O
@@ -2786,6 +2864,7 @@ certification	O
 company	O
 Flocert	B-ORG
 ,	O
+
 the	O
 company	O
 will	O
@@ -2837,6 +2916,7 @@ remains	O
 the	O
 same	O
 .	O
+
 This	O
 enables	O
 Lidl	B-ORG
@@ -2900,6 +2980,7 @@ Alliance	I-ORG
 labelled	O
 bananas	B-CROP
 .	O
+
 This	O
 has	O
 no	O
@@ -2932,6 +3013,7 @@ Alliance	I-ORG
 certifications	O
 :	O
  	O
+
 "	O
 In	O
 all	O
@@ -2998,7 +3080,9 @@ for	O
 our	O
 customers	O
 .	O
+
 "	O
+
  	O
 "	O
 Our	O
@@ -3031,6 +3115,7 @@ countries	O
 of	O
 origin	O
 .	O
+
 The	O
 certification	O
 requires	O
@@ -3064,7 +3149,9 @@ and	O
 sustainable	O
 agriculture	O
 .	O
+
 "	O
+
  	O
 For	O
 more	O
@@ -3124,6 +3211,7 @@ centre	I-SYMPTOM
 of	I-SYMPTOM
 leaves	I-SYMPTOM
 .	O
+
 A	O
 species	O
 of	O
@@ -3163,6 +3251,7 @@ Stemphylium	B-PATHOGEN
 solani	I-PATHOGEN
 Weber	O
 ,	O
+
 and	O
 its	O
 pathogenicity	O
@@ -3173,6 +3262,7 @@ Koch	O
 's	O
 postulates	O
 .	O
+
 This	O
 is	O
 the	O
@@ -3235,6 +3325,7 @@ Massola	O
 et	O
 al	O
 .	O
+
 2016	B-DATE
 )	O
 .	O
@@ -3267,6 +3358,7 @@ Para	B-GPE
 Brazil	B-GPE
 )	O
 .	O
+
 These	O
 plants	O
 had	O
@@ -3308,6 +3400,7 @@ tap	O
 water	O
 agar	O
 .	O
+
 Mycelium	O
 emerging	O
 from	O
@@ -3339,6 +3432,7 @@ COAD	O
 2088	O
 )	O
 .	O
+
 Colonies	O
 were	O
 fast	O
@@ -3393,6 +3487,7 @@ follows	O
 Mycelium	O
 coenocytic	O
 ,	O
+
 hyaline	O
 ;	O
 sporangia	O
@@ -3427,6 +3522,7 @@ through	O
 zoospore	O
 release	O
 ,	O
+
 hyaline	O
 ,	O
 smooth	O
@@ -3487,6 +3583,7 @@ DNA	O
 was	O
 amplified	O
 ,	O
+
 and	O
 the	O
 ITS	O
@@ -3518,6 +3615,7 @@ Fm85mod	O
 ,	O
 respectively	O
 .	O
+
 The	O
 resulting	O
 sequences	O
@@ -3549,6 +3647,7 @@ results	O
 showed	O
 98	O
 ,	O
+
 99	O
 ,	O
 and	O
@@ -3573,6 +3672,7 @@ CBS748.96	O
 in	O
 GenBank	B-ORG
 .	O
+
 Additionally	O
 ,	O
 a	O
@@ -3631,6 +3731,7 @@ and	O
 genetics	O
 programs	O
 ,	O
+
 and	O
 maintenance	O
 of	O
@@ -3647,6 +3748,7 @@ for	O
 future	O
 generations	O
 .	O
+
 Germplasm	O
 collections	O
 seek	O
@@ -3677,6 +3779,7 @@ genome	O
 phenotypic	O
 plasticity	O
 ,	O
+
 and	O
 high	O
 flower	B-PLANT_PART
@@ -3689,6 +3792,7 @@ characterization	O
 is	O
 challenging	O
 .	O
+
 Here	O
 ,	O
 we	O
@@ -3719,6 +3823,7 @@ Agriculture	I-GPE
 USDA	B-ORG
 )	O
 ,	O
+
 Agricultural	B-ORG
 Research	I-ORG
 Service	I-ORG
@@ -3742,6 +3847,7 @@ Georgia	B-GPE
 United	B-GPE
 States	I-GPE
 .	O
+
 Using	O
 the	O
 genotyping	O
@@ -3779,6 +3885,7 @@ the	O
 604	O
 accessions	O
 .	O
+
 Discriminant	O
 analysis	O
 of	O
@@ -3801,7 +3908,6 @@ broad	O
 geographic	O
 regions	O
 .	O
-
 Genetic	O
 diversity	O
 analyses	O
@@ -3824,6 +3930,7 @@ with	O
 previous	O
 analyses	O
 .	O
+
 Following	O
 population	O
 structure	O
@@ -3861,6 +3968,7 @@ and	O
 genotypic	O
 diversity	O
 .	O
+
 The	O
 genetic	O
 characterization	O
@@ -3940,6 +4048,7 @@ as	O
 pretty	O
 unassuming	O
 .	O
+
 In	O
 reality	O
 ,	O
@@ -3974,6 +4083,7 @@ the	O
 Cavendish	B-CROP
 variety	O
 .	O
+
 But	O
 with	O
 two	O
@@ -4005,6 +4115,7 @@ Important	O
 Cash	O
 Crop	O
  	O
+
 Grown	O
 in	O
 more	O
@@ -4031,6 +4142,7 @@ in	O
 developing	O
 countries	O
 .	O
+
 Bananas	B-CROP
 are	O
 among	O
@@ -4063,6 +4175,7 @@ Ecuador	B-GPE
 the	B-GPE
 Philippines	I-GPE
 ,	O
+
 Costa	B-GPE
 Rica	I-GPE
 ,	O
@@ -4070,6 +4183,7 @@ Colombia	B-GPE
 and	O
 Guatemala	B-GPE
 .	O
+
 However	O
 ,	O
 most	O
@@ -4143,6 +4257,7 @@ top	O
 five	O
 exporters	O
 ,	O
+
 bananas	B-CROP
 are	O
 a	O
@@ -4157,6 +4272,7 @@ their	O
 agricultural	O
 exports	O
 .	O
+
 India	B-GPE
 and	O
 China	B-GPE
@@ -4198,6 +4314,7 @@ banana	B-CROP
 trade	O
 regime	O
 ,	O
+
 spanned	O
 20	B-DATE
 years	I-DATE
@@ -4232,6 +4349,7 @@ that	O
 title	O
 )	O
 .	O
+
 As	O
 one	O
 of	O
@@ -4293,6 +4411,7 @@ colonies	O
 in	O
 Africa	B-LOC
 ,	O
+
 Caribbean	B-LOC
 and	I-LOC
 the	I-LOC
@@ -4363,6 +4482,7 @@ their	O
 overseas	O
 departments	O
 .	O
+
 For	O
 example	O
 ,	O
@@ -4395,6 +4515,7 @@ and	O
 Cote	B-GPE
 d'Ivoire	I-GPE
 .	O
+
 The	O
 Spanish	B-GPE
 market	O
@@ -4425,6 +4546,7 @@ to	O
 free	O
 trade	O
 .	O
+
  	O
 The	O
 Single	O
@@ -4456,6 +4578,7 @@ regime	O
 for	O
 bananas	B-CROP
 .	O
+
 As	O
 devised	O
 ,	O
@@ -4487,6 +4610,7 @@ countries	O
 .	O
 Colombia	B-GPE
 ,	O
+
 Costa	B-GPE
 Rica	I-GPE
 ,	O
@@ -4562,6 +4686,7 @@ with	O
 its	O
 obligations	O
 .	O
+
 However	O
 ,	O
 prior	O
@@ -4593,6 +4718,7 @@ GATT	B-ORG
 Panel	O
 ruling	O
 .	O
+
  	O
 Second	O
 Banana	B-CROP
@@ -4633,6 +4759,7 @@ as	O
 customs	O
 clearance	O
 ,	O
+
 warehousing	O
 and	O
 storage	O
@@ -4655,6 +4782,7 @@ and	O
 other	O
 criteria	O
 .	O
+
 After	O
 yet	O
 another	O
@@ -4688,6 +4816,7 @@ by	O
 its	O
 waiver	O
 .	O
+
  	O
 After	O
 1995	B-DATE
@@ -4769,6 +4898,7 @@ the	O
 legal	O
 challenge	O
 .	O
+
 Having	O
 offered	O
 additional	O
@@ -4815,6 +4945,7 @@ WTO	B-ORG
 in	O
 1996	B-DATE
 ,	O
+
 this	O
 time	O
 with	O
@@ -4837,6 +4968,7 @@ Hawaiian	I-ORG
 Banana	I-ORG
 Association	I-ORG
 .	O
+
 A	O
 WTO	B-ORG
 decision	O
@@ -4873,6 +5005,7 @@ its	O
 WTO	B-ORG
 obligations	O
 .	O
+
 The	O
 EU	B-LOC
 's	O
@@ -4917,6 +5050,7 @@ the	O
 WTO	B-ORG
 ruling	O
 .	O
+
 By	O
 2001	B-DATE
 ,	O
@@ -4947,6 +5081,7 @@ tariff	O
 only	O
 system	O
 ,	O
+
 dispensing	O
 with	O
 quotas	O
@@ -4985,6 +5120,7 @@ all	O
 WTO	B-ORG
 members	O
 .	O
+
 Tariffs	O
 would	O
 come	O
@@ -5023,6 +5159,7 @@ of	O
 imports	O
 )	O
 .	O
+
 It	O
 would	O
 n't	O
@@ -5062,6 +5199,7 @@ Agreement	I-ORG
 "	O
 )	O
 ,	O
+
 officially	O
 closing	O
 the	O
@@ -5069,6 +5207,7 @@ longstanding	O
 legal	O
 disputes	O
 .	O
+
  	O
 As	O
 a	O
@@ -5111,6 +5250,7 @@ EU	B-LOC
 is	O
 implemented	O
 .	O
+
 By	O
 next	B-DATE
 year	I-DATE
@@ -5143,6 +5283,7 @@ for	O
 this	O
 rate	O
 .	O
+
 As	O
 the	O
 EU	B-LOC
@@ -5165,7 +5306,6 @@ face	O
 considerable	O
 adjustment	O
 .	O
-
  	O
 Going	O
 Bananas	B-CROP
@@ -5177,6 +5317,7 @@ banana	B-CROP
 trade	O
 wars	O
 ,	O
+
 the	O
 popular	O
 Cavendish	B-CROP
@@ -5194,6 +5335,7 @@ wipe	O
 them	O
 out	O
 .	O
+
  	O
 "	O
 Panama	B-DISEASE
@@ -5240,6 +5382,7 @@ fungicides	O
 and	O
 fumigants	O
 .	O
+
 It	O
 is	O
 only	O
@@ -5277,6 +5420,7 @@ called	O
 Black	B-DISEASE
 Sigatoka	I-DISEASE
 ,	O
+
 which	O
 has	O
 been	O
@@ -5292,6 +5436,7 @@ in	O
 affected	O
 areas	O
 .	O
+
  	O
 Before	O
 Cavendish	B-CROP
@@ -5332,6 +5477,7 @@ in	O
 the	O
 mid-1950s	O
 .	O
+
 At	O
 that	O
 time	O
@@ -5409,6 +5555,7 @@ a	O
 New	O
 Bunch	O
  	O
+
 If	O
 scientists	O
 do	O
@@ -5429,6 +5576,7 @@ the	O
 beloved	O
 Cavendish	B-CROP
 .	O
+
 With	O
 over	O
 1,000	O
@@ -5465,6 +5613,7 @@ get	O
 you	O
 started	O
 .	O
+
  	O
 For	O
 your	O
@@ -5495,12 +5644,14 @@ flavor	O
 or	O
 Goldfinger	O
 ,	O
+
 a	O
 newer	O
 variety	O
 from	O
 Honduras	B-GPE
 .	O
+
 Intriguingly	O
 ,	O
 there	O
@@ -5533,6 +5684,7 @@ subtle	O
 vanilla	B-CROP
 flavor	O
 .	O
+
  	O
 Cooking	O
 bananas	B-CROP
@@ -5567,6 +5719,7 @@ Horn	O
 from	O
 Africa	B-LOC
 ,	O
+
 which	O
 can	O
 grow	O
@@ -5715,6 +5868,7 @@ Technology	I-ORG
 in	O
 Arusha	B-GPE
 .	O
+
  	O
 The	O
 institute	O
@@ -5748,6 +5902,7 @@ in	O
 the	O
 region	O
 ,	O
+
 including	O
 matooke	O
 and	O
@@ -5762,6 +5917,7 @@ pests	O
 and	O
 disease	O
 .	O
+
  	O
 Bananas	B-CROP
 are	O
@@ -5794,6 +5950,7 @@ $	O
 4.3	O
 billion	O
 .	O
+
  	O
 Tanzania	B-GPE
 and	O
@@ -5827,6 +5984,7 @@ non	O
 seasonal	O
 nature	O
 ,	O
+
 and	O
 apart	O
 from	O
@@ -5843,6 +6001,7 @@ all	B-DATE
 year	I-DATE
 round	O
 .	O
+
  	O
 Advertisement	O
  	O
@@ -5921,6 +6080,7 @@ as	O
 livestock	O
 feed	O
 ,	O
+
 while	O
 the	O
 bark	O
@@ -5945,6 +6105,7 @@ works	O
 of	O
 art	O
 .	O
+
  	O
 Last	B-DATE
 November	I-DATE
@@ -5978,10 +6139,12 @@ regions	O
 of	O
 Mbeya	B-GPE
 ,	O
+
 Kilimanjaro	B-GPE
 and	O
 Kagera	B-GPE
 .	O
+
  	O
 The	O
 new	O
@@ -6034,6 +6197,7 @@ of	I-ORG
 Tropical	I-ORG
 Agriculture	I-ORG
 .	O
+
  	O
 The	O
 $	O
@@ -6075,6 +6239,7 @@ high	O
 -	O
 yielding	O
 ,	O
+
 disease	O
 -	O
 resistant	O
@@ -6127,6 +6292,7 @@ sub	B-LOC
 Saharan	I-LOC
 Africa	I-LOC
 .	O
+
 We	O
 investigated	O
 the	O
@@ -6169,6 +6335,7 @@ in	O
 Southern	B-LOC
 Ghana	I-LOC
 .	O
+
 Africa	B-PATHOGEN
 cassava	I-PATHOGEN
 mosaic	I-PATHOGEN
@@ -6214,6 +6381,7 @@ EACMV	B-PATHOGEN
 CM	I-PATHOGEN
 )	O
 .	O
+
 EACMV	B-PATHOGEN
 (	O
 CM	O
@@ -6244,6 +6412,7 @@ cassava	B-PATHOGEN
 mosaic	I-PATHOGEN
 begomoviruses	I-PATHOGEN
 ,	O
+
 satIII	O
 and	O
 satII	O
@@ -6264,6 +6433,7 @@ and	O
 ,	O
 respectively	O
 .	O
+
 To	O
 the	O
 best	O
@@ -6302,6 +6472,7 @@ management	O
 of	O
 CMD	B-DISEASE
 ,	O
+
 thereby	O
 requiring	O
 further	O
@@ -6350,6 +6521,7 @@ producer	O
 of	O
 sweetpotato	B-CROP
 ,	O
+
 and	O
 Guangdong	B-GPE
 Province	I-GPE
@@ -6373,6 +6545,7 @@ Huang	O
 et	O
 al	O
 .	O
+
 2020a	B-DATE
 )	O
 .	O
@@ -6403,6 +6576,7 @@ October	B-DATE
 ,	I-DATE
 2021	I-DATE
 ,	O
+
 a	O
 white	B-DISEASE
 rust	I-DISEASE
@@ -6437,6 +6611,7 @@ and	O
 relatively	O
 mild	O
 .	O
+
 The	O
 adaxial	O
 surface	O
@@ -6473,6 +6648,7 @@ chalky	I-SYMPTOM
 white	I-SYMPTOM
 pustules	I-SYMPTOM
 ,	O
+
 typical	O
 of	O
 white	B-DISEASE
@@ -6499,6 +6675,7 @@ leaves	I-SYMPTOM
 or	I-SYMPTOM
 abscission	I-SYMPTOM
 .	O
+
 For	O
 further	O
 analysis	O
@@ -6531,6 +6708,7 @@ S-3400N	O
 -	O
 II	O
 ,	O
+
 Hitachi	B-ORG
 ,	O
 Japan	B-GPE
@@ -6573,6 +6751,7 @@ the	O
 morphological	O
 analyses	O
 ,	O
+
 the	O
 pathogen	O
 was	O
@@ -6583,6 +6762,7 @@ an	O
 Albugo	B-PATHOGEN
 sp	I-PATHOGEN
 .	O
+
 Crude	O
 genomic	O
 DNA	O
@@ -6618,6 +6798,7 @@ with	O
 the	O
 primers	O
 ,	O
+
 ITS1	O
 /	O
 ITS4	O
@@ -6626,6 +6807,7 @@ White	O
 et	O
 al	O
 .	O
+
 1990	B-DATE
 )	O
 .	O
@@ -6662,6 +6844,7 @@ BLASTn	O
 search	O
 tool	O
 .	O
+
 The	O
 two	O
 best	O
@@ -6692,6 +6875,7 @@ GenBank	B-ORG
 OM182104	O
 )	O
 ,	O
+
 was	O
 ≥97	O
 %	O
@@ -6717,6 +6901,7 @@ Korea	B-GPE
 DQ643920	O
 )	O
 .	O
+
 A.	B-PATHOGEN
 ipomoeae	I-PATHOGEN
 -	I-PATHOGEN
@@ -6743,11 +6928,11 @@ culturable	O
 in	O
 vitro	O
 .	O
-
 To	O
 demonstrate	O
 pathogenicity	O
 ,	O
+
 spores	O
 collected	O
 from	O
@@ -6769,6 +6954,7 @@ healthy	O
 sweetpotato	B-CROP
 plants	O
 .	O
+
 Inoculated	O
 plants	O
 were	O
@@ -6800,6 +6986,7 @@ the	O
 control	O
 group	O
 .	O
+
 After	O
 12	B-DATE
 days	I-DATE
@@ -6836,6 +7023,7 @@ noninoculated	O
 control	O
 plants	O
 .	O
+
 To	O
 the	O
 best	O
@@ -6866,6 +7054,7 @@ Guangdong	B-GPE
 ,	O
 China	B-GPE
 .	O
+
 White	B-DISEASE
 rust	I-DISEASE
 on	O
@@ -6933,6 +7122,7 @@ pathogen	O
 resistant	O
 potatoes	B-CROP
 .	O
+
 Here	O
 ,	O
 we	O
@@ -6969,9 +7159,11 @@ Responsive	O
 SR4	O
 )	O
 ,	O
+
 in	O
 protoplasts	O
 .	O
+
 Mutations	O
 in	O
 StSR4	O
@@ -7013,6 +7205,7 @@ acid	O
 SA	O
 )	O
 ,	O
+
 and	O
 enhanced	O
 the	O
@@ -7024,6 +7217,7 @@ resistance	O
 marker	O
 StPR1	O
 .	O
+
 In	O
 addition	O
 ,	O
@@ -7068,6 +7262,7 @@ was	O
 strongly	O
 inhibited	O
 ,	O
+
 and	O
 a	O
 dwarf	O
@@ -7075,6 +7270,7 @@ phenotype	O
 was	O
 induced	O
 .	O
+
 Therefore	O
 ,	O
 it	O
@@ -7167,6 +7363,7 @@ technology	O
 ,	O
 climate	O
 ,	O
+
 soil	O
 type	O
 ,	O
@@ -7179,6 +7376,7 @@ insects	O
 and	O
 diseases	O
 .	O
+
 Numerous	O
 fungal	B-DISEASE
 diseases	I-DISEASE
@@ -7220,6 +7418,7 @@ grayish	B-SYMPTOM
 black	I-SYMPTOM
 stems	I-SYMPTOM
 .	O
+
 The	O
 infectivity	O
 of	O
@@ -7257,6 +7456,7 @@ at	O
 this	O
 time	O
 .	O
+
 However	O
 ,	O
 these	O
@@ -7296,10 +7496,12 @@ controlling	O
 most	O
 pathogens	O
 ,	O
+
 including	O
 N.	B-PATHOGEN
 rubicola	I-PATHOGEN
 .	O
+
 This	O
 review	O
 is	O
@@ -7342,6 +7544,7 @@ distribution	O
 and	O
 symptomatology	O
 ,	O
+
 and	O
 sustainable	O
 management	O
@@ -7384,6 +7587,7 @@ rubicola	I-PATHOGEN
 infested	O
 soils	O
 .	O
+
 Phosphorus	O
 and	O
 nitrogen	O
@@ -7415,6 +7619,7 @@ N.	B-PATHOGEN
 rubicola	I-PATHOGEN
 infestation	O
 ,	O
+
 with	O
 maximum	O
 tuber	B-PLANT_PART
@@ -7442,6 +7647,7 @@ most	O
 recent	O
 studies	O
 .	O
+
 With	O
 the	O
 current	O
@@ -7511,6 +7717,7 @@ of	O
 a	O
 plantain	B-CROP
 .	O
+
  	O
 Virupakshi	O
 hill	O
@@ -7549,6 +7756,7 @@ temple	O
 in	O
 Palani	B-GPE
 .	O
+
  	O
 Till	O
 1970	B-DATE
@@ -7579,6 +7787,7 @@ than	O
 hectares	O
 .	O
  	O
+
 Virupakshi	O
 has	O
 always	O
@@ -7593,6 +7802,7 @@ young	O
 coffee	B-CROP
 plants	O
 .	O
+
 With	O
 coffee	B-CROP
 being	O
@@ -7624,6 +7834,7 @@ terrains	O
 till	B-DATE
 1970s	I-DATE
 .	O
+
 In	O
 addition	O
 ,	O
@@ -7665,6 +7876,7 @@ in	O
 these	O
 hills	O
 ,	O
+
 threatening	O
 the	O
 two	O
@@ -7672,6 +7884,7 @@ varieties	O
 of	O
 bananas	B-CROP
 .	O
+
 Within	O
 a	B-DATE
 decade	I-DATE
@@ -7685,7 +7898,6 @@ few	O
 hundred	O
 hectares	O
 .	O
-
  	O
 But	O
 a	O
@@ -7737,6 +7949,7 @@ save	O
 the	O
 species	O
 .	O
+
  	O
 Another	O
 distinct	O
@@ -7789,7 +8002,9 @@ of	O
 1500	O
 mm	O
 .	O
+
 "	O
+
 We	O
 formed	O
 our	O
@@ -7825,6 +8040,7 @@ R	O
 Pavalarajan	O
 said	O
 .	O
+
  	O
 He	O
 said	O
@@ -7873,7 +8089,9 @@ a	B-DATE
 few	I-DATE
 years	I-DATE
 .	O
+
 "	O
+
 It	O
 went	O
 down	O
@@ -7889,7 +8107,6 @@ in	O
 he	O
 recalled	O
 .	O
-
  	O
 The	O
 spreading	O
@@ -7911,6 +8128,7 @@ of	I-SYMPTOM
 the	I-SYMPTOM
 leaves	I-SYMPTOM
 ,	O
+
 which	B-SYMPTOM
 are	I-SYMPTOM
 bunched	I-SYMPTOM
@@ -7922,6 +8140,7 @@ plant	I-SYMPTOM
 from	I-SYMPTOM
 fruiting	I-SYMPTOM
 .	O
+
 The	O
 virus	O
 also	O
@@ -7960,6 +8179,7 @@ Rs	O
 20	O
 crore	O
 ,	O
+
 which	O
 was	O
 high	O
@@ -7967,6 +8187,7 @@ in	O
 those	B-DATE
 days	I-DATE
 .	O
+
 Besides	O
 ,	O
 the	O
@@ -8000,6 +8221,7 @@ bananas	B-CROP
 per	O
 day	O
 .	O
+
 Rapid	O
 spreading	O
 of	O
@@ -8058,6 +8280,7 @@ over	O
 the	B-DATE
 years	I-DATE
 .	O
+
 Adding	O
 further	O
 plight	O
@@ -8134,6 +8357,7 @@ a	O
 particular	O
 geography	O
 .	O
+
  	O
 The	O
 Virupakshi	O
@@ -8183,6 +8407,7 @@ other	O
 medical	O
 significance	O
 .	O
+
 This	O
 is	O
 the	O
@@ -8218,8 +8443,10 @@ the	O
 fruit	B-PLANT_PART
 to	O
 "	O
-Panchamrutham"	O
+Panchamrutham	O
+"	O
 .	O
+
 With	O
 multi	O
 -	O
@@ -8251,6 +8478,7 @@ through	O
 the	B-DATE
 year	I-DATE
 .	O
+
  	O
 A	O
 senior	O
@@ -8282,6 +8510,7 @@ revive	O
 the	O
 variety	O
 .	O
+
 Pointing	O
 out	O
 that	O
@@ -8321,6 +8550,7 @@ over	O
 the	B-DATE
 years	I-DATE
 .	O
+
 "	O
 
  	O
@@ -8358,6 +8588,7 @@ returns	O
 it	O
 fetched	O
 ,	O
+
 K	O
 Murugasen	O
 ,	O
@@ -8395,7 +8626,9 @@ Rs	O
 per	O
 fruit	B-PLANT_PART
 .	O
+
 "	O
+
 In	O
 order	O
 to	O
@@ -8457,6 +8690,7 @@ famine	O
 1840s	B-DATE
 )	O
 .	O
+
 It	O
 is	O
 still	O
@@ -8500,6 +8734,7 @@ of	O
 the	O
 disease	O
 .	O
+
 One	O
 of	O
 the	O
@@ -8545,6 +8780,7 @@ virulent	O
 race	O
 EU_13_A2	O
 .	O
+
 Four	O
 potato	B-CROP
 genotypes	O
@@ -8576,6 +8812,7 @@ sensitive	O
 .	O
 However	O
 ,	O
+
 the	O
 sensitivity	O
 degree	O
@@ -8592,6 +8829,7 @@ by	O
 each	O
 genotype	O
 .	O
+
 There	O
 was	O
 a	O
@@ -8620,10 +8858,10 @@ detached	O
 leaf	B-PLANT_PART
 test	O
 .	O
-
 In	O
 addition	O
 ,	O
+
 the	O
 amount	O
 of	O
@@ -8682,6 +8920,7 @@ and	O
 recent	O
 molecular	O
 ,	O
+
 genetic	O
 ,	O
 and	O
@@ -8695,6 +8934,7 @@ its	O
 host	O
 potato	B-CROP
 .	O
+
 Taxonomy	O
 ,	O
 epidemiology	O
@@ -8730,6 +8970,7 @@ kingdom	O
 :	O
 Fungi	O
 ,	O
+
 phylum	O
 :	O
 Chytridiomycota	O
@@ -8770,6 +9011,7 @@ the	O
 order	O
 Synchytriales	O
 .	O
+
 Hosts	O
 and	O
 disease	O
@@ -8819,6 +9061,7 @@ of	O
 infested	O
 fields	O
 .	O
+
 Disease	O
 symptoms	O
 on	O
@@ -8846,12 +9089,12 @@ by	O
 the	O
 pathogen	O
 .	O
-
 Meristematic	O
 tissue	O
 on	O
 tubers	B-PLANT_PART
 ,	O
+
 stolons	B-PLANT_PART
 ,	O
 eyes	B-PLANT_PART
@@ -8873,6 +9116,7 @@ to	O
 be	O
 immune	O
 .	O
+
 Pathotypes	O
 For	O
 S.	B-PATHOGEN
@@ -8903,6 +9147,7 @@ varieties	O
 are	O
 described	O
 .	O
+
 Pathotypes	O
 1(D1	O
 )	O
@@ -8938,6 +9183,7 @@ largely	O
 remains	O
 undetected	O
 .	O
+
 Pathogen	O
 –	O
 host	O
@@ -8979,6 +9225,7 @@ described	O
 in	O
 Chytridiomycota	O
 ,	O
+
 showing	O
 that	O
 in	O
@@ -8992,6 +9239,7 @@ the	O
 gene‐for‐gene	O
 concept	O
 .	O
+
 Although	O
 significant	O
 progress	O
@@ -9065,6 +9313,7 @@ Asia	B-LOC
 (	O
 China	B-GPE
 ,	O
+
 Korea	B-GPE
 ,	O
 and	O
@@ -9081,6 +9330,7 @@ America	I-LOC
 and	O
 Africa	B-LOC
 .	O
+
 Sweetpotato	B-DISEASE
 foot	I-DISEASE
 and	I-DISEASE
@@ -9118,6 +9368,7 @@ disease	O
 on	O
 seedlings	O
 ,	O
+
 mature	O
 plants	O
 ,	O
@@ -9125,6 +9376,7 @@ and	O
 storage	O
 roots	B-PLANT_PART
 .	O
+
 Decay	B-SYMPTOM
 or	I-SYMPTOM
 rot	I-SYMPTOM
@@ -9164,6 +9416,7 @@ Gai	O
 et	O
 al	O
 .	O
+
 2016	B-DATE
 )	O
 .	O
@@ -9203,6 +9456,7 @@ of	O
 the	O
 disease	O
 .	O
+
 We	O
 collected	O
 samples	O
@@ -9241,6 +9495,7 @@ agar	O
 PDA	O
 )	O
 ,	O
+
 and	O
 isolated	O
 .	O
@@ -9278,6 +9533,7 @@ and	O
 SPL18008	O
 )	O
 .	O
+
 The	O
 representative	O
 isolate	O
@@ -9325,6 +9581,7 @@ ends	O
 were	O
 produced	O
 ,	O
+
 measuring	O
 6.4	O
 to	O
@@ -9342,6 +9599,7 @@ average	O
 μm	O
 )	O
 .	O
+
 The	O
 internal	O
 transcribed	O
@@ -9386,6 +9644,7 @@ White	O
 et	O
 al	O
 .	O
+
 1990	B-DATE
 )	O
 ,	O
@@ -9424,6 +9683,7 @@ for	O
 EF-1α	O
 )	O
 .	O
+
 BLASTn	O
 search	O
 analysis	O
@@ -9451,7 +9711,6 @@ KP990656	O
 EF-1α	O
 )	O
 .	O
-
 Based	O
 on	O
 the	O
@@ -9462,6 +9721,7 @@ DNA	O
 sequence	O
 analysis	O
 ,	O
+
 the	O
 fungus	O
 was	O
@@ -9474,6 +9734,7 @@ Gai	O
 et	O
 al	O
 .	O
+
 2016	B-DATE
 )	O
 .	O
@@ -9504,6 +9765,7 @@ with	O
 three	O
 replications	O
 ,	O
+
 and	O
 a	O
 blank	O
@@ -9514,6 +9776,7 @@ as	O
 a	O
 control	O
 .	O
+
 After	O
 3	B-DATE
 weeks	I-DATE
@@ -9544,6 +9807,7 @@ the	O
 control	O
 samples	O
 ,	O
+
 and	O
 P.	B-PATHOGEN
 destruens	I-PATHOGEN
@@ -9556,6 +9820,7 @@ inoculated	O
 storage	O
 roots	B-PLANT_PART
 .	O
+
 To	O
 the	O
 best	O
@@ -9616,6 +9881,7 @@ TR4	B-PATHOGEN
 )	O
 disease	O
 ,	O
+
 previously	O
 called	O
 "	O
@@ -9628,6 +9894,7 @@ attacks	O
 the	O
 crops	O
 .	O
+
  	O
 Agriculture	O
 Minister	O
@@ -9671,6 +9938,7 @@ have	O
 affected	O
 bananas	B-CROP
 ,	O
+
 plantains	B-CROP
 ,	O
 and	O
@@ -9679,6 +9947,7 @@ Heliconia	B-CROP
 plant	O
 .	O
 "	O
+
  	O
 The	O
 pathogen	O
@@ -9710,6 +9979,7 @@ of	I-SYMPTOM
 the	I-SYMPTOM
 leaves	I-SYMPTOM
 .	O
+
  	O
 Shaw	O
 explained	O
@@ -9742,6 +10012,7 @@ animals	O
 and	O
 vehicles	O
 .	O
+
  	O
 Headlines	O
 Delivered	O
@@ -9772,6 +10043,7 @@ and	O
 ,	O
 even	O
 ,	O
+
 we	O
 ,	O
 as	O
@@ -9821,6 +10093,7 @@ Ministry	O
 he	O
 said	O
 .	O
+
  	O
 The	O
 agriculture	O
@@ -9867,6 +10140,7 @@ and	O
 plantain	B-CROP
 industry	O
 .	O
+
  	O
 He	O
 said	O
@@ -9900,6 +10174,7 @@ the	O
 respective	O
 territories	O
 .	O
+
  	O
 Noting	O
 that	O
@@ -9937,6 +10212,7 @@ first	O
 time	O
 and	O
 ,	O
+
 on	O
 August	B-DATE
 8	I-DATE
@@ -9965,6 +10241,7 @@ to	O
 contain	O
 it	O
 .	O
+
  	O
 In	O
 Photo	O
@@ -9990,7 +10267,6 @@ August	B-DATE
 2019	I-DATE
 .	O
 (	O
-
 AP	O
 photo	O
 )	O
@@ -10029,11 +10305,13 @@ and	O
 plantain	B-CROP
 industry	O
 ,	O
+
 occupying	O
 approximately	O
 20,822.53	O
 hectares	O
 .	O
+
  	O
 Additionally	O
 ,	O
@@ -10065,6 +10343,7 @@ tonnes	O
  	O
 Further	O
 ,	O
+
 694	O
 metric	O
 tonnes	O
@@ -10085,6 +10364,7 @@ a	O
 %	O
 increase	O
 .	O
+
  	O
 "	O
 Once	O
@@ -10118,6 +10398,7 @@ pest	O
 free	O
 areas	O
 .	O
+
 That	O
 is	O
 why	O
@@ -10148,6 +10429,7 @@ Jamaica	B-GPE
 said	O
 Shaw	O
 .	O
+
  	O
 "	O
 I	O
@@ -10185,6 +10467,7 @@ Produce	I-ORG
 Inspection	I-ORG
 Branch	I-ORG
 ,	O
+
 is	O
 working	O
 assiduously	O
@@ -10246,6 +10529,7 @@ into	O
 the	O
 island	O
 .	O
+
  	O
 "	O
 I	O
@@ -10277,6 +10561,7 @@ this	O
 deadly	O
 disease	O
 .	O
+
  	O
 "	O
 I	O
@@ -10318,6 +10603,7 @@ about	O
 the	O
 disease	O
 .	O
+
  	O
 Two	O
 major	O
@@ -10352,6 +10638,7 @@ before	O
 entering	O
 Jamaica	B-GPE
 .	O
+
  	O
 *	O
 The	O
@@ -10386,6 +10673,7 @@ reach	O
 our	O
 shores	O
 .	O
+
  	O
 We	O
 want	O
@@ -10455,6 +10743,7 @@ laboratory	O
 scale	O
 experiments	O
 .	O
+
 Data	O
 analysis	O
 of	O
@@ -10487,6 +10776,7 @@ trimethylbenzene	O
 -	O
 trimethyldodecane	O
 ,	O
+
 benzothiazole	O
 ,	O
 3	O
@@ -10516,6 +10806,7 @@ and	O
 Pectobacterium	B-PATHOGEN
 carotovorum	I-PATHOGEN
 .	O
+
 In	O
 turn	O
 ,	O
@@ -10549,6 +10840,7 @@ of	O
 potato	B-CROP
 physiology	O
 .	O
+
 The	O
 established	O
 physiological	O
@@ -10583,6 +10875,7 @@ entire	O
 root	B-PLANT_PART
 system	O
 ,	O
+
 but	O
 also	O
 on	O
@@ -10597,6 +10890,7 @@ leaves	B-PLANT_PART
 and	O
 yield	O
 .	O
+
 The	O
 negative	O
 effect	O
@@ -10688,6 +10982,7 @@ regions	O
 of	O
 Iran	B-GPE
 ,	O
+
 and	O
 isolations	O
 were	O
@@ -10696,6 +10991,7 @@ onto	O
 PDA	O
 medium	O
 .	O
+
 Single	O
 spore	O
 isolates	O
@@ -10730,6 +11026,7 @@ a1	O
 gene	O
 regions	O
 .	O
+
 Pathogenicity	O
 tests	O
 demonstrated	O
@@ -10799,6 +11096,7 @@ Solanum	B-CROP
 tuberosum	I-CROP
 )	O
 ,	O
+
 napa	B-CROP
 cabbage	I-CROP
 (	O
@@ -10806,6 +11104,7 @@ Brassica	B-CROP
 rapa	I-CROP
 subsp	O
 .	O
+
 pekinensis	O
 )	O
 ,	O
@@ -10839,6 +11138,7 @@ five	O
 from	O
 radish	B-CROP
 .	O
+
 Strains	O
 were	O
 identified	O
@@ -10885,6 +11185,7 @@ P.	B-PATHOGEN
 carotovorum	I-PATHOGEN
 subsp	I-PATHOGEN
 .	I-PATHOGEN
+
 carotovorum	I-PATHOGEN
 ,	O
 Pcc	B-PATHOGEN
@@ -10915,6 +11216,7 @@ parmentieri	I-PATHOGEN
 Ppa	B-PATHOGEN
 )	O
 .	O
+
 Pod	B-PATHOGEN
 ,	O
 Pcc	B-PATHOGEN
@@ -10946,6 +11248,7 @@ not	O
 found	O
 here	O
 .	O
+
 This	O
 is	O
 the	O
@@ -10962,7 +11265,6 @@ in	O
 South	B-GPE
 Korea	I-GPE
 .	O
-
 Pectobacterium	B-PATHOGEN
 species	I-PATHOGEN
 showed	O
@@ -10982,6 +11284,7 @@ at	O
 °	O
 C	O
 ,	O
+
 and	O
 showed	O
 weak	O
@@ -10991,6 +11294,7 @@ at	O
 °	O
 C	O
 .	O
+
 Pectolytic	O
 activity	O
 decreased	O
@@ -11022,6 +11326,7 @@ with	O
 increasing	O
 temperature	O
 .	O
+
 The	O
 inability	O
 of	O
@@ -11105,6 +11410,7 @@ the	O
 local	O
 market	O
 .	O
+
  	O
 The	O
 Ministry	B-ORG
@@ -11136,6 +11442,7 @@ of	O
 the	O
 disease	O
 ,	O
+
 have	O
 confirmed	O
 that	O
@@ -11149,6 +11456,7 @@ and	O
 banana	B-CROP
 plants	O
 .	O
+
  	O
 The	O
 National	B-ORG
@@ -11196,6 +11504,7 @@ fact	O
 Black	B-DISEASE
 Sigatoka	I-DISEASE
 .	O
+
 The	O
 disease	O
 is	O
@@ -11247,6 +11556,7 @@ of	O
 the	O
 disease	O
 .	O
+
 A	O
 farmer	O
 in	O
@@ -11345,6 +11655,7 @@ disease	O
 has	O
 affected	O
 ,	O
+
 but	O
 he	O
 noted	O
@@ -11374,6 +11685,7 @@ to	O
 most	O
 farmers	O
 .	O
+
  	O
 According	O
 to	O
@@ -11418,6 +11730,7 @@ Regions	B-GPE
 and	I-GPE
 6	I-GPE
 .	O
+
  	O
 As	O
 regards	O
@@ -11469,6 +11782,7 @@ entry	O
 and	O
 exit	O
 .	O
+
  	O
 The	O
 NAREI	B-ORG
@@ -11506,6 +11820,7 @@ about	O
 the	O
 disease	O
 ,	O
+
 the	O
 agency	O
 stated	O
@@ -11559,6 +11874,7 @@ of	O
 the	O
 disease	O
 .	O
+
  	O
 NAREI	B-ORG
 said	O
@@ -11595,6 +11911,7 @@ plantains	B-CROP
 from	O
 Guyana	B-GPE
 ,	O
+
 "	O
 thus	O
 resulting	O
@@ -11616,6 +11933,7 @@ market	O
 as	O
 well	O
 .	O
+
  	O
 PNCR	O
 MP	O
@@ -11670,6 +11988,7 @@ time	O
 in	O
 2005	B-DATE
 .	O
+
 He	O
 said	O
 the	O
@@ -11746,6 +12065,7 @@ entire	O
 plant	O
 area	O
 ,	O
+
 since	O
 the	O
 disease	O
@@ -11754,6 +12074,7 @@ an	O
 airborne	O
 one	O
 .	O
+
 He	O
 said	O
 that	O
@@ -11789,6 +12110,7 @@ extension	O
 officers	O
 "	O
 ,	O
+
 while	O
 points	O
 B	O
@@ -11797,6 +12119,7 @@ D	O
 remained	O
 unassisted	O
 .	O
+
  	O
 He	O
 said	O
@@ -11839,6 +12162,7 @@ items	O
 facing	O
 penalties	O
 .	O
+
  	O
 In	O
 August	B-DATE
@@ -11879,6 +12203,7 @@ the	O
 two	O
 countries	O
 ,	O
+
 citing	O
 "	O
 widespread	O
@@ -11894,6 +12219,7 @@ by	O
 the	O
 disease	O
 .	O
+
  	O
 This	O
 newspaper	O
@@ -11978,6 +12304,7 @@ an	O
 ascomycete	O
 fungus	O
 .	O
+
 Research	O
 shows	O
 that	O
@@ -12015,6 +12342,7 @@ application	O
 of	O
 fungicides	O
 ,	O
+
 while	O
 the	O
 removal	O
@@ -12075,10 +12403,12 @@ products	O
 are	O
 P1	O
 ,	O
+
 HCpro	O
 and	O
 P3	O
 .	O
+
 An	O
 additional	O
 short	O
@@ -12119,6 +12449,7 @@ a	O
 third	O
 ORF	O
 ,	O
+
 called	O
 pispo	O
 ,	O
@@ -12132,6 +12463,7 @@ the	O
 P1	O
 region	O
 .	O
+
 Recently	O
 ,	O
 pipo	O
@@ -12167,6 +12499,7 @@ a	O
 GA6	O
 sequence	O
 ,	O
+
 with	O
 higher	O
 slippage	O
@@ -12185,6 +12518,7 @@ site	O
 %	O
 )	O
 .	O
+
 Transient	O
 expression	O
 of	O
@@ -12221,6 +12555,7 @@ the	O
 silencing	O
 signal	O
 .	O
+
 These	O
 results	O
 reveal	O
@@ -12288,6 +12623,7 @@ a	O
 Starbucks	O
 Frappuccino	O
 ,	O
+
 they	O
 are	O
 a	O
@@ -12299,6 +12635,7 @@ embodies	O
 the	O
 season	O
 .	O
+
  	O
 However	O
 ,	O
@@ -12329,6 +12666,7 @@ to	O
 speak	O
 of	O
 ,	O
+
 the	O
 parasitic	O
 fungus	O
@@ -12364,6 +12702,7 @@ the	O
 potato	B-CROP
 itself	O
 .	O
+
  	O
 This	B-DATE
 year	I-DATE
@@ -12415,6 +12754,7 @@ from	O
 Tokushima	B-GPE
 Prefecture	I-GPE
 .	O
+
 However	O
 ,	O
 due	O
@@ -12506,6 +12846,7 @@ also	O
 affect	O
 yield	O
 .	O
+
 Much	O
 like	O
 it	O
@@ -12551,6 +12892,7 @@ rot	I-DISEASE
 between	O
 potatoes	B-CROP
 .	O
+
 Unfortunately	O
 this	O
 also	O
@@ -12583,6 +12925,7 @@ Blancs	O
 and	O
 prices	O
  	O
+
 China	B-GPE
 has	O
 also	O
@@ -12619,6 +12962,7 @@ to	O
 combat	O
 it	O
 .	O
+
 In	O
 the	O
 meantime	O
@@ -12655,6 +12999,7 @@ all	O
 the	O
 potatoes	B-CROP
 .	O
+
  	O
 That	O
 last	O
@@ -12735,6 +13080,7 @@ from	O
 sweet	B-CROP
 potato	I-CROP
  	O
+
 --	O
 Falling	O
 into	O
@@ -12798,6 +13144,7 @@ host	O
 pathogen	O
 interaction	O
 .	O
+
 Recent	O
 studies	O
 showed	O
@@ -12833,6 +13180,7 @@ translation	O
 of	O
 mRNA	O
 .	O
+
  	O
 METHOD	O
  	O
@@ -12871,6 +13219,7 @@ secondary	O
 structure	O
 prediction	O
 .	O
+
 The	O
 target	O
 related	O
@@ -12905,6 +13254,7 @@ relationships	O
 were	O
 established	O
 .	O
+
  	O
 RESULTS	O
 AND	O
@@ -12937,6 +13287,7 @@ linked	O
 with	O
 Avr3a	O
 ,	O
+
 INF1	O
 ,	O
 INF2b	O
@@ -12955,6 +13306,7 @@ to	O
 host	O
 cell	O
 .	O
+
 Mapping	O
 of	O
 target	O
@@ -13022,6 +13374,7 @@ in	O
 Solanum	B-CROP
 tuberosum	I-CROP
 .	O
+
 RX	O
 recognizes	O
 pathogen	O
@@ -13080,6 +13433,7 @@ capita	O
 consumption	O
 worldwide	O
 .	O
+
 Pests	O
 ,	O
 diseases	O
@@ -13119,6 +13473,7 @@ banana	I-CROP
 EAHB	B-ORG
 )	O
 .	O
+
 These	O
 include	O
 genomic	O
@@ -13166,6 +13521,7 @@ models	O
 for	O
 banana	B-CROP
 .	O
+
 In	O
 this	O
 study	O
@@ -13196,6 +13552,7 @@ interaction	O
 with	O
 genotype	O
 .	O
+
 A	O
 training	O
 population	O
@@ -13228,6 +13585,7 @@ traits	O
 was	O
 observed	O
 .	O
+
 Therefore	O
 ,	O
 genomic	O
@@ -13306,6 +13664,7 @@ field	O
 management	O
 conditions	O
 .	O
+
 Resistance	O
 to	O
 Black	B-DISEASE
@@ -13341,6 +13700,7 @@ R	O
 of	O
 hybrids	O
 .	O
+
 Genotyping	O
 using	O
 simple	O
@@ -13413,6 +13773,7 @@ and	I-SYMPTOM
 small	I-SYMPTOM
 leaves	I-SYMPTOM
 ,	O
+
 were	O
 observed	O
 in	O
@@ -13434,6 +13795,7 @@ governorate	I-GPE
 Saudi	B-GPE
 Arabia	I-GPE
 .	O
+
 In	O
 this	O
 study	O
@@ -13482,6 +13844,7 @@ group	I-PATHOGEN
 16SrII	B-PATHOGEN
 )	O
 .	O
+
 Sequencing	O
 of	O
 the	O
@@ -13574,9 +13937,11 @@ food	O
 (	O
 Raidl	O
 ,	O
+
 2020	B-DATE
 )	O
 .	O
+
 Potato	B-CROP
 infected	O
 by	O
@@ -13618,12 +13983,14 @@ tubers	I-PATHOGEN
 turn	I-PATHOGEN
 yellow	I-PATHOGEN
 ,	O
+
 and	O
 then	B-PATHOGEN
 tan	I-PATHOGEN
 to	I-PATHOGEN
 brown	I-PATHOGEN
 .	O
+
 In	O
 August	B-DATE
 2018	I-DATE
@@ -13658,6 +14025,7 @@ for	O
 30	B-DATE
 s	I-DATE
 ,	O
+
 and	O
 then	O
 rinsed	O
@@ -13665,6 +14033,7 @@ in	O
 sterile	O
 water	O
 .	O
+
 The	O
 tissue	O
 pieces	O
@@ -13700,6 +14069,7 @@ isolates	O
 were	O
 obtained	O
 .	O
+
 Isolate	O
 3SMJ-2	O
 was	O
@@ -13786,6 +14156,7 @@ soil	O
 per	O
 pot	O
 .	O
+
 After	O
 8	B-DATE
 weeks	I-DATE
@@ -13836,11 +14207,13 @@ For	O
 each	O
 treatment	O
 ,	O
+
 3	O
 pots	O
 were	O
 inoculated	O
 .	O
+
 After	O
 50	B-DATE
 days	I-DATE
@@ -13888,6 +14261,7 @@ Koch	O
 's	O
 postulates	O
 .	O
+
 Morphological	O
 characteristics	O
 of	O
@@ -13924,6 +14298,7 @@ with	O
 short	O
 conidiophores	O
 ,	O
+
 a	O
 few	O
 microconidia	O
@@ -13955,6 +14330,7 @@ mostly	O
 5	O
 septa	O
 ,	O
+
 after	O
 cultivated	O
 on	O
@@ -14001,6 +14377,7 @@ et	O
 al	O
 .	O
 ,	O
+
 2006	B-DATE
 )	O
 .	O
@@ -14031,6 +14408,7 @@ spacer	O
 ITS	O
 )	O
 ,	O
+
 translation	O
 elongation	O
 factor	O
@@ -14061,7 +14439,9 @@ White	O
 et	O
 al	O
 .	O
+
 ,	O
+
 1990	B-DATE
 )	O
 ,	O
@@ -14101,6 +14481,7 @@ Co.	I-ORG
 ,	I-ORG
 Ltd.	I-ORG
 ,	O
+
 3	O
 fragments	O
 of	O
@@ -14128,6 +14509,7 @@ MW561963	O
 and	O
 MW561964	O
 .	O
+
 The	O
 ITS	O
 ,	O
@@ -14158,6 +14540,7 @@ and	O
 MH582110	O
 )	O
 .	O
+
 Based	O
 on	O
 the	O
@@ -14221,6 +14604,7 @@ et	O
 al	O
 .	O
 ,	O
+
 2018	B-DATE
 )	O
 in	O
@@ -14313,6 +14697,7 @@ Region	I-GPE
 of	O
 Turkey	B-GPE
 .	O
+
 Disease	O
 incidence	O
 varied	O
@@ -14370,6 +14755,7 @@ wide	O
 marker	O
 data	O
 .	O
+
 GS	O
 has	O
 been	O
@@ -14402,6 +14788,7 @@ models	O
 and	O
 scenarios	O
 .	O
+
 In	O
 the	O
 present	O
@@ -14437,6 +14824,7 @@ within	O
 each	O
 population	O
 ,	O
+
 (	O
 2	O
 )	O
@@ -14453,6 +14841,7 @@ cross	O
 generation	O
 prediction	O
 .	O
+
 We	O
 also	O
 evaluated	O
@@ -14487,6 +14876,7 @@ across	O
 breeding	O
 programs	O
 ,	O
+
 with	O
 non	O
 -	O
@@ -14503,6 +14893,7 @@ of	O
 more	O
 accurately	O
 .	O
+
 Accuracy	O
 was	O
 generally	O
@@ -14543,6 +14934,7 @@ one	O
 Nigerian	B-GPE
 population	O
 ,	O
+
 when	O
 combining	O
 data	O
@@ -14584,6 +14976,7 @@ on	O
 several	O
 traits	O
 .	O
+
 Selection	O
 of	O
 prediction	O
@@ -14615,6 +15008,7 @@ a	O
 genetic	O
 algorithm	O
 ,	O
+
 selecting	O
 one	O
 third	O
@@ -14629,6 +15023,7 @@ phenotyping	O
 all	O
 progeny	O
 .	O
+
 Based	O
 on	O
 the	O
@@ -14662,6 +15057,7 @@ for	O
 most	O
 traits	O
 .	O
+
 We	O
 are	O
 still	O
@@ -14702,6 +15098,7 @@ critical	O
 than	O
 ever	O
 .	O
+
 General	O
 guidelines	O
 for	O
@@ -14736,6 +15133,7 @@ the	O
 data	O
 collected	O
 .	O
+
 Abbreviations	O
 (	O
 GS	O
@@ -14862,6 +15260,7 @@ export	O
 of	O
 plantains	B-CROP
 ,	O
+
 farmers	O
 are	O
 now	O
@@ -14886,6 +15285,7 @@ quality	O
 of	O
 production	O
 .	O
+
  	O
 However	O
 ,	O
@@ -14922,6 +15322,7 @@ Institute	I-ORG
 NAREI	B-ORG
 )	O
 ,	O
+
 resulting	O
 in	O
 poor	O
@@ -14930,6 +15331,7 @@ in	O
 some	O
 areas	O
 .	O
+
 Nevertheless	O
 ,	O
 those	O
@@ -14975,6 +15377,7 @@ market	O
 for	O
 plantains	B-CROP
 .	O
+
 This	O
 is	O
 because	O
@@ -15012,6 +15415,7 @@ demand	O
 for	O
 plantains	B-CROP
 .	O
+
  	O
 Dr	O
 Homenauth	O
@@ -15039,7 +15443,6 @@ under	O
 close	O
 watch	O
 .	O
-
  	O
 "	O
 All	O
@@ -15064,6 +15467,7 @@ have	O
 been	O
 successful	O
 ,	O
+
 "	O
 Dr	O
 Homenauth	O
@@ -15096,6 +15500,7 @@ to	O
 90	O
 pounds	O
 .	O
+
  	O
 Homenauth	O
 had	O
@@ -15139,6 +15544,7 @@ it	O
 under	O
 control	O
 .	O
+
  	O
 Farmers	O
 on	O
@@ -15171,9 +15577,11 @@ island	B-LOC
 of	I-LOC
 Hamburg	I-LOC
 ,	O
+
 he	O
 said	O
 .	O
+
  	O
 Some	O
 of	O
@@ -15207,6 +15615,7 @@ amongst	O
 other	O
 places	O
 .	O
+
  	O
 The	O
 price	O
@@ -15237,6 +15646,7 @@ acreage	O
 Homenauth	O
 stated	O
 .	O
+
  	O
 The	O
 production	O
@@ -15269,6 +15679,7 @@ produced	O
 in	O
 2015	B-DATE
 ,	O
+
 he	O
 said	O
 .	O
@@ -15314,6 +15725,7 @@ of	O
 his	O
 plantains	B-CROP
 .	O
+
  	O
 The	O
 farmer	O
@@ -15351,6 +15763,7 @@ encountered	O
 the	O
 disease	O
 ,	O
+
 he	O
 had	O
 about	O
@@ -15359,6 +15772,7 @@ acres	O
 of	O
 plantains	B-CROP
 .	O
+
  	O
 The	O
 first	O
@@ -15391,6 +15805,7 @@ flourishing	O
 young	O
 plants	O
 ,	O
+
 just	O
 before	O
 the	O
@@ -15409,6 +15824,7 @@ across	O
 his	O
 field	O
 .	O
+
  	O
 Some	O
 farmers	O
@@ -15450,6 +15866,7 @@ plantains	B-CROP
 and	O
 bananas	B-CROP
 .	O
+
  	O
 Leyland	O
 Lewis	O
@@ -15520,6 +15937,7 @@ acres	O
 of	O
 plantains	B-CROP
 .	O
+
 His	O
 two	O
 acres	O
@@ -15556,6 +15974,7 @@ managing	O
 the	O
 disease	O
 ,	O
+
 but	O
 Lewis	O
 said	O
@@ -15585,6 +16004,7 @@ the	O
 advice	O
 .	O
 "	O
+
 If	O
 you	O
 have	O
@@ -15617,6 +16037,7 @@ than	O
 forty	O
 suckers	B-PLANT_PART
 ,	O
+
 "	O
 Lewis	O
 reasoned	O
@@ -15631,6 +16052,7 @@ fertilizers	O
 and	O
 labour	O
 .	O
+
  	O
 Lester	O
 Wong	O
@@ -15665,6 +16087,7 @@ with	O
 three	O
 acres	O
 .	O
+
 After	O
 about	B-DATE
 six	I-DATE
@@ -15734,6 +16157,7 @@ farming	O
 at	O
 Larimakabra	B-GPE
 ,	O
+
 East	B-GPE
 Bank	I-GPE
 Essequibo	I-GPE
@@ -15773,6 +16197,7 @@ on	O
 his	O
 farms	O
 .	O
+
  	O
 Singh	O
 is	O
@@ -15804,6 +16229,7 @@ of	O
 thirty	O
 pounds	O
 .	O
+
  	O
 Singh	O
 said	O
@@ -15835,6 +16261,7 @@ beneficiary	O
 Ramanand	B-GPE
 Mohabir	I-GPE
 ,	O
+
 a	O
 farmer	O
 of	O
@@ -15875,6 +16302,7 @@ managing	O
 the	O
 disease	O
 .	O
+
 Mohabir	O
 said	O
 he	O
@@ -15907,6 +16335,7 @@ over	O
 the	B-DATE
 years	I-DATE
 ,	O
+
 has	O
 been	O
 receiving	O
@@ -15980,6 +16409,7 @@ to	O
 manage	O
 it	O
 .	O
+
 Other	O
 countries	O
 which	O
@@ -16010,6 +16440,7 @@ to	O
 the	O
 FAO	B-ORG
 ,	O
+
 Black	B-DISEASE
 Sigatoka	I-DISEASE
 made	O
@@ -16026,6 +16457,7 @@ throughout	O
 the	O
 region	O
 .	O
+
 Guyana	B-GPE
 's	O
 exports	O
@@ -16058,6 +16490,7 @@ to	O
 90	O
 %	O
 .	O
+
 Barbados	B-GPE
 was	O
 the	O
@@ -16102,6 +16535,7 @@ sent	O
 to	O
 it	O
 .	O
+
  	O
 Regions	B-GPE
 1	I-GPE
@@ -16183,6 +16617,7 @@ of	I-SYMPTOM
 the	I-SYMPTOM
 fruit	I-SYMPTOM
 .	O
+
  	O
 At	O
 a	O
@@ -16213,6 +16648,7 @@ and	O
 its	O
 management	O
 .	O
+
  	O
 According	O
 to	O
@@ -16250,6 +16686,7 @@ of	O
 the	O
 disease	O
 ,	O
+
 while	O
 sanitation	O
 and	O
@@ -16267,6 +16704,7 @@ an	O
 important	O
 role	O
 .	O
+
  	O
 Other	O
 aspects	O
@@ -16302,6 +16740,7 @@ during	O
 its	O
 lifetime	O
 ,	O
+
 but	O
 that	O
 is	O
@@ -16314,6 +16753,7 @@ contracts	O
 the	O
 disease	O
 .	O
+
 However	O
 ,	O
 Black	B-DISEASE
@@ -16359,6 +16799,7 @@ include	O
 Red	O
 Cayenne	O
 ,	O
+
 Sweet	O
 Fig	O
 and	O
@@ -16397,6 +16838,7 @@ of	O
 the	B-DATE
 year	I-DATE
 .	O
+
  	O
 Some	O
 of	O
@@ -16429,6 +16871,7 @@ use	O
 of	O
 pesticides	O
 .	O
+
  	O
 A	O
 training	O
@@ -16462,6 +16905,7 @@ on	O
 September	B-DATE
 28	I-DATE
 ,	O
+
 and	O
 will	O
 run	O
@@ -16469,6 +16913,7 @@ until	O
 October	B-DATE
 9	I-DATE
 .	O
+
 The	O
 programme	O
 is	O
@@ -16507,6 +16952,7 @@ Power	O
 of	O
 Suriname	B-GPE
 .	O
+
  	O
 The	O
 illegal	O
@@ -16544,6 +16990,7 @@ Fisheries	I-ORG
 of	O
 Suriname	B-GPE
 ,	O
+
 owing	O
 to	O
 the	O
@@ -16552,6 +16999,7 @@ of	O
 Black	B-DISEASE
 Sigatoka	I-DISEASE
 .	O
+
  	O
 Identifying	O
 Black	B-DISEASE
@@ -16621,6 +17069,7 @@ of	O
 the	O
 plant	O
 .	O
+
  	O
 Large	B-SYMPTOM
 dark	I-SYMPTOM
@@ -16661,6 +17110,7 @@ brown	I-SYMPTOM
 necrotic	I-SYMPTOM
 centre	I-SYMPTOM
 .	O
+
  	O
 This	O
 advances	O
@@ -16691,6 +17141,7 @@ becomes	I-SYMPTOM
 completely	I-SYMPTOM
 withered	I-SYMPTOM
 .	O
+
  	O
 Spores	O
 multiply	O
@@ -16723,6 +17174,7 @@ damage	O
 to	O
 leaves	B-PLANT_PART
 ,	O
+
 yield	B-SYMPTOM
 reduction	I-SYMPTOM
 up	I-SYMPTOM
@@ -16736,6 +17188,7 @@ of	O
 the	O
 plant	O
 .	O
+
  	O
 The	O
 fungal	B-DISEASE
@@ -16810,6 +17263,7 @@ endophytes	O
 in	O
 Thailand	B-GPE
 .	O
+
 In	O
 this	O
 study	O
@@ -16844,6 +17298,7 @@ in	O
 northern	B-LOC
 Thailand	I-LOC
 .	O
+
 In	O
 addition	O
 ,	O
@@ -16935,6 +17390,7 @@ and	I-SYMPTOM
 brown	I-SYMPTOM
 spots	I-SYMPTOM
 .	O
+
 These	O
 spots	O
 lead	O
@@ -16965,6 +17421,7 @@ In	O
 this	O
 work	O
 ,	O
+
 twenty	O
 representative	O
 strains	O
@@ -16999,6 +17456,7 @@ characterized	O
 by	O
 morphological	O
 ,	O
+
 physiological	O
 ,	O
 biochemical	O
@@ -17007,6 +17465,7 @@ and	O
 molecular	O
 assays	O
 .	O
+
 Results	O
 showed	O
 that	O
@@ -17046,6 +17505,7 @@ and	O
 Dickeya	B-PATHOGEN
 spp	I-PATHOGEN
 .	O
+
 were	O
 performed	O
 using	O
@@ -17096,6 +17556,7 @@ other	O
 Dickeya	B-PATHOGEN
 spp	I-PATHOGEN
 .	O
+
 Therefore	O
 ,	O
 the	O
@@ -17108,7 +17569,6 @@ be	O
 D.	B-CROP
 dadantii	I-CROP
 .	O
-
 This	O
 report	O
 is	O
@@ -17163,6 +17623,7 @@ and	O
 plant	O
 domestication	O
 .	O
+
 Today	B-DATE
 ,	O
 significant	O
@@ -17194,8 +17655,10 @@ plantains	B-CROP
 Musa	B-CROP
 cvs	I-CROP
 .	O
+
 )	O
 ,	O
+
 sweet	B-CROP
 potato	I-CROP
 (	O
@@ -17229,6 +17692,7 @@ cereals	O
 and	O
 legumes	O
 ,	O
+
 the	O
 domestication	O
 syndrome	O
@@ -17242,6 +17706,7 @@ is	O
 poorly	O
 defined	O
 .	O
+
  	O
 AIMS	O
 AND	O
@@ -17277,6 +17742,7 @@ mode	O
 of	O
 reproduction	O
 ,	O
+
 yield	O
 of	O
 edible	O
@@ -17296,6 +17762,7 @@ and	O
 plant	O
 architecture	O
 .	O
+
 The	O
 archaeobotanical	O
 visibility	O
@@ -17329,6 +17796,7 @@ in	O
 the	O
 past	O
 .	O
+
  	O
 CONCLUSIONS	O
  	O
@@ -17347,7 +17815,6 @@ some	O
 are	O
 divergent	O
 .	O
-
 In	O
 contrast	O
 to	O
@@ -17373,6 +17840,7 @@ practices	O
 of	O
 cultivation	O
 ,	O
+
 as	O
 opposed	O
 to	O
@@ -17420,6 +17888,7 @@ brown	I-SYMPTOM
 vascular	I-SYMPTOM
 staining	I-SYMPTOM
 ,	O
+
 internal	B-SYMPTOM
 rot	I-SYMPTOM
 ,	O
@@ -17430,6 +17899,7 @@ green	I-SYMPTOM
 banana	I-SYMPTOM
 fruit	I-SYMPTOM
 .	O
+
 There	O
 is	O
 no	O
@@ -17464,6 +17934,7 @@ being	O
 highly	O
 susceptible	O
 .	O
+
 This	O
 study	O
 established	O
@@ -17510,6 +17981,7 @@ infected	O
 banana	B-CROP
 materials	O
 .	O
+
 In	O
 contrast	O
 ,	O
@@ -17606,6 +18078,7 @@ of	O
 reducing	O
 malnutrition	O
 ,	O
+
 hunger	O
 and	O
 poverty	O
@@ -17620,6 +18093,7 @@ welfare	O
 and	O
 productivity	O
 .	O
+
  	O
 The	O
 2022	O
@@ -17676,6 +18150,7 @@ whole	O
 genome	O
 sequencing	O
 .	O
+
  	O
 Technology	B-ORG
 Networks	I-ORG
@@ -17709,6 +18184,7 @@ under	O
 researched	O
 crop	O
 .	O
+
  	O
 Sarah	O
 Whelan	O
@@ -17747,6 +18223,7 @@ and	O
 molecular	O
 geneticist	O
 ,	O
+
 and	O
 the	O
 focus	O
@@ -17812,6 +18289,7 @@ using	O
 conventional	O
 methods	O
 .	O
+
 This	O
 is	O
 when	O
@@ -17846,6 +18324,7 @@ focuses	O
 on	O
 yams	B-CROP
 .	O
+
 Can	O
 you	O
 explain	O
@@ -17877,6 +18356,7 @@ as	O
 the	O
 US	B-GPE
 ,	O
+
 yams	B-CROP
 are	O
 often	O
@@ -17885,6 +18365,7 @@ with	O
 sweet	B-CROP
 potatoes	I-CROP
 .	O
+
 However	O
 ,	O
 they	O
@@ -17926,6 +18407,7 @@ world	O
 covering	O
 Asia	B-LOC
 ,	O
+
 Africa	B-LOC
 ,	O
 Latin	B-LOC
@@ -17936,6 +18418,7 @@ and	O
 the	O
 Pacific	B-LOC
 .	O
+
 Out	O
 of	O
 these	O
@@ -18011,6 +18494,7 @@ is	O
 very	O
 high	O
 ,	O
+
 so	O
 yam	B-CROP
 farmers	O
@@ -18040,6 +18524,7 @@ are	O
 much	O
 cheaper	O
 .	O
+
 Yams	B-CROP
 are	O
 also	O
@@ -18074,6 +18559,7 @@ income	O
 secured	O
 crop	O
 .	O
+
 There	O
 are	O
 reports	O
@@ -18110,11 +18596,13 @@ metabolites	O
 like	O
 diosgenin	O
 ,	O
+
 saponins	O
 and	O
 shikimic	O
 acid	O
 .	O
+
 These	O
 are	O
 important	O
@@ -18149,6 +18637,7 @@ can	O
 be	O
 extracted	O
 ,	O
+
 this	O
 can	O
 provide	O
@@ -18159,6 +18648,7 @@ source	O
 of	O
 income	O
 .	O
+
  	O
 SW	O
 :	O
@@ -18222,6 +18712,7 @@ Another	O
 yam	B-CROP
 species	O
 ,	O
+
 Dioscorea	B-CROP
 rotundata	I-CROP
 ,	O
@@ -18237,6 +18728,7 @@ yam	B-DISEASE
 mosaic	I-DISEASE
 disease	I-DISEASE
 .	O
+
 Both	O
 diseases	O
 can	O
@@ -18276,6 +18768,7 @@ in	O
 the	O
 ground	O
 .	O
+
 The	O
 lack	O
 of	O
@@ -18308,6 +18801,7 @@ or	O
 ten	O
 kilos	O
 ,	O
+
 and	O
 each	O
 plant	O
@@ -18316,6 +18810,7 @@ produce	O
 multiple	O
 tubers	B-PLANT_PART
 .	O
+
 Another	O
 challenge	O
 is	O
@@ -18361,6 +18856,7 @@ the	B-DATE
 next	I-DATE
 year	I-DATE
 ,	O
+
 while	O
 also	O
 keeping	O
@@ -18370,6 +18866,7 @@ their	O
 own	O
 consumption	O
 .	O
+
  	O
 Lastly	O
 ,	O
@@ -18400,6 +18897,7 @@ in	O
 the	O
 world	O
 ,	O
+
 but	O
 policymakers	O
 and	O
@@ -18459,6 +18957,7 @@ prioritize	O
 these	O
 crops	O
 ,	O
+
 they	O
 say	O
 that	O
@@ -18477,6 +18976,7 @@ tubers	B-PLANT_PART
 are	O
 rotting	B-SYMPTOM
 .	O
+
 However	O
 ,	O
 this	O
@@ -18509,6 +19009,7 @@ of	O
 the	O
 other	O
 ,	O
+
 a	O
 lot	O
 of	O
@@ -18532,6 +19033,7 @@ to	O
 fungal	O
 infections	O
 .	O
+
 This	O
 means	O
 that	O
@@ -18583,6 +19085,7 @@ of	O
 this	O
 grant	O
 ?	O
+
  	O
 RB	O
 :	O
@@ -18635,6 +19138,7 @@ approximately	O
 yam	B-CROP
 genotypes	O
 ,	O
+
 including	O
 both	O
 cultivated	O
@@ -18675,6 +19179,7 @@ and	O
 yellow	B-CROP
 yam	I-CROP
 ,	O
+
 respectively	O
 )	O
 –	O
@@ -18685,6 +19190,7 @@ with	O
 wild	O
 species	O
 .	O
+
 Farmers	O
 go	O
 into	O
@@ -18724,6 +19230,7 @@ cultivated	O
 white	B-CROP
 yams	I-CROP
 .	O
+
 However	O
 ,	O
 there	O
@@ -18755,6 +19262,7 @@ completely	O
 wild	O
 species	O
 .	O
+
 And	O
 if	O
 it	O
@@ -18786,6 +19294,7 @@ of	O
 many	O
 white	O
 ,	O
+
 yellow	O
 and	O
 probable	O
@@ -18797,6 +19306,7 @@ all	O
 grown	O
 together	O
 .	O
+
 With	O
 this	O
 ,	O
@@ -18830,6 +19340,7 @@ or	O
 interspecific	O
 hybrids	O
 .	O
+
  	O
 For	O
 the	O
@@ -18855,7 +19366,6 @@ difficult	O
 to	O
 separate	O
 .	O
-
 We	O
 will	O
 perform	O
@@ -18876,6 +19386,7 @@ the	O
 yams	B-CROP
 themselves	O
 .	O
+
 This	O
 will	O
 allow	O
@@ -18907,6 +19418,7 @@ the	O
 white	B-CROP
 yam	I-CROP
 ,	O
+
 meaning	O
 we	O
 can	O
@@ -18921,6 +19433,7 @@ draft	O
 reference	O
 genome	O
 .	O
+
 This	O
 will	O
 allow	O
@@ -18951,6 +19464,7 @@ starch	O
 quality	O
 .	O
  	O
+
 SW	O
 :	O
 How	O
@@ -18966,6 +19480,7 @@ of	O
 this	O
 crop	O
 ?	O
+
  	O
 RB	O
 :	O
@@ -19004,6 +19519,7 @@ for	O
 different	O
 traits	O
 ,	O
+
 we	O
 can	O
 perform	O
@@ -19019,6 +19535,7 @@ the	O
 breeding	O
 cycle	O
 .	O
+
  	O
 Currently	O
 ,	O
@@ -19056,6 +19573,7 @@ to	O
 the	O
 farmers	O
 ,	O
+
 the	O
 adoption	O
 rate	O
@@ -19105,6 +19623,7 @@ the	O
 improved	O
 varieties	O
 .	O
+
 So	O
 ,	O
 when	O
@@ -19135,10 +19654,12 @@ like	O
 starch	O
 properties	O
 ,	O
+
 minerals	O
 and	O
 taste	O
 .	O
+
 With	O
 whole	O
 genome	O
@@ -19173,6 +19694,7 @@ these	O
 improved	O
 varieties	O
 .	O
+
  	O
 Genome	O
 sequencing	O
@@ -19205,6 +19727,7 @@ genes	O
 are	O
 functional	O
 .	O
+
 However	O
 ,	O
 this	O
@@ -19246,6 +19769,7 @@ understanding	O
 of	O
 rice	B-CROP
 ,	O
+
 and	O
 rice	B-CROP
 and	O
@@ -19254,6 +19778,7 @@ are	O
 both	O
 monocots	O
 .	O
+
 This	O
 means	O
 we	O
@@ -19277,7 +19802,6 @@ knowledge	O
 of	O
 rice	B-CROP
 .	O
-
 Taken	O
 together	O
 ,	O
@@ -19291,6 +19815,7 @@ see	O
 immediate	O
 benefits	O
 ,	O
+
 but	O
 I	O
 believe	O
@@ -19314,6 +19839,7 @@ sustainability	O
 and	O
 productivity	O
 .	O
+
  	O
 SW	O
 :	O
@@ -19361,6 +19887,7 @@ to	O
 West	B-LOC
 Africa	I-LOC
 .	O
+
 With	O
 this	O
 grant	O
@@ -19403,6 +19930,7 @@ being	O
 cleared	O
 up	O
 .	O
+
 At	O
 the	O
 same	O
@@ -19445,6 +19973,7 @@ with	O
 this	O
 grant	O
 .	O
+
 Genome	O
 sequencing	O
 is	O
@@ -19475,6 +20004,7 @@ scale	O
 genome	O
 sequencing	O
 .	O
+
  	O
 Dr.	O
 Ranjana	O
@@ -19528,6 +20058,7 @@ staple	O
 carbohydrate	O
 source	O
 .	O
+
 Biotic	O
 constraints	O
 such	O
@@ -19563,6 +20094,7 @@ Mite	O
 CGM	O
 )	O
 ,	O
+
 are	O
 major	O
 constraints	O
@@ -19578,6 +20110,7 @@ potential	O
 in	O
 Africa	B-LOC
 .	O
+
 To	O
 address	O
 these	O
@@ -19627,6 +20160,7 @@ AR40	O
 and	O
 Albert	O
 .	O
+
 A	O
 high	O
 -	O
@@ -19676,8 +20210,10 @@ Chambezi	B-GPE
 and	O
 Naliendele	B-GPE
 ,	O
+
 Tanzania	B-GPE
 .	O
+
 Previously	O
 identified	O
 QTL	O
@@ -19739,6 +20275,7 @@ locus	O
 .	O
 Interestingly	O
 ,	O
+
 a	O
 minor	O
 but	O
@@ -19770,6 +20307,7 @@ identified	O
 SSR	O
 marker	O
 ,	O
+
 NS346	O
 ,	O
 linked	O
@@ -19777,6 +20315,7 @@ with	O
 CGM	O
 resistance	O
 .	O
+
 Markers	O
 underlying	O
 these	O
@@ -19834,6 +20373,7 @@ Jones	O
 2018	B-DATE
 )	O
 .	O
+
 In	O
 April	B-DATE
 2017	I-DATE
@@ -19865,6 +20405,7 @@ AAB	O
 subgroup	O
 )	O
 ,	O
+
 in	O
 Onne	B-GPE
 ,	O
@@ -19882,6 +20423,7 @@ Nigeria	B-GPE
 10'35.92128′′E	I-LOC
 )	O
 .	O
+
 Diseased	O
 plants	O
 (	O
@@ -19926,6 +20468,7 @@ sliced	O
 (	O
 Fig	O
 .	O
+
 S1	O
 )	O
 and	O
@@ -19958,6 +20501,7 @@ on	O
 PDA	O
 plates	O
 .	O
+
 Plates	O
 were	O
 incubated	O
@@ -19991,10 +20535,10 @@ Phillips	O
 et	O
 al	O
 .	O
+
 2013	B-DATE
 )	O
 .	O
-
 Immature	O
 conidia	O
 were	O
@@ -20022,6 +20566,7 @@ a	O
 central	O
 septum	O
 ,	O
+
 longitudinal	O
 striations	O
 ,	O
@@ -20035,6 +20580,7 @@ cinnamon	O
 like	O
 color	O
 .	O
+
 Size	O
 of	O
 mature	O
@@ -20065,6 +20611,7 @@ Fig	O
 S1	O
 )	O
 .	O
+
 DNA	O
 templates	O
 of	O
@@ -20095,6 +20642,7 @@ the	O
 ITS	O
 locus	O
 ,	O
+
 EF1	O
 -	O
 688F	O
@@ -20119,6 +20667,7 @@ Phillips	O
 et	O
 al	O
 .	O
+
 2013	B-DATE
 )	O
 and	O
@@ -20164,6 +20713,7 @@ of	O
 Lasiodiplodia	B-PATHOGEN
 theobromae	I-PATHOGEN
 .	O
+
 Based	O
 on	O
 morphological	O
@@ -20205,6 +20755,7 @@ hybrid	O
 PITA	O
 24	O
 ,	O
+
 and	O
 mature	O
 fruits	B-PLANT_PART
@@ -20273,6 +20824,7 @@ sealed	O
 with	O
 parafilm	O
 .	O
+
 Sterile	O
 water	O
 was	O
@@ -20303,6 +20855,7 @@ plastic	O
 Crisper	O
 boxes	O
 .	O
+
 Sterile	O
 PDA	O
 plugs	O
@@ -20348,6 +20901,7 @@ in	O
 the	O
 field	O
 .	O
+
 Control	O
 plants	O
 and	O
@@ -20395,6 +20949,7 @@ Phillips	O
 et	O
 al	O
 .	O
+
 2013	B-DATE
 ;	O
 Mehl	O
@@ -20425,12 +20980,14 @@ rot	I-DISEASE
 at	O
 Onne	B-GPE
 ,	O
+
 Nigeria	B-GPE
 (	O
 Mwangi	O
 et	O
 al	O
 .	O
+
 2005	B-DATE
 )	O
 but	O
@@ -20501,6 +21058,7 @@ to	O
 our	O
 knowledge	O
 ,	O
+
 this	O
 is	O
 the	O
@@ -20520,6 +21078,7 @@ and	O
 in	O
 Africa	B-LOC
 .	O
+
 There	O
 is	O
 need	O
@@ -20584,6 +21143,7 @@ industries	O
 at	O
 risk	O
 .	O
+
  	O
 According	O
 to	O
@@ -20618,6 +21178,7 @@ a	I-SYMPTOM
 short	I-SYMPTOM
 time	I-SYMPTOM
 .	O
+
 Extension	O
 officers	O
 will	O
@@ -20656,6 +21217,7 @@ by	O
 the	O
 officers	O
 .	O
+
 The	O
 unit	O
 has	O
@@ -20709,6 +21271,7 @@ and	O
 plantain	B-CROP
 )	O
 .	O
+
  	O
 Last	B-DATE
 August	I-DATE
@@ -20740,6 +21303,7 @@ the	O
 banana	B-CROP
 sector	O
 ,	O
+
 being	O
 affected	O
 by	O
@@ -20807,6 +21371,7 @@ banana	B-CROP
 industry	O
 here	O
 .	O
+
 There	O
 had	O
 been	O
@@ -20867,6 +21432,7 @@ processing	O
 and	O
 analysis	O
 .	O
+
 During	O
 the	O
 first	O
@@ -20899,6 +21465,7 @@ model	O
 difference	O
 regularization	O
 .	O
+
 Short	O
 -	O
 wavelength	O
@@ -20949,6 +21516,7 @@ Africa	I-LOC
 case	O
 study	O
 .	O
+
 Introduction	O
 One	O
 challenge	O
@@ -20982,6 +21550,7 @@ and	O
 manual	O
 parametrization	O
 .	O
+
 Maximizing	O
 the	O
 net	O
@@ -21025,6 +21594,7 @@ compromising	O
 their	O
 quality	O
 .	O
+
 A	O
 variety	O
 of	O
@@ -21064,6 +21634,7 @@ Maharramov	O
 and	O
 Albertin	O
 ,	O
+
 2007	B-DATE
 ;	O
 Chu	O
@@ -21135,7 +21706,9 @@ Asnaashari	O
 et	O
 al	O
 .	O
+
 ,	O
+
 2012	B-DATE
 ;	O
 Routh	O
@@ -21168,7 +21741,9 @@ Maharramov	O
 et	O
 al	O
 .	O
+
 ,	O
+
 2016	B-DATE
 )	O
 .	O
@@ -21207,7 +21782,9 @@ Maharramov	O
 et	O
 al	O
 .	O
+
 ,	O
+
 2017b	B-DATE
 )	O
 .	O
@@ -21261,6 +21838,7 @@ difference	O
 Musa	O
 Maharramov1	O
 ,	O
+
 Bram	O
 Willemsen2	O
 ,	O
@@ -21331,6 +21909,7 @@ a	O
 neural	O
 network	O
 .	O
+
 The	O
 misfit	O
 functional	O
@@ -21364,6 +21943,7 @@ with	O
 poor	O
 repeatability	O
 .	O
+
 We	O
 discuss	O
 separate	O
@@ -21398,6 +21978,7 @@ solution	O
 (	O
 i.e.	O
 ,	O
+
 gas	O
 coming	O
 out	O
@@ -21425,6 +22006,7 @@ Africa	I-LOC
 case	O
 study	O
 .	O
+
 Theory	O
 Kinematic	O
 FWI	O
@@ -21456,6 +22038,7 @@ Fichtner	O
 2011	B-DATE
 )	O
 .	O
+
 Such	O
 phase	O
 misfits	O
@@ -21500,6 +22083,7 @@ Maharramov	O
 et	O
 al	O
 .	O
+
 ,	O
 
 2017a	B-DATE
@@ -21563,9 +22147,11 @@ events	O
 (	O
 Fichtner	O
 ,	O
+
 2011	B-DATE
 )	O
 .	O
+
 While	O
 application	O
 of	O
@@ -21596,7 +22182,9 @@ Maharramov	O
 et	O
 al	O
 .	O
+
 ,	O
+
 2016	B-DATE
 )	O
 ,	O
@@ -21643,6 +22231,7 @@ reflection	O
 4D	O
 FWI	O
 .	O
+
 To	O
 reduce	O
 the	O
@@ -21745,6 +22334,7 @@ model	O
 difference	O
 regularization	O
 .	O
+
 The	O
 following	O
 sections	O
@@ -21776,12 +22366,14 @@ Upstream	I-ORG
 Research	I-ORG
 Company	I-ORG
 ,	O
+
 Spring	B-GPE
 ,	O
 Texas	B-GPE
 ,	O
 USA	B-GPE
 .	O
+
 E	O
 -	O
 mail	O
@@ -21816,6 +22408,7 @@ alana.p.robinson@exxonmobil.com	O
 ;	O
 spyros.lazaratos@exxonmobil.com	O
 .	O
+
 3ExxonMobil	B-ORG
 Services	I-ORG
 and	I-ORG
@@ -21848,6 +22441,7 @@ to	O
 .2	O
 6	O
 .	O
+
 2	O
 .	O
 16	O
@@ -21939,6 +22533,7 @@ Fig	O
 2	O
 ]	O
 .	O
+
 The	O
 importance	O
 of	O
@@ -22005,6 +22600,7 @@ kg	O
 3	O
 ]	O
 .	O
+
 Throughout	O
 this	O
 region	O
@@ -22055,6 +22651,7 @@ balbisiana	I-CROP
 5	O
 ]	O
 .	O
+
 Although	O
 the	O
 wild	O
@@ -22091,6 +22688,7 @@ variation	O
 5	O
 ]	O
 .	O
+
 On	O
 the	O
 local	O
@@ -22159,6 +22757,7 @@ Fig	O
 1	O
 )	O
 .	O
+
 It	O
 is	O
 caused	O
@@ -22189,6 +22788,7 @@ F.	B-PATHOGEN
 oxysporum	I-PATHOGEN
 f.sp	I-PATHOGEN
 .	I-PATHOGEN
+
 cubense	I-PATHOGEN
 (	O
 Foc	B-PATHOGEN
@@ -22226,6 +22826,7 @@ species	I-PATHOGEN
 9	O
 ]	O
 .	O
+
 For	O
 instance	O
 ,	O
@@ -22271,6 +22872,7 @@ century	I-DATE
 8	O
 ]	O
 ,	O
+
 actually	O
 comprise	O
 a	O
@@ -22283,6 +22885,7 @@ species	I-PATHOGEN
 9	O
 ]	O
 .	O
+
 Eventually	O
 ,	O
 the	O
@@ -22315,6 +22918,7 @@ already	O
 in	O
 1967	B-DATE
 ,	O
+
 FWB	B-DISEASE
 affected	O
 Cavendish	B-CROP
@@ -22359,6 +22963,7 @@ odoratissimum	I-PATHOGEN
 9	O
 ]	O
 .	O
+
 This	O
 modified	O
 nomenclature	O
@@ -22405,6 +23010,7 @@ infecting	O
 Fusarium	B-PATHOGEN
 spp	I-PATHOGEN
 .	O
+
 that	O
 it	O
 is	O
@@ -22443,6 +23049,7 @@ EAHBs	B-CROP
 11	O
 ]	O
 .	O
+
 The	O
 latter	O
 are	O
@@ -22496,6 +23103,7 @@ Cambodia	B-GPE
 in	O
 2015	B-DATE
 .	O
+
 To	O
 determine	O
 the	O
@@ -22555,6 +23163,7 @@ the	O
 cropping	O
 season	O
 .	O
+
 Using	O
 PCR	O
 -	O
@@ -22595,6 +23204,7 @@ of	O
 Eastern	B-LOC
 Cambodia	I-LOC
 ,	O
+
 while	O
 no	O
 infection	O
@@ -22611,6 +23221,7 @@ in	O
 either	O
 country	O
 .	O
+
 Symptom	O
 expression	O
 patterns	O
@@ -22642,6 +23253,7 @@ vector	O
 of	O
 SLCMV	B-PATHOGEN
 .	O
+
 In	O
 addition	O
 ,	O
@@ -22765,7 +23377,9 @@ or	O
 Dickeya	B-PATHOGEN
 spp	I-PATHOGEN
 .	O
+
 (	O
+
 De	O
 Boer	O
 and	O
@@ -22799,6 +23413,7 @@ districts	O
 (	O
 Odintsovo	O
 ,	O
+
 Dmitrov	B-GPE
 ,	O
 Kashira	B-GPE
@@ -22825,6 +23440,7 @@ and	O
 Lady	O
 Clear	O
 .	O
+
 Disease	O
 incidence	O
 was	O
@@ -22858,6 +23474,7 @@ eight	O
 evaluated	O
 fields	O
 .	O
+
 Six	O
 bacterial	O
 strains	O
@@ -22889,6 +23506,7 @@ at	O
 °	O
 C	O
 ,	O
+
 but	O
 physiological	O
 tests	O
@@ -22906,6 +23524,7 @@ Khayi	O
 et	O
 al	O
 .	O
+
 2016	B-DATE
 )	O
 .	O
@@ -22985,6 +23604,7 @@ d	O
 -	O
 galactose	O
 ,	O
+
 lactose	O
 ,	O
 melibiose	O
@@ -22996,6 +23616,7 @@ citrate	O
 and	O
 trehalose	O
 .	O
+
 All	O
 strains	O
 were	O
@@ -23026,6 +23647,7 @@ inolin	O
 ,	O
 melezitose	O
 ,	O
+
 α	O
 -	O
 methyl	O
@@ -23039,6 +23661,7 @@ d	O
 -	O
 arabitol	O
 .	O
+
 All	O
 the	O
 strains	O
@@ -23076,6 +23699,7 @@ used	O
 as	O
 controls	O
 .	O
+
 Molecular	O
 identification	O
 of	O
@@ -23120,6 +23744,7 @@ F148	O
 (	O
 syn	O
 .	O
+
 PB20	O
 )	O
 (	O
@@ -23194,6 +23819,7 @@ GenBank	B-ORG
 accession	O
 nos	O
 .	O
+
 MG518488	O
 ,	O
 MG518489	O
@@ -23232,6 +23858,7 @@ species	O
 of	O
 Pectobacterium	O
 .	O
+
 Pathogenicity	O
 assays	O
 were	O
@@ -23278,6 +23905,7 @@ into	O
 each	O
 stem	B-PLANT_PART
 .	O
+
 Plants	O
 were	O
 exposed	O
@@ -23322,6 +23950,7 @@ in	O
 the	O
 field	O
 ,	O
+
 including	O
 brown	B-SYMPTOM
 water	I-SYMPTOM
@@ -23329,6 +23958,7 @@ water	I-SYMPTOM
 soaked	I-SYMPTOM
 lesions	I-SYMPTOM
 .	O
+
 Symptoms	O
 were	O
 not	O
@@ -23361,6 +23991,7 @@ original	O
 culture	O
 and	O
 ,	O
+
 thus	O
 ,	O
 were	O
@@ -23416,6 +24047,7 @@ independent	O
 diagnostic	O
 laboratories	O
 ,	O
+
 P.	B-PATHOGEN
 parmentieri	I-PATHOGEN
 had	O
@@ -23431,6 +24063,7 @@ P.	B-PATHOGEN
 carotovorum	I-PATHOGEN
 subsp	I-PATHOGEN
 .	I-PATHOGEN
+
 brasiliense	I-PATHOGEN
 (	O
 about	O
@@ -23484,6 +24117,7 @@ to	O
 infect	O
 banana	B-CROP
 ,	O
+
 the	O
 banana	B-PATHOGEN
 bunchy	I-PATHOGEN
@@ -23499,6 +24133,7 @@ and	O
 economically	O
 damaging	O
 .	O
+
 The	O
 use	O
 of	O
@@ -23551,10 +24186,12 @@ in	O
 several	O
 crops	O
 ,	O
+
 including	O
 the	O
 banana	B-CROP
 .	O
+
 The	O
 availability	O
 of	O
@@ -23585,6 +24222,7 @@ for	O
 genome	O
 editing	O
 .	O
+
 A	O
 robust	O
 CRISPR	O
@@ -23615,6 +24253,7 @@ varieties	O
 .	O
 Recently	O
 ,	O
+
 the	O
 CRISPR	O
 system	O
@@ -23647,6 +24286,7 @@ for	O
 virus	O
 diagnosis	O
 .	O
+
 This	O
 article	O
 presents	O
@@ -23720,6 +24360,7 @@ might	O
 wonder	O
 why	O
 .	O
+
  	O
 It	O
 's	O
@@ -23750,6 +24391,7 @@ eventually	I-SYMPTOM
 rot	I-SYMPTOM
 .	O
  	O
+
 The	O
 disease	O
 was	O
@@ -23769,6 +24411,7 @@ spread	O
 throughout	O
 Japan	B-GPE
 .	O
+
 The	O
 result	O
 has	O
@@ -23810,6 +24453,7 @@ sales	O
 channels	O
 overseas	O
 .	O
+
  	O
 According	O
 to	O
@@ -23845,6 +24489,7 @@ lowest	O
 on	O
 record	O
 .	O
+
 Approximately	O
 190,000	O
 tons	O
@@ -23882,6 +24527,7 @@ in	O
 the	O
 harvest	O
 .	O
+
 As	O
 a	O
 result	O
@@ -23954,7 +24600,9 @@ acquire	O
 sweet	B-CROP
 potatoes	I-CROP
 .	O
+
 "	O
+
  	O
 Sweet	B-CROP
 potato	I-CROP
@@ -23986,6 +24634,7 @@ countermeasures	O
 are	O
 underway	O
 .	O
+
 The	B-ORG
 National	I-ORG
 Agriculture	I-ORG
@@ -24016,12 +24665,14 @@ a	O
 new	O
 variety	O
 ,	O
+
 resistant	O
 to	O
 foot	B-DISEASE
 rot	I-DISEASE
 disease	I-DISEASE
 .	O
+
  	O
 Wakashio	B-ORG
 Distillery	I-ORG
@@ -24054,6 +24705,7 @@ materials	O
 This	B-DATE
 year	I-DATE
 ,	O
+
 however	O
 ,	O
 it	O
@@ -24075,6 +24727,7 @@ a	O
 contract	O
 farm	O
 .	O
+
  	O
 Yosuke	O
 Uemura	O
@@ -24108,6 +24761,7 @@ tons	O
 next	B-DATE
 year	I-DATE
 ,	O
+
 and	O
 we	O
 would	O
@@ -24157,6 +24811,7 @@ from	O
 Kogane	O
 Sengan	O
 ,	O
+
 the	O
 main	O
 variety	O
@@ -24167,6 +24822,7 @@ used	O
 until	O
 now	O
 .	O
+
 The	O
 company	O
 plans	O
@@ -24207,6 +24863,7 @@ around	O
 to	I-DATE
 2005	I-DATE
 .	O
+
 A	O
 representative	O
 of	O
@@ -24240,6 +24897,7 @@ shochu	O
 and	O
 awamori	O
 ,	O
+
 rapidly	O
 became	O
 popular	O
@@ -24253,6 +24911,7 @@ throughout	O
 the	O
 country	O
 .	O
+
  	O
 However	O
 ,	O
@@ -24290,6 +24949,7 @@ the	B-DATE
 previous	I-DATE
 year	I-DATE
 .	O
+
  	O
 After	O
 a	O
@@ -24325,6 +24985,7 @@ new	O
 sales	O
 channels	O
 .	O
+
  	O
 Fruity	O
 New	O
@@ -24391,6 +25052,7 @@ to	O
 expand	O
 sales	O
 .	O
+
 One	O
 of	O
 its	O
@@ -24421,6 +25083,7 @@ people	O
 In	O
 2021	B-DATE
 ,	O
+
 sales	O
 of	O
 "	O
@@ -24436,6 +25099,7 @@ times	O
 over	O
 2020	B-DATE
 .	O
+
  	O
 Wakashio	B-ORG
 Distillery	I-ORG
@@ -24468,6 +25132,7 @@ year	I-DATE
 In	O
 April	B-DATE
 ,	O
+
 the	O
 company	O
 prepared	O
@@ -24499,6 +25164,7 @@ pre	O
 order	O
 stage	O
 .	O
+
 For	O
 a	O
 new	O
@@ -24535,6 +25201,7 @@ exports	O
 of	O
 shochu	O
 .	O
+
 Ichiki	B-GPE
 -	I-GPE
 Kushikino	I-GPE
@@ -24565,6 +25232,7 @@ the	O
 domestic	O
 market	O
 ,	O
+
 shochu	O
 distilleries	O
 are	O
@@ -24611,7 +25279,9 @@ the	O
 Shochu	O
 Coalition	O
 .	O
+
 "	O
+
 Their	O
 aim	O
 is	O
@@ -24643,6 +25313,7 @@ November	B-DATE
 ,	O
 Kagoshima	B-GPE
 ,	O
+
 Miyazaki	B-GPE
 ,	O
 and	O
@@ -24676,6 +25347,7 @@ making	O
 with	O
 them	O
 .	O
+
  	O
 Shochu	O
 is	O
@@ -24731,6 +25403,7 @@ of	O
 shochu	O
 makers	O
 ,	O
+
 we	O
 can	O
 tell	O
@@ -24752,6 +25425,7 @@ potential	O
 of	O
 shochu	O
 .	O
+
  	O
 "	O
 As	O
@@ -24780,7 +25454,6 @@ Kazuhito	O
 Shimozaki	O
 excitedly	O
 .	O
-
 He	O
 is	O
 in	O
@@ -24800,6 +25473,7 @@ at	O
 Hamada	B-ORG
 Shuzo	I-ORG
 .	O
+
  	O
 Can	O
 shochu	O
@@ -24862,6 +25536,7 @@ species	O
 ;	O
 however	O
 ,	O
+
 introduction	O
 of	O
 these	O
@@ -24883,6 +25558,7 @@ poor	O
 agronomic	O
 performance	O
 .	O
+
 The	O
 Arabidopsis	O
 thaliana	O
@@ -24930,6 +25606,7 @@ anti	O
 bacterial	O
 immunity	O
 .	O
+
 Previous	O
 work	O
 has	O
@@ -24972,6 +25649,7 @@ INIA	O
 Ipora	O
 )	O
 ,	O
+
 as	O
 well	O
 as	O
@@ -24998,6 +25676,7 @@ relative	O
 Solanum	B-CROP
 commersonii	I-CROP
 .	O
+
 Resistance	O
 to	O
 R.	B-PATHOGEN
@@ -25028,6 +25707,7 @@ to	O
 R.	B-PATHOGEN
 solanacearum	I-PATHOGEN
 ,	O
+
 with	O
 no	O
 detectable	O
@@ -25155,6 +25835,7 @@ of	O
 Musa	B-CROP
 spp	I-CROP
 .	O
+
 and	O
 the	O
 banana	O
@@ -25187,6 +25868,7 @@ and	O
 unrooted	O
 cuttings	O
 ,	O
+
 roots	B-PLANT_PART
 ,	O
 and	O
@@ -25208,6 +25890,7 @@ known	O
 to	O
 occur	O
 .	O
+
  	O
 The	O
 United	B-GPE
@@ -25258,6 +25941,7 @@ with	O
 this	O
 pest	O
 ,	O
+
 "	O
 it	O
 said	O
@@ -25266,6 +25950,7 @@ the	O
 federal	O
 order	O
 .	O
+
  	O
 The	O
 Philippines	B-GPE
@@ -25340,6 +26025,7 @@ D.	O
 Dar	O
 said	O
 .	O
+
  	O
 The	O
 Philippines	B-GPE
@@ -25375,6 +26061,7 @@ saw	O
 stronger	O
 competition	O
 ,	O
+
 higher	O
 tariffs	O
 ,	O
@@ -25404,6 +26091,7 @@ in	O
 July	B-DATE
 2020	I-DATE
 .	O
+
  	O
 The	O
 Trade	B-ORG
@@ -25440,6 +26128,7 @@ items	O
 like	O
 bananas	B-CROP
 ,	O
+
 for	O
 which	O
 Philippine	B-GPE
@@ -25463,6 +26152,7 @@ seeking	O
 greater	O
 access	O
 .	O
+
  	O
 Philippine	B-GPE
 trade	O
@@ -25500,6 +26190,7 @@ apply	O
 to	O
 seeds	B-PLANT_PART
 ,	O
+
 leaves	B-PLANT_PART
 ,	O
 cut	B-PLANT_PART
@@ -25566,6 +26257,7 @@ locations	O
 (	O
 Cheongju	B-GPE
 ,	O
+
 Heanam	B-GPE
 ,	O
 Iksan	B-GPE
@@ -25597,6 +26289,7 @@ and	O
 in	O
 storehouse	O
 .	O
+
 The	O
 wilt	B-SYMPTOM
 incidence	O
@@ -25628,6 +26321,7 @@ Samples	O
 were	O
 collected	O
 ,	O
+
 and	O
 the	O
 causal	O
@@ -25642,6 +26336,7 @@ agar	O
 PDA	O
 )	O
 .	O
+
 Ten	O
 pure	O
 cultures	O
@@ -25696,6 +26391,7 @@ combined	O
 phylogenetic	O
 analysis	O
 ,	O
+
 confirmed	O
 the	O
 isolates	O
@@ -25705,6 +26401,7 @@ Fusarium	B-PATHOGEN
 oxysporum	I-PATHOGEN
 Schltdl	I-PATHOGEN
 .	O
+
 Pathogenicity	O
 tests	O
 were	O
@@ -25780,6 +26477,7 @@ surface	B-DISEASE
 rot	I-DISEASE
 resistance	O
 ,	O
+
 and	O
 Yulmi	O
 and	O
@@ -25834,6 +26532,7 @@ of	O
 growth	O
 continuing	O
 ,	O
+
 "	O
 says	O
 Robert	O
@@ -25850,6 +26549,7 @@ World	I-ORG
 Variety	I-ORG
 Produce	I-ORG
 .	O
+
  	O
 Melissa's	B-ORG
 /	I-ORG
@@ -25884,6 +26584,7 @@ year	O
 -	O
 round	O
 .	O
+
 And	O
 unlike	O
 a	O
@@ -25929,6 +26630,7 @@ that	O
 core	O
 customer	O
 .	O
+
 However	O
 ,	O
 people	O
@@ -25967,6 +26669,7 @@ cook	O
 with	O
 it	O
 ,	O
+
 "	O
 says	O
 Schueller	O
@@ -25987,6 +26690,7 @@ banana	B-CROP
 category	O
 .	O
 "	O
+
 That	O
 's	O
 a	O
@@ -26021,6 +26725,7 @@ time	O
 last	B-DATE
 year	I-DATE
 .	O
+
 "	O
 
 Taking	O
@@ -26060,11 +26765,13 @@ current	O
 inflation	O
 rate	O
 ,	O
+
 "	O
 says	O
 Schueller	O
 .	O
 "	O
+
 It	O
 seems	O
 like	O
@@ -26102,6 +26809,7 @@ Tel	O
 -	O
 1281	O
  	O
+
 roberts@melissas.com	O
  	O
 www.melissas.com	O
@@ -26144,6 +26852,7 @@ wilt	I-DISEASE
 BXW	B-DISEASE
 )	O
 ,	O
+
 blood	B-DISEASE
 ,	I-DISEASE
 and	I-DISEASE
@@ -26157,6 +26866,7 @@ on	O
 banana	B-CROP
 production	O
 .	O
+
 There	O
 is	O
 a	O
@@ -26187,6 +26897,7 @@ the	O
 same	O
 field	O
 .	O
+
 BXW	B-DISEASE
 disease	I-DISEASE
 caused	O
@@ -26221,6 +26932,7 @@ in	O
 the	O
 region	O
 .	O
+
 Only	O
 the	O
 wild	O
@@ -26256,6 +26968,7 @@ to	O
 manage	O
 diseases	O
 .	O
+
 Recent	O
 advances	O
 in	O
@@ -26371,6 +27084,7 @@ same	O
 with	O
 plantain	B-CROP
 .	O
+
  	O
 The	O
 debilitating	O
@@ -26424,6 +27138,7 @@ boost	O
 local	O
 enterprise	O
 .	O
+
  	O
 In	O
 a	O
@@ -26477,6 +27192,7 @@ expand	O
 the	O
 sector	O
 .	O
+
 One	O
 of	O
 the	O
@@ -26511,7 +27227,9 @@ to	O
 the	O
 farmers	O
 .	O
+
 "	O
+
  	O
 Hon	O
 .	O
@@ -26569,6 +27287,7 @@ esculenta	I-CROP
 in	O
 Tanzania	B-GPE
 .	O
+
 We	O
 investigated	O
 the	O
@@ -26608,6 +27327,7 @@ in	O
 the	O
 greenhouse	O
 .	O
+
 Leaves	B-PLANT_PART
 were	O
 sampled	O
@@ -26640,6 +27360,7 @@ MS	O
 )	O
 medium	O
 .	O
+
 On	O
 the	O
 second	O
@@ -26676,6 +27397,7 @@ ribavirin	O
 (	O
 0	O
 ,	O
+
 5	O
 ,	O
 10	O
@@ -26688,6 +27410,7 @@ mg	O
 L	O
 )	O
 .	O
+
 In	O
 the	O
 second	O
@@ -26719,6 +27442,7 @@ days	I-DATE
 of	O
 growth	O
 ,	O
+
 DNA	O
 was	O
 extracted	O
@@ -26735,6 +27459,7 @@ EACMV	B-PATHOGEN
 specific	O
 primers	O
 .	O
+
 It	O
 was	O
 found	O
@@ -26753,7 +27478,6 @@ and	O
 ribavirin	O
 concentrations	O
 .	O
-
 In	O
 general	O
 ,	O
@@ -26774,6 +27498,7 @@ treated	O
 with	O
 ribavirin	O
 .	O
+
 However	O
 ,	O
 the	O
@@ -26826,8 +27551,10 @@ and	O
 virus‐free	O
 plantlets	O
 ,	O
+
 respectively	O
 .	O
+
 With	O
 regard	O
 to	O
@@ -26863,6 +27590,7 @@ mg	O
 /	O
 L	O
 ,	O
+
 salicylic	O
 acid	O
 30	O
@@ -26925,6 +27653,7 @@ is	O
 highly	O
 heterogeneous	O
 ,	O
+
 indicating	O
 a	O
 need	O
@@ -26940,6 +27669,7 @@ of	O
 the	O
 species	O
 .	O
+
 PacBio	O
 was	O
 used	O
@@ -26979,11 +27709,13 @@ genes	O
 (	O
 dnaX	O
 ,	O
+
 icdA	O
 and	O
 mdh	O
 )	O
 .	O
+
 Their	O
 taxonomic	O
 relationship	O
@@ -27016,6 +27748,7 @@ identity	O
 ANI	O
 )	O
 .	O
+
 Based	O
 on	O
 ANI	O
@@ -27049,6 +27782,7 @@ the	O
 genus	O
 Pectobacterium	O
 ,	O
+
 for	O
 which	O
 the	O
@@ -27057,6 +27791,7 @@ Pectobacterium	B-PATHOGEN
 polaris	I-PATHOGEN
 sp	I-PATHOGEN
 .	O
+
 nov	O
 .	O
 is	O
@@ -27129,6 +27864,7 @@ combine	O
 high	O
 yield	O
 ,	O
+
 nutritional	O
 value	O
 and	O
@@ -27142,6 +27878,7 @@ and	O
 men	O
 demand	O
 .	O
+
  	O
 An	O
 innovation	O
@@ -27173,6 +27910,7 @@ of	O
 hybrid	O
 vigor	O
 ,	O
+
 or	O
 heterosis	O
 ,	O
@@ -27195,6 +27933,7 @@ to	O
 either	O
 parent	O
 .	O
+
 Hybrid	O
 maize	B-CROP
 is	O
@@ -27234,6 +27973,7 @@ with	O
 other	O
 crops	O
 .	O
+
  	O
 Sweetpotato	B-CROP
 is	O
@@ -27332,6 +28072,7 @@ foundation	O
 grandparents	O
 )	O
 .	O
+
 The	O
 article	O
 ,	O
@@ -27363,6 +28104,7 @@ a	O
 worthy	O
 investment	O
 .	O
+
  	O
 Breeding	O
 innovation	O
@@ -27399,6 +28141,7 @@ successful	O
 breeding	O
 scheme	O
 ,	O
+
 "	O
 says	O
 CIP	B-ORG
@@ -27410,6 +28153,7 @@ author	O
 Wolfgang	O
 Gruneberg	O
 .	O
+
  	O
 He	O
 explains	O
@@ -27447,6 +28191,7 @@ genetics	O
 and	O
 breeding	O
 .	O
+
 With	O
 Gruneberg	O
 's	O
@@ -27486,6 +28231,7 @@ on	O
 sequencing	O
 data	O
 ,	O
+
 then	O
 crossed	O
 individuals	O
@@ -27547,6 +28293,7 @@ in	O
 subsequent	O
 breeding	O
 .	O
+
  	O
 Though	O
 still	O
@@ -27578,6 +28325,7 @@ varieties	O
 for	O
 Mozambique	B-GPE
 .	O
+
 CIP	B-ORG
 has	O
 also	O
@@ -27612,6 +28360,7 @@ La	O
 Molina	O
 1895	O
  	O
+
 La	O
 Molina	O
 Apartado	O
@@ -27660,6 +28409,7 @@ decay	B-SYMPTOM
 of	I-SYMPTOM
 tubers	I-SYMPTOM
 ,	O
+
 blackening	B-SYMPTOM
 of	I-SYMPTOM
 stem	I-SYMPTOM
@@ -27672,6 +28422,7 @@ yellowing	I-SYMPTOM
 of	I-SYMPTOM
 leaves	I-SYMPTOM
 .	O
+
 The	O
 disease	O
 causes	O
@@ -27702,6 +28453,7 @@ Pectobacterium	I-PATHOGEN
 maceratum	I-PATHOGEN
 )	I-PATHOGEN
 ,	O
+
 P.	B-PATHOGEN
 carotovorum	I-PATHOGEN
 ,	O
@@ -27733,6 +28485,7 @@ Voronina	O
 et	O
 al	O
 .	O
+
 2019	B-DATE
 ,	O
 Ngoc	O
@@ -27786,6 +28539,7 @@ Helias	O
 et	O
 al	O
 .	O
+
 2012	B-DATE
 )	O
 as	O
@@ -27818,6 +28572,7 @@ yeast	O
 extract	O
 medium	O
 .	O
+
 DNA	O
 of	O
 bacterial	O
@@ -27843,13 +28598,13 @@ Cigna	O
 et	O
 al	O
 .	O
-
 2017	B-DATE
 )	O
 followed	O
 by	O
 sequencing	O
 .	O
+
 DNA	O
 sequence	O
 alignment	O
@@ -27883,6 +28638,7 @@ for	O
 F109	O
 NZ_RRYS01000004.1	O
 ,	O
+
 locus	O
 KHDHEBDM_RS06360	O
 )	O
@@ -27914,6 +28670,7 @@ Dees	O
 et	O
 al	O
 .	O
+
 2017	B-DATE
 )	O
 .	O
@@ -27949,6 +28706,7 @@ Duarte	O
 et	O
 al	O
 .	O
+
 2004	B-DATE
 )	O
 ,	O
@@ -27985,6 +28743,7 @@ for	O
 genome	O
 sequencing	O
 .	O
+
 The	O
 genome	O
 of	O
@@ -28017,6 +28776,7 @@ accession	O
 GCA_902143345.1	O
 )	O
 .	O
+
 The	O
 strain	O
 F109	O
@@ -28086,9 +28846,11 @@ urease	O
 indole	O
 production	O
 ,	O
+
 gelatin	O
 liquefaction	O
 .	O
+
 All	O
 isolates	O
 were	O
@@ -28124,6 +28886,7 @@ malonate	O
 and	O
 citrate	O
 .	O
+
 All	O
 the	O
 isolates	O
@@ -28199,6 +28962,7 @@ Koch	O
 's	O
 postulates	O
 .	O
+
 To	O
 our	O
 knowledge	O
@@ -28240,6 +29004,7 @@ Moscow	B-GPE
 region	O
 )	O
 ,	O
+
 P.	B-PATHOGEN
 polaris	I-PATHOGEN
 occurred	O
@@ -28295,6 +29060,7 @@ conflict	O
 of	O
 interest	O
 .	O
+
 Funding	O
 :	O
 This	O
@@ -28354,6 +29120,7 @@ Region	I-GPE
 of	I-GPE
 China	I-GPE
 ,	O
+
 lying	O
 on	O
 the	O
@@ -28362,6 +29129,7 @@ world	O
 highest	O
 plateau	O
 .	O
+
 To	O
 investigate	O
 whether	O
@@ -28392,6 +29160,7 @@ in	O
 In	O
 August	B-DATE
 ,	O
+
 potato	B-CROP
 (	O
 Solanum	B-CROP
@@ -28424,6 +29193,7 @@ Region	I-GPE
 29.3N,88.8E	B-LOC
 )	O
 .	O
+
 The	B-SYMPTOM
 necrotic	I-SYMPTOM
 brown	I-SYMPTOM
@@ -28454,6 +29224,7 @@ late	B-DISEASE
 blight	I-DISEASE
 symptom	O
 .	O
+
 Affected	O
 leaves	B-PLANT_PART
 were	O
@@ -28486,6 +29257,7 @@ for	O
 further	O
 investigation	O
 .	O
+
 The	O
 mycelium	O
 grew	O
@@ -28522,6 +29294,7 @@ L	O
 agar	O
 )	O
 ,	O
+
 forming	O
 white	O
 colony	O
@@ -28566,6 +29339,7 @@ Cardenas	O
 et	O
 al	O
 .	O
+
 2011	B-DATE
 ;	O
 Winton	O
@@ -28603,6 +29377,7 @@ Donaldson	O
 1995	B-DATE
 )	O
 .	O
+
 The	O
 sequences	O
 with	O
@@ -28635,6 +29410,7 @@ with	O
 Accession	O
 No	O
 .	O
+
 of	O
 MW559423	O
 .	O
@@ -28669,6 +29445,7 @@ GenBank	B-ORG
 Accession	O
 No	O
 .	O
+
 of	O
 MK507866	O
 ,	O
@@ -28716,6 +29493,7 @@ EF_R	O
 '	O
 )	O
 ,	O
+
 and	O
 a	O
 partial	O
@@ -28811,6 +29589,7 @@ MZ189257	O
 and	O
 MZ399710	O
 ,	O
+
 respectively	O
 ,	O
 which	O
@@ -28833,6 +29612,7 @@ infestans	I-PATHOGEN
 ,	O
 respectively	O
 .	O
+
 Phylogenetic	O
 analyses	O
 showed	O
@@ -28877,6 +29657,7 @@ on	O
 each	O
 leaf	B-PLANT_PART
 .	O
+
 After	O
 3	B-DATE
 days	I-DATE
@@ -28912,6 +29693,7 @@ water	O
 remained	O
 healthy	O
 .	O
+
 The	O
 pathogenicity	O
 of	O
@@ -28955,12 +29737,14 @@ the	O
 morphological	O
 characteristics	O
 ,	O
+
 which	O
 was	O
 fulfilled	O
 Koch	O
 postulates	O
 .	O
+
 The	O
 pathogenicity	O
 test	O
@@ -29055,6 +29839,7 @@ of	O
 this	O
 disease	O
 .	O
+
 This	O
 study	O
 provides	O
@@ -29085,6 +29870,7 @@ landscape	O
 -	O
 scale	O
 .	O
+
 This	O
 was	O
 achieved	O
@@ -29147,6 +29933,7 @@ seed	B-PLANT_PART
 stocks	O
 )	O
 ,	O
+
 matching	O
 features	O
 in	O
@@ -29179,6 +29966,7 @@ and	O
 soil	O
 features	O
 .	O
+
 Our	O
 approach	O
 provides	O
@@ -29249,6 +30037,7 @@ in	O
 recent	B-DATE
 years	I-DATE
 .	O
+
 Organic	O
 asparagus	B-CROP
 from	O
@@ -29284,6 +30073,7 @@ by	O
 country	O
 basis	O
 ,	O
+
 that	O
 diversity	O
 is	O
@@ -29320,6 +30110,7 @@ and	O
 processed	O
 foods	O
 ,	O
+
 while	O
 liberalized	O
 trade	O
@@ -29333,6 +30124,7 @@ global	O
 food	O
 brands	O
 .	O
+
 Whether	O
 you	O
 're	O
@@ -29364,6 +30156,7 @@ grandparents	O
 once	O
 did	O
 .	O
+
  	O
 But	O
 even	O
@@ -29397,6 +30190,7 @@ becoming	O
 more	O
 homogenized	O
 ,	O
+
 and	O
 that	O
 's	O
@@ -29404,6 +30198,7 @@ a	O
 dangerous	O
 thing	O
 .	O
+
 Those	O
 are	O
 the	O
@@ -29423,7 +30218,6 @@ Academy	I-ORG
 of	I-ORG
 Sciences	I-ORG
 .	O
-
 Researchers	O
 from	O
 around	O
@@ -29452,6 +30246,7 @@ the	O
 global	O
 menu	O
 .	O
+
 They	O
 found	O
 that	O
@@ -29493,6 +30288,7 @@ part	O
 of	O
 mealtime	O
 ,	O
+
 displacing	O
 regional	O
 crops	O
@@ -29501,6 +30297,7 @@ cassava	B-CROP
 and	O
 sorghum	B-CROP
 .	O
+
  	O
 "	O
 More	O
@@ -29534,6 +30331,7 @@ maize	B-CROP
 and	O
 soybean	B-CROP
 ,	O
+
 along	O
 with	O
 meat	O
@@ -29575,11 +30373,13 @@ of	O
 the	O
 paper	O
 ,	O
+
 in	O
 a	O
 statement	O
 .	O
 "	O
+
 These	O
 foods	O
 are	O
@@ -29611,6 +30411,7 @@ the	O
 major	O
 crops	O
 ,	O
+
 as	O
 consumption	O
 of	O
@@ -29621,6 +30422,7 @@ and	O
 vegetables	O
 declines	O
 .	O
+
  	O
 (	O
 MORE	O
@@ -29660,6 +30462,7 @@ Mexican	B-GPE
 in	O
 Malaysia	B-GPE
 ,	O
+
 sushi	O
 in	O
 South	B-LOC
@@ -29704,6 +30507,7 @@ down	O
 on	O
 hamburgers	O
 .	O
+
 But	O
 on	O
 a	O
@@ -29770,11 +30574,13 @@ very	O
 limited	O
 diet	O
 ,	O
+
 there	O
 are	O
 obvious	O
 drawbacks	O
 .	O
+
 The	O
 Westernized	O
 diet	O
@@ -29809,6 +30615,7 @@ diseases	O
 like	O
 diabetes	O
 .	O
+
 The	O
 carbon	O
 footprint	O
@@ -29845,6 +30652,7 @@ in	O
 climate	O
 change	O
 .	O
+
 And	O
 just	O
 as	O
@@ -29875,6 +30683,7 @@ identity	O
 and	O
 language	O
 ,	O
+
 the	O
 homogenization	O
 of	O
@@ -29931,6 +30740,7 @@ threaten	O
 those	O
 plants	O
 .	O
+
 Just	O
 look	O
 at	O
@@ -29970,6 +30780,7 @@ oranges	B-CROP
 put	O
 together	O
 .	O
+
 But	O
 a	O
 pair	O
@@ -30011,6 +30822,7 @@ to	O
 control	O
 it	O
 .	O
+
 Worse	O
 ,	O
 Foc	B-PATHOGEN
@@ -30054,6 +30866,7 @@ banana	B-CROP
 export	O
 crop	O
 .	O
+
  	O
 The	O
 reason	O
@@ -30088,6 +30901,7 @@ called	O
 Race	B-PATHOGEN
 1	I-PATHOGEN
 .	O
+
 Over	O
 the	B-DATE
 first	I-DATE
@@ -30118,6 +30932,7 @@ to	O
 virtual	O
 extinction	O
 .	O
+
 (	O
 
 The	O
@@ -30151,12 +30966,14 @@ Simpson	O
 once	O
 noted	O
 ,	O
+
 is	O
 just	O
 so	O
 sad	O
 .	O
 )	O
+
 As	O
 Gwynn	O
 Guilford	O
@@ -30188,6 +31005,7 @@ called	O
 Race	B-PATHOGEN
 4	I-PATHOGEN
 ,	O
+
 spreads	O
 globally	O
 :	O
@@ -30221,6 +31039,7 @@ production	O
 in	O
 fact	O
 ,	O
+
 bananas	B-CROP
 are	O
 the	O
@@ -30238,6 +31057,7 @@ wheat	B-CROP
 and	O
 milk	O
 .	O
+
 Where	O
 are	O
 the	O
@@ -30281,6 +31101,7 @@ their	O
 daily	O
 calories	O
 .	O
+
 And	O
 that	O
 's	O
@@ -30366,6 +31187,7 @@ a	O
 few	O
 holdings	O
 ,	O
+
 it	O
 's	O
 very	O
@@ -30378,6 +31200,7 @@ kind	O
 of	O
 disaster	O
 .	O
+
  	O
 (	O
 MORE	O
@@ -30429,6 +31252,7 @@ TR4	B-PATHOGEN
 of	O
 Foc	B-PATHOGEN
 ,	O
+
 which	O
 affects	O
 Cavendish	B-CROP
@@ -30465,6 +31289,7 @@ Bastidas	O
 et	O
 al	O
 .	O
+
 2014	B-DATE
 )	O
 .	O
@@ -30496,9 +31321,11 @@ country	O
 ’s	O
 production	O
 ,	O
+
 respectively	O
 )	O
 .	O
+
 Symptoms	O
 ofFusariumwilt	B-DISEASE
 ,	O
@@ -30532,6 +31359,7 @@ Pooran	I-GPE
 (	O
 ca	O
 .	O
+
 24	B-LOC
 °	I-LOC
 N	I-LOC
@@ -30567,10 +31395,12 @@ and	O
 regional	O
 export	O
 ,	O
+
 especially	O
 to	O
 Syria	B-GPE
 .	O
+
 Yellowing	B-SYMPTOM
 of	I-SYMPTOM
 leaves	I-SYMPTOM
@@ -30665,6 +31495,7 @@ isolates	O
 were	O
 generated	O
 ,	O
+
 four	O
 from	O
 the	O
@@ -30684,6 +31515,7 @@ quarter	O
 strength	O
 PDA	O
 .	O
+
 All	O
 isolates	O
 phenotypically	O
@@ -30724,6 +31556,7 @@ Ploetz	O
 2006	B-DATE
 )	O
 .	O
+
 Subsequently	O
 ,	O
 one	O
@@ -30756,6 +31589,7 @@ analyzed	O
 for	O
 pathogenicity	O
 .	O
+
 Inoculum	O
 production	O
 and	O
@@ -30788,6 +31622,7 @@ old	I-DATE
 Cavendish	B-CROP
 cv	O
 .	O
+
 Grand	O
 Naine	O
 plants	O
@@ -30859,10 +31694,12 @@ and	O
 pathogenicity	O
 analyses	O
 ,	O
+
 seeDita	O
 et	O
 al	O
 .	O
+
 2010	B-DATE
 )	O
 .	O
@@ -30895,6 +31732,7 @@ After	O
 4	B-DATE
 weeks	I-DATE
 ,	O
+
 all	O
 plants	O
 inoculated	O
@@ -30918,6 +31756,7 @@ of	O
 Fusarium	B-DISEASE
 wilt	I-DISEASE
 .	O
+
 After	O
 6	B-DATE
 weeks	I-DATE
@@ -30955,6 +31794,7 @@ all	O
 symptomatic	O
 plants	O
 .	O
+
 No	O
 isolates	O
 were	O
@@ -30998,6 +31838,7 @@ in	O
 Western	B-LOC
 Asia	I-LOC
 .	O
+
 Although	O
 comparatively	O
 limited	O
@@ -31055,6 +31896,7 @@ the	B-GPE
 United	I-GPE
 States	I-GPE
 .	O
+
 A	O
 total	O
 of	O
@@ -31087,6 +31929,7 @@ the	B-GPE
 United	I-GPE
 States	I-GPE
 ,	O
+
 Mexico	B-GPE
 ,	O
 Central	B-LOC
@@ -31096,6 +31939,7 @@ and	O
 New	B-GPE
 Zealand	I-GPE
 .	O
+
 A	O
 single	O
 tuber	B-PLANT_PART
@@ -31139,6 +31983,7 @@ different	O
 '	O
 Ca	B-PATHOGEN
 .	I-PATHOGEN
+
 L.	I-PATHOGEN
 solanacearum	I-PATHOGEN
 '	O
@@ -31172,6 +32017,7 @@ to	O
 '	O
 Ca	B-PATHOGEN
 .	I-PATHOGEN
+
 L.	I-PATHOGEN
 solanacearum	I-PATHOGEN
 '	O
@@ -31217,6 +32063,7 @@ of	O
 '	O
 Ca	B-PATHOGEN
 .	I-PATHOGEN
+
 L.	I-PATHOGEN
 solanacearum	I-PATHOGEN
 ,	O
@@ -31232,7 +32079,6 @@ pathogen	O
 was	O
 identified	O
 .	O
-
 This	O
 new	O
 haplotype	O
@@ -31292,6 +32138,7 @@ oxysporum	I-PATHOGEN
 f.	I-PATHOGEN
 sp	I-PATHOGEN
 .	I-PATHOGEN
+
 cubense	I-PATHOGEN
 (	O
 FOC	B-DISEASE
@@ -31328,6 +32175,7 @@ FOC	B-PATHOGEN
 race	I-PATHOGEN
 4	I-PATHOGEN
 ,	O
+
 is	O
 considered	O
 to	O
@@ -31339,6 +32187,7 @@ in	O
 problematic	O
 areas	O
 .	O
+
 However	O
 ,	O
 Fenza	O
@@ -31370,8 +32219,10 @@ orchids	B-PATHOGEN
 Dendrobium	B-PATHOGEN
 sp	I-PATHOGEN
 .	O
+
 )	O
 .	O
+
 Axillary	O
 spraying	O
 of	O
@@ -31410,6 +32261,7 @@ monocotyledonous	O
 plant	O
 species	O
 .	O
+
 By	O
 axillary	O
 inoculation	O
@@ -31443,6 +32295,7 @@ in	O
 Fenza	O
 No	O
 .	O
+
 1	O
 root	B-PLANT_PART
 tissues	O
@@ -31551,6 +32404,7 @@ by	O
 deep	O
 learning	O
 .	O
+
 The	O
 algorithm	O
 uses	O
@@ -31581,6 +32435,7 @@ healthy	O
 potato	B-CROP
 class	O
 .	O
+
 The	O
 database	O
 of	O
@@ -31613,6 +32468,7 @@ manually	O
 by	O
 experts	O
 .	O
+
 The	O
 models	O
 were	O
@@ -31661,6 +32517,7 @@ RGB	O
 (	O
 red	O
 ,	O
+
 green	O
 ,	O
 and	O
@@ -31678,6 +32535,7 @@ high	O
 classification	O
 accuracy	O
 .	O
+
 This	O
 is	O
 the	O
@@ -31708,6 +32566,7 @@ in	O
 potato	B-CROP
 tubers	B-PLANT_PART
 ,	O
+
 showing	O
 the	O
 potential	O
@@ -31763,6 +32622,7 @@ previous	O
 phylogenetic	O
 analyses	O
 .	O
+
 Several	O
 basic	O
 elements	O
@@ -31794,6 +32654,7 @@ South	B-LOC
 American	I-LOC
 taxa	O
 .	O
+
 We	O
 find	O
 that	O
@@ -31834,6 +32695,7 @@ in	O
 dry	O
 forests	O
 ,	O
+
 with	O
 numerous	O
 independent	O
@@ -31851,6 +32713,7 @@ within	O
 South	B-LOC
 America	I-LOC
 .	O
+
 We	O
 identify	O
 the	O
@@ -31886,6 +32749,7 @@ including	O
 M.	B-CROP
 glaziovii	I-CROP
 ,	O
+
 a	O
 species	O
 used	O
@@ -31894,6 +32758,7 @@ in	O
 breeding	O
 programs	O
 .	O
+
 Finally	O
 ,	O
 we	O
@@ -31932,6 +32797,7 @@ and	O
 widespread	O
 group	O
 ,	O
+
 and	O
 a	O
 robust	O
@@ -31976,6 +32842,7 @@ Williams	O
 (	O
 AAA	O
 ,	O
+
 Cavendish	B-CROP
 )	O
 in	O
@@ -31995,6 +32862,7 @@ to	O
 30	O
 %	O
 .	O
+
 Small	O
 pieces	O
 of	O
@@ -32026,6 +32894,7 @@ in	O
 sterile	O
 water	O
 ,	O
+
 plated	O
 on	O
 potato	O
@@ -32041,6 +32910,7 @@ at	O
 in	O
 darkness	O
 .	O
+
 A	O
 single	O
 -	O
@@ -32074,6 +32944,7 @@ containing	O
 8	O
 ascospores	O
 ,	O
+
 were	O
 clavate	O
 or	O
@@ -32090,6 +32961,7 @@ measured	O
 10.6	O
 μm	O
 .	O
+
 Conidia	O
 measured	O
 7.2	O
@@ -32120,6 +32992,7 @@ for	O
 molecular	O
 identification	O
 .	O
+
 The	O
 internal	O
 transcribed	O
@@ -32145,7 +33018,6 @@ ITS5	O
 2	O
 )	O
 .	O
-
 The	O
 ITS	O
 region	O
@@ -32156,6 +33028,7 @@ isolate	O
 Accession	O
 No	O
 .	O
+
 LM994823	O
 )	O
 was	O
@@ -32187,6 +33060,7 @@ and	O
 JQ743587	O
 )	O
 .	O
+
 Pathogenicity	O
 was	O
 conducted	O
@@ -32223,6 +33097,7 @@ were	O
 artificially	O
 inoculated	O
 .	O
+
 Mycelial	O
 plugs	O
 were	O
@@ -32260,6 +33135,7 @@ incubated	O
 at	O
 28oC	O
 ,	O
+
 75	O
 %	O
 relative	O
@@ -32275,6 +33151,7 @@ a	O
 h	I-DATE
 photoperiod	O
 .	O
+
 After	O
 7	B-DATE
 days	I-DATE
@@ -32319,6 +33196,7 @@ and	O
 molecular	O
 analysis	O
 .	O
+
 P.	B-PATHOGEN
 capitalensis	I-PATHOGEN
 is	O
@@ -32351,6 +33229,7 @@ Wong	O
 et	O
 al	O
 .	O
+
 ,	O
 
 2012	B-DATE
@@ -32384,6 +33263,7 @@ al	O
 2013	B-DATE
 )	O
 .	O
+
 To	O
 our	O
 knowledge	O
