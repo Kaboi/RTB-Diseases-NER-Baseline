@@ -436,7 +436,7 @@ def evaluating(model, datas, best_F):
             fb1 = float(metrics[3].split(':')[1].strip())
             # best_F_wandb = fb1
             # Log accuracy, precision, recall, and fb1 to wandb
-            wandb.log({"accuracy": accuracy, "precision": precision, "recall": recall, "FB1": fb1})
+            wandb.log({"accuracy": accuracy, "precision": precision, "recall": recall, "f1": fb1})
         elif i > 1 and line.strip():  # Skip the first line and empty lines
             entity_metrics = line.split()
             entity_name = entity_metrics[0].replace(":", "")
