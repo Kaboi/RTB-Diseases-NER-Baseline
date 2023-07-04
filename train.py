@@ -156,7 +156,7 @@ model_name = models_path + name #get_name(parameters)
 tmp_model = model_name + '.tmp'
 
 # Change some parameters only once, to include in WandB as well
-param_num_epochs = 10
+param_num_epochs = 25
 param_learning_rate = 0.015
 param_plot_every = 1000
 param_eval_every = 2000
