@@ -5,12 +5,19 @@ from spacy.training.example import Example
 from spacy.training import Corpus
 from spacy import displacy
 from spacy.util import minibatch
+from spacy.util import prefer_gpu
 from pathlib import Path
 import tempfile
 import shutil
 import itertools
 import matplotlib.pyplot as plt
 import numpy as np
+
+# Use GPU if available
+if prefer_gpu():
+    print("Using GPU!")
+else:
+    print("Using CPU :(")
 
 # Function to plot confusion matrix
 def plot_confusion_matrix(cm, classes, normalize=False, title='Confusion matrix', cmap=plt.cm.Blues):
