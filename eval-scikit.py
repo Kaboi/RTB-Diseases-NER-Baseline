@@ -91,7 +91,7 @@ test_data = prepare_dataset(
 # log evaluation to wandb
 timestamp = datetime.datetime.now().strftime("%Y%m%d%H%M%S")
 run_name = f"{parameters['name']}-{timestamp}-eval-ordered"
-wandb.init(project='RTB-NER-Transfer-Learning', name=run_name, tags=['baseline', 'ordered'])
+wandb.init(project='RTB-NER-Transfer-Learning-Evaluation', name=run_name, tags=['baseline', 'ordered'])
 # wandb.init(project='RTB-NER-Transfer-Learning', name=run_name, mode='disabled')
 
 # Log parameters
@@ -158,7 +158,7 @@ def get_entities(seq):
     return entities
 
 
-def plot_confusion_matrix(cm, classes, normalize=False, title='Confusion matrix', cmap=plt.cm.Blues):
+def plot_confusion_matrix(cm, classes, normalize=False, title='Confusion Matrix', cmap=plt.cm.Blues):
     """
     This function prints and plots the confusion matrix.
     Normalization can be applied by setting `normalize=True`.
