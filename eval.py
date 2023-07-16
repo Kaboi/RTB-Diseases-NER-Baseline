@@ -307,12 +307,13 @@ def evaluate(model, datas):
             fb1 = float(metrics[3].split(':')[1].strip())
             # best_F_wandb = fb1
             # Log accuracy, precision, recall, and fb1 to wandb
-            wandb.log({"test_accuracy": accuracy, "test_precision": precision, "test_recall": recall, "test_F1": fb1})
+            # wandb.log({"test_accuracy": accuracy, "test_precision": precision, "test_recall": recall, "test_F1": fb1})
             # wandb.run.summary({"Accuracy": accuracy, "Precision": precision, "Recall": recall, "F1": fb1})
             wandb.run.summary["Accuracy"] = accuracy
             wandb.run.summary["Precision"] = precision
             wandb.run.summary["Recall"] = recall
             wandb.run.summary["F1"] = fb1
+
 
 
         elif i > 1 and line.strip():  # Skip the first line and empty lines
