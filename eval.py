@@ -351,7 +351,8 @@ def evaluate(model, datas):
     print(f"Non-'O' entities accuracy: {non_O_accuracy:.2f}%")
     # wandb.log({"Overall accuracy": overall_accuracy, "Non_O_accuracy": non_O_accuracy})
     wandb.log({"Overall accuracy": overall_accuracy})
-    wandb.run.summary({"Non_O_Accuracy": non_O_accuracy})
+    wandb.log({"non_o_Accuracy": non_O_accuracy})
+    wandb.run.summary["Non_O_Accuracy"] = non_O_accuracy
 
     cm = confusion_matrix.numpy()  # Assuming your confusion_matrix is a PyTorch tensor
     fig = plot_confusion_matrix(cm, normalize=True, classes=[id_to_tag[i] for i in range(len(tag_to_id) - 2)])
