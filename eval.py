@@ -90,7 +90,7 @@ test_data = prepare_dataset(
 # log evaluation to wandb
 timestamp = datetime.datetime.now().strftime("%Y%m%d%H%M%S")
 run_name = f"{parameters['name']}-{timestamp}-eval"
-wandb.init(project='RTB-NER-Transfer-Learning-Evaluation', name=run_name, tags=['baseline', 'eval'])
+wandb.init(project='RTB-NER-Transfer-Learning-Final', name=run_name, tags=['baseline', 'eval'])
 # wandb.init(project='RTB-NER-Transfer-Learning', name=run_name, mode='disabled')
 
 # Log parameters
@@ -307,7 +307,9 @@ def evaluate(model, datas):
             fb1 = float(metrics[3].split(':')[1].strip())
             # best_F_wandb = fb1
             # Log accuracy, precision, recall, and fb1 to wandb
-            wandb.log({"Accuracy": accuracy, "Precision": precision, "Recall": recall, "F1": fb1})
+            wandb.log({"test_accuracy": accuracy, "test_precision": precision, "test_recall": recall, "test_F1": fb1})
+            wandb.run.summary({"Accuracy": accuracy, "Precision": precision, "Recall": recall, "F1": fb1})
+
 
         elif i > 1 and line.strip():  # Skip the first line and empty lines
             entity_metrics = line.split()
@@ -347,7 +349,9 @@ def evaluate(model, datas):
 
     print(f"Overall accuracy: {overall_accuracy:.2f}%")
     print(f"Non-'O' entities accuracy: {non_O_accuracy:.2f}%")
-    wandb.log({"Overall accuracy": overall_accuracy, "Non_O_accuracy": non_O_accuracy})
+    # wandb.log({"Overall accuracy": overall_accuracy, "Non_O_accuracy": non_O_accuracy})
+    wandb.log({"Overall accuracy": overall_accuracy})
+    wandb.run.summary({"Non_O_Accuracy": non_O_accuracy})
 
     cm = confusion_matrix.numpy()  # Assuming your confusion_matrix is a PyTorch tensor
     fig = plot_confusion_matrix(cm, normalize=True, classes=[id_to_tag[i] for i in range(len(tag_to_id) - 2)])

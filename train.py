@@ -165,7 +165,7 @@ param_momentum = 0.9
 # log training to wandb
 timestamp = datetime.datetime.now().strftime("%Y%m%d%H%M%S")
 run_name = f"{parameters['name']}-{timestamp}"
-wandb.init(project='RTB-NER-Transfer-Learning-Evaluation', name=run_name, tags=['baseline', 'train'])
+wandb.init(project='RTB-NER-Transfer-Learning-Final', name=run_name, tags=['baseline', 'train'])
 
 
 assert os.path.isfile(opts.train)
