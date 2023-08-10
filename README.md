@@ -1,13 +1,13 @@
 # BLSTM-CRF-NER
 ## reference:
 
-paper:
+Original paper:
 
 Neural Architectures for Named Entity Recognition<br/>
 End-toEnd Sequence labeling via BLSTM-CNN-CRF<br/>
    
 code:
-
+Source code is a modified version of what is available at
 https://github.com/smutuvi/NER_Baseline<br/>
 
 ## requirement
